@@ -13,7 +13,7 @@ class TableViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     
-    fileprivate let titles = [["SYButton", "SYLabel", "SYTextField", "SYView", "SYCollectionView", "SYImageView", "SYTextView", "SYAlertView", "SYNavigationBar", "SYSwitch", "SYControll", "SYSlider", "SYActivityIndicator"]]
+    fileprivate let titles = [["SYButton", "SYLabel", "SYTextField", "SYView", "SYCollectionView"]]
     fileprivate let controllers = ["ButtonView", "LabelView", "TextFieldView", "AnimationView", "CollectionView"]
     
     fileprivate let cellIdentifier = "ExampleTableViewCell"
@@ -96,7 +96,7 @@ extension TableViewController: UITableViewDataSource {
 
 extension TableViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return 60
+        return 60 * 2.2
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
