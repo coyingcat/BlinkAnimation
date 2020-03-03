@@ -160,7 +160,7 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     public func stopAnimating() {
         isAnimating = false
-        syLayer.startAnimating()
+        syLayer.stopAnimating()
 
     }
 }

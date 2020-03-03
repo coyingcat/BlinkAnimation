@@ -12,12 +12,18 @@ struct AnimationConstants {
     static let borderWidthHalf: CGFloat        = 1
     static let defaultDuration: CFTimeInterval = 1.5
     static let rippleDiameterRatio: CGFloat    = 0.7
+    
+    
     static let rippleBorderWidth: CGFloat      = 1
     static let subRippleDiameterRatio: CGFloat = 0.85
     static let shadowRadiusIfNotClear: CGFloat = 4
+    
+    
     static let shadowRadius: CGFloat           = 2.5
     static let shadowOpacity: CGFloat          = 0.5
     static let fromTextColorAlpha: CGFloat     = 0.15
+    
+    
     static let rippleToAlpha: CGFloat          = 0
     static let rippleToScale: CGFloat          = 1
 }
@@ -68,6 +74,11 @@ protocol Animatable {
     var animationTextColor: UIColor { get set }
 }
 
+
+
+
+
+
 extension Animatable {
     func startAnimating() {
         switch animationType {
@@ -90,6 +101,12 @@ extension Animatable {
         
         textLayer.foregroundColor = textColor.cgColor
     }
+    
+    
+    
+    
+    
+    
     
     func configureBorderAnimation() {
         configureBorderColorAnimation()

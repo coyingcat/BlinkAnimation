@@ -37,25 +37,25 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="KXQ-da-2Tf" customClass="SYButton" customModule="SYBlinkAnimationKit">
                                 <rect key="frame" x="37.5" y="74" width="300" height="50"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="300" id="6No-BU-Uf3"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="6No-BU-Uf3"/>
                                     <constraint firstAttribute="height" constant="50" id="FfZ-EP-wBo"/>
                                 </constraints>
                                 <state key="normal" title="Border Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sb-B8-nz9" customClass="SYButton" customModule="SYBlinkAnimationKit">
-                                <rect key="frame" x="37.5" y="144" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="184" width="300" height="50"/>
                                 <state key="normal" title="BorderWithShadow Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zxw-p8-LK2" customClass="SYButton" customModule="SYBlinkAnimationKit">
-                                <rect key="frame" x="37.5" y="214" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="254" width="300" height="50"/>
                                 <state key="normal" title="Background Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5ql-Bp-1dS" customClass="SYButton" customModule="SYBlinkAnimationKit">
-                                <rect key="frame" x="37.5" y="284" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="324" width="300" height="50"/>
                                 <state key="normal" title="Text Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rU9-le-gKA" customClass="SYButton" customModule="SYBlinkAnimationKit">
-                                <rect key="frame" x="37.5" y="354" width="300" height="50"/>
+                                <rect key="frame" x="37.5" y="394" width="300" height="50"/>
                                 <state key="normal" title="Ripple Animation"/>
                             </button>
                         </subviews>
@@ -72,7 +72,7 @@
                             <constraint firstItem="rU9-le-gKA" firstAttribute="centerX" secondItem="Ol0-1n-MOV" secondAttribute="centerX" id="T1Z-6x-FgZ"/>
                             <constraint firstItem="zxw-p8-LK2" firstAttribute="centerX" secondItem="Ol0-1n-MOV" secondAttribute="centerX" id="VF4-Cd-8Kp"/>
                             <constraint firstItem="5ql-Bp-1dS" firstAttribute="centerX" secondItem="Ol0-1n-MOV" secondAttribute="centerX" id="VXX-f9-LUx"/>
-                            <constraint firstItem="7Sb-B8-nz9" firstAttribute="top" secondItem="KXQ-da-2Tf" secondAttribute="bottom" constant="20" id="aRy-5J-qYA"/>
+                            <constraint firstItem="7Sb-B8-nz9" firstAttribute="top" secondItem="KXQ-da-2Tf" secondAttribute="bottom" constant="60" id="aRy-5J-qYA"/>
                             <constraint firstItem="KXQ-da-2Tf" firstAttribute="top" secondItem="UlW-st-bAG" secondAttribute="bottom" constant="30" id="byF-dN-YTj"/>
                             <constraint firstItem="5ql-Bp-1dS" firstAttribute="height" secondItem="zxw-p8-LK2" secondAttribute="height" id="gCj-ei-oVn"/>
                             <constraint firstItem="rU9-le-gKA" firstAttribute="width" secondItem="5ql-Bp-1dS" secondAttribute="width" id="nzX-ap-enk"/>

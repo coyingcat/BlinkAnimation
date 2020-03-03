@@ -67,13 +67,13 @@ class ButtonViewController: UIViewController {
     // MARK: - SYButton Tap Events -
     
     @objc private func borderAnimation(_ sender: SYButton) {
-        if sender.isAnimating{
+        if borderButton.isAnimating{
             print("stopAnimating")
-            sender.stopAnimating()
+            borderButton.stopAnimating()
         }
         else{
             print("startAnimating")
-            sender.startAnimating()
+            borderButton.startAnimating()
         }
     }
     
