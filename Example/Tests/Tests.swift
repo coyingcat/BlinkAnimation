@@ -1,6 +1,6 @@
 import UIKit
 import XCTest
-import SYBlinkAnimationKit
+
 
 class Tests: XCTestCase {
     

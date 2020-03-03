@@ -16,15 +16,25 @@
 		267412E7240E8B6C00F21D5E /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E2240E8B6C00F21D5E /* TextFieldViewController.swift */; };
 		267412E8240E8B6C00F21D5E /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E3240E8B6C00F21D5E /* LabelViewController.swift */; };
 		267412E9240E8B6C00F21D5E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E4240E8B6C00F21D5E /* CollectionViewController.swift */; };
+		2674132D240E99C000F21D5E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741320240E99C000F21D5E /* UIColorExtension.swift */; };
+		2674132E240E99C000F21D5E /* TextConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741321240E99C000F21D5E /* TextConvertible.swift */; };
+		2674132F240E99C000F21D5E /* AnimatableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741322240E99C000F21D5E /* AnimatableComponent.swift */; };
+		26741330240E99C000F21D5E /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741323240E99C000F21D5E /* Animatable.swift */; };
+		26741331240E99C000F21D5E /* CABasicAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741324240E99C000F21D5E /* CABasicAnimationExtension.swift */; };
+		26741332240E99C000F21D5E /* SYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741326240E99C000F21D5E /* SYTableViewCell.swift */; };
+		26741333240E99C000F21D5E /* SYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741327240E99C000F21D5E /* SYView.swift */; };
+		26741334240E99C000F21D5E /* SYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741328240E99C000F21D5E /* SYLabel.swift */; };
+		26741335240E99C000F21D5E /* SYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741329240E99C000F21D5E /* SYTextField.swift */; };
+		26741336240E99C000F21D5E /* SYLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674132A240E99C000F21D5E /* SYLayer.swift */; };
+		26741337240E99C000F21D5E /* SYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674132B240E99C000F21D5E /* SYCollectionViewCell.swift */; };
+		26741338240E99C000F21D5E /* SYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674132C240E99C000F21D5E /* SYButton.swift */; };
+		4161A0FC7A1F63C57934B86F /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EBEA239D11C8FE3E8985A67D /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
 		607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDE1AFB9204008FA782 /* LaunchScreen.xib */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
-		6B7A772A1D9A8401D534E613 /* Pods_SYBlinkAnimationKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD0D1B0CF0ECBBAB71E9905 /* Pods_SYBlinkAnimationKit_Example.framework */; };
-		6D2C74171DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2C74161DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6DA9213F1D4BAB0400454C88 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9213E1D4BAB0400454C88 /* TableViewController.swift */; };
-		83DA82E30386F417993E0FD9 /* Pods_SYBlinkAnimationKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,7 +65,8 @@
 		0EE63DCE0743D28A9B37FBC4 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		146CFC4D314BE36EF9201312 /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		152ED1CE78CD5530D3FF46D1 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1C5CA1B88037E6DA5C5588BD /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		24F5D1DBFAFE7C848CE502D0 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		267412D7240E8B1500F21D5E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		267412D8240E8B1500F21D5E /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
 		267412D9240E8B1500F21D5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -65,6 +76,18 @@
 		267412E2240E8B6C00F21D5E /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
 		267412E3240E8B6C00F21D5E /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
 		267412E4240E8B6C00F21D5E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
+		26741320240E99C000F21D5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		26741321240E99C000F21D5E /* TextConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConvertible.swift; sourceTree = "<group>"; };
+		26741322240E99C000F21D5E /* AnimatableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableComponent.swift; sourceTree = "<group>"; };
+		26741323240E99C000F21D5E /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		26741324240E99C000F21D5E /* CABasicAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationExtension.swift; sourceTree = "<group>"; };
+		26741326240E99C000F21D5E /* SYTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTableViewCell.swift; sourceTree = "<group>"; };
+		26741327240E99C000F21D5E /* SYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYView.swift; sourceTree = "<group>"; };
+		26741328240E99C000F21D5E /* SYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLabel.swift; sourceTree = "<group>"; };
+		26741329240E99C000F21D5E /* SYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTextField.swift; sourceTree = "<group>"; };
+		2674132A240E99C000F21D5E /* SYLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLayer.swift; sourceTree = "<group>"; };
+		2674132B240E99C000F21D5E /* SYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCollectionViewCell.swift; sourceTree = "<group>"; };
+		2674132C240E99C000F21D5E /* SYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYButton.swift; sourceTree = "<group>"; };
 		26C8EBAEADFD4EF853F26080 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		603805ABB0BE9A1FFBE0B524 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SYBlinkAnimationKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYBlinkAnimationKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -79,6 +102,7 @@
 		6D2C74161DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SYBlinkAnimationKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SYBlinkAnimationKit-beyykhzqdxeqgcghkxmayghanyrb/Build/Products/Debug-iphonesimulator/SYBlinkAnimationKit/SYBlinkAnimationKit.framework"; sourceTree = "<group>"; };
 		6DA9213E1D4BAB0400454C88 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		6F6D317777A9370409DF2003 /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		EBEA239D11C8FE3E8985A67D /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,8 +110,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6D2C74171DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework in Frameworks */,
-				6B7A772A1D9A8401D534E613 /* Pods_SYBlinkAnimationKit_Example.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -95,7 +117,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				83DA82E30386F417993E0FD9 /* Pods_SYBlinkAnimationKit_Tests.framework in Frameworks */,
+				4161A0FC7A1F63C57934B86F /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -125,6 +147,32 @@
 			path = Controller;
 			sourceTree = "<group>";
 		};
+		2674131F240E99C000F21D5E /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				26741320240E99C000F21D5E /* UIColorExtension.swift */,
+				26741321240E99C000F21D5E /* TextConvertible.swift */,
+				26741322240E99C000F21D5E /* AnimatableComponent.swift */,
+				26741323240E99C000F21D5E /* Animatable.swift */,
+				26741324240E99C000F21D5E /* CABasicAnimationExtension.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		26741325240E99C000F21D5E /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				26741326240E99C000F21D5E /* SYTableViewCell.swift */,
+				26741327240E99C000F21D5E /* SYView.swift */,
+				26741328240E99C000F21D5E /* SYLabel.swift */,
+				26741329240E99C000F21D5E /* SYTextField.swift */,
+				2674132A240E99C000F21D5E /* SYLayer.swift */,
+				2674132B240E99C000F21D5E /* SYCollectionViewCell.swift */,
+				2674132C240E99C000F21D5E /* SYButton.swift */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -149,6 +197,8 @@
 		607FACD21AFB9204008FA782 /* Example for SYBlinkAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
+				26741325240E99C000F21D5E /* Category */,
+				2674131F240E99C000F21D5E /* Core */,
 				267412DF240E8B6C00F21D5E /* Controller */,
 				267412D6240E8B1500F21D5E /* View */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
@@ -203,6 +253,8 @@
 				152ED1CE78CD5530D3FF46D1 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */,
 				6F6D317777A9370409DF2003 /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */,
 				146CFC4D314BE36EF9201312 /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */,
+				24F5D1DBFAFE7C848CE502D0 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */,
+				1C5CA1B88037E6DA5C5588BD /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */,
 			);
 			name = Pods;
 			sourceTree = "<group>";
@@ -212,7 +264,7 @@
 			children = (
 				6D2C74161DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework */,
 				0DD0D1B0CF0ECBBAB71E9905 /* Pods_SYBlinkAnimationKit_Example.framework */,
-				1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */,
+				EBEA239D11C8FE3E8985A67D /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -228,8 +280,6 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0F31BAAC8FC84DC8A402E4C6 /* [CP] Embed Pods Frameworks */,
-				27FA0A058114FE8507F6C4D3 /* [CP] Copy Pods Resources */,
 				6D2C741A1DB0A2AB0053AF4A /* Embed Frameworks */,
 			);
 			buildRules = (
@@ -249,8 +299,6 @@
 				607FACE11AFB9204008FA782 /* Sources */,
 				607FACE21AFB9204008FA782 /* Frameworks */,
 				607FACE31AFB9204008FA782 /* Resources */,
-				7B22D20A251C49511F2DE6FC /* [CP] Embed Pods Frameworks */,
-				4D47E3A3E4C1F714C2C8BCB8 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -326,39 +374,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0F31BAAC8FC84DC8A402E4C6 /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SYBlinkAnimationKit/SYBlinkAnimationKit.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYBlinkAnimationKit.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		27FA0A058114FE8507F6C4D3 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		385061614EC92A2C881B7BF7 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -377,21 +392,6 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
-		4D47E3A3E4C1F714C2C8BCB8 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests-resources.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
 		5141E2B732492B3D12EE8BF4 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -403,31 +403,11 @@
 			);
 			name = "[CP] Check Pods Manifest.lock";
 			outputPaths = (
-				"$(DERIVED_FILE_DIR)/Pods-SYBlinkAnimationKit_Tests-checkManifestLockResult.txt",
+				"$(DERIVED_FILE_DIR)/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-checkManifestLockResult.txt",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
-			showEnvVarsInLog = 0;
-		};
-		7B22D20A251C49511F2DE6FC /* [CP] Embed Pods Frameworks */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/SYBlinkAnimationKit/SYBlinkAnimationKit.framework",
-				"${BUILT_PRODUCTS_DIR}/FBSnapshotTestCase/FBSnapshotTestCase.framework",
-			);
-			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SYBlinkAnimationKit.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FBSnapshotTestCase.framework",
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -437,15 +417,27 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				26741337240E99C000F21D5E /* SYCollectionViewCell.swift in Sources */,
 				267412E9240E8B6C00F21D5E /* CollectionViewController.swift in Sources */,
+				2674132F240E99C000F21D5E /* AnimatableComponent.swift in Sources */,
+				26741338240E99C000F21D5E /* SYButton.swift in Sources */,
 				6DA9213F1D4BAB0400454C88 /* TableViewController.swift in Sources */,
 				267412DB240E8B1500F21D5E /* CollectionViewCell.swift in Sources */,
+				26741332240E99C000F21D5E /* SYTableViewCell.swift in Sources */,
 				267412E7240E8B6C00F21D5E /* TextFieldViewController.swift in Sources */,
 				267412E8240E8B6C00F21D5E /* LabelViewController.swift in Sources */,
 				267412E5240E8B6C00F21D5E /* AnimationViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				26741336240E99C000F21D5E /* SYLayer.swift in Sources */,
+				2674132D240E99C000F21D5E /* UIColorExtension.swift in Sources */,
 				267412E6240E8B6C00F21D5E /* ButtonViewController.swift in Sources */,
+				26741330240E99C000F21D5E /* Animatable.swift in Sources */,
+				26741331240E99C000F21D5E /* CABasicAnimationExtension.swift in Sources */,
+				26741335240E99C000F21D5E /* SYTextField.swift in Sources */,
 				267412DE240E8B1500F21D5E /* ExampleTableViewCell.swift in Sources */,
+				26741334240E99C000F21D5E /* SYLabel.swift in Sources */,
+				26741333240E99C000F21D5E /* SYView.swift in Sources */,
+				2674132E240E99C000F21D5E /* TextConvertible.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -596,7 +588,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 603805ABB0BE9A1FFBE0B524 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SYBlinkAnimationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -618,7 +609,6 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 152ED1CE78CD5530D3FF46D1 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */;
 			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SYBlinkAnimationKit/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
@@ -639,7 +629,7 @@
 		};
 		607FACF31AFB9204008FA782 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6F6D317777A9370409DF2003 /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */;
+			baseConfigurationReference = 24F5D1DBFAFE7C848CE502D0 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -662,7 +652,7 @@
 		};
 		607FACF41AFB9204008FA782 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 146CFC4D314BE36EF9201312 /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */;
+			baseConfigurationReference = 1C5CA1B88037E6DA5C5588BD /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

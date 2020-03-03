@@ -58,7 +58,7 @@ To run the example project, run `pod install` from the Example directory first.
 ## :large_orange_diamond: Usage
 First, Import **SYBlinkAnimationKit** in class.
 ```swift
-   import SYBlinkAnimationKit
+   
 ```
 
 **SYBlinkAnimationKit** is designed to be easy to use.

@@ -7,406 +7,307 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		26741313240E945000F21D5E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741306240E945000F21D5E /* UIColorExtension.swift */; };
-		26741314240E945000F21D5E /* TextConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741307240E945000F21D5E /* TextConvertible.swift */; };
-		26741315240E945000F21D5E /* AnimatableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741308240E945000F21D5E /* AnimatableComponent.swift */; };
-		26741316240E945000F21D5E /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741309240E945000F21D5E /* Animatable.swift */; };
-		26741317240E945000F21D5E /* CABasicAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */; };
-		26741318240E945000F21D5E /* SYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130C240E945000F21D5E /* SYTableViewCell.swift */; };
-		26741319240E945000F21D5E /* SYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130D240E945000F21D5E /* SYView.swift */; };
-		2674131A240E945000F21D5E /* SYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130E240E945000F21D5E /* SYLabel.swift */; };
-		2674131B240E945000F21D5E /* SYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130F240E945000F21D5E /* SYTextField.swift */; };
-		2674131C240E945000F21D5E /* SYLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741310240E945000F21D5E /* SYLayer.swift */; };
-		2674131D240E945000F21D5E /* SYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741311240E945000F21D5E /* SYCollectionViewCell.swift */; };
-		2674131E240E945000F21D5E /* SYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741312240E945000F21D5E /* SYButton.swift */; };
-		802EC4EC7E0F6E7204D25CC9333CA2E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
-		BE9A8A775EE604155D8B115BDD93396D /* SYBlinkAnimationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4513B9F77FD2AD79D706379310727ABA /* SYBlinkAnimationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		EA68A6FFDD67B1973CEAC4FBB3797949 /* SYBlinkAnimationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB3E9284E5DF59BAA2A06618C0626 /* SYBlinkAnimationKit-dummy.m */; };
+		13EDEACFE4B7FF3CDDC1C1D657D0F2F1 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 07D4DAE4B9184632EDBF48724A6315E8 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		26163B3A9170CC36812B5D7D057709EA /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = CC09DEA5C67E340C44E0DE429048D4DF /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m */; };
+		950B79332B1CD3F1C697B41293EA0DD0 /* Pods-SYBlinkAnimationKit_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 18106340C4C07B4EE6C8CFD402112F0F /* Pods-SYBlinkAnimationKit_Example-dummy.m */; };
+		B84F05A3257AB3A216452F2179D9FAE6 /* Pods-SYBlinkAnimationKit_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = AD4C4897564E5412CC7315C47ADB4C58 /* Pods-SYBlinkAnimationKit_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		E12B79528B8A99A38967044A34231466 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
+		F70AA9C8165E69777A7AE65B9D86EE81 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestController.m; path = FBSnapshotTestCase/FBSnapshotTestController.m; sourceTree = "<group>"; };
-		0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Snapshot.h"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.h"; sourceTree = "<group>"; };
-		0F88358CE498BB079250C38419BFDA1B /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
-		214610CD38EF3CFE35BAE3BC49FF43A5 /* SYBlinkAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYBlinkAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		26741306240E945000F21D5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		26741307240E945000F21D5E /* TextConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConvertible.swift; sourceTree = "<group>"; };
-		26741308240E945000F21D5E /* AnimatableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableComponent.swift; sourceTree = "<group>"; };
-		26741309240E945000F21D5E /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
-		2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationExtension.swift; sourceTree = "<group>"; };
-		2674130C240E945000F21D5E /* SYTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTableViewCell.swift; sourceTree = "<group>"; };
-		2674130D240E945000F21D5E /* SYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYView.swift; sourceTree = "<group>"; };
-		2674130E240E945000F21D5E /* SYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLabel.swift; sourceTree = "<group>"; };
-		2674130F240E945000F21D5E /* SYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTextField.swift; sourceTree = "<group>"; };
-		26741310240E945000F21D5E /* SYLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLayer.swift; sourceTree = "<group>"; };
-		26741311240E945000F21D5E /* SYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCollectionViewCell.swift; sourceTree = "<group>"; };
-		26741312240E945000F21D5E /* SYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYButton.swift; sourceTree = "<group>"; };
-		2A5FC5A9611E38248D67D983D3177DEF /* Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
-		3151E9A6157B7F064F22E5F330530E43 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
-		39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCase.m; path = FBSnapshotTestCase/FBSnapshotTestCase.m; sourceTree = "<group>"; };
-		3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Compare.m"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.m"; sourceTree = "<group>"; };
-		3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Snapshot.m"; path = "FBSnapshotTestCase/Categories/UIImage+Snapshot.m"; sourceTree = "<group>"; };
-		432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Compare.h"; path = "FBSnapshotTestCase/Categories/UIImage+Compare.h"; sourceTree = "<group>"; };
-		4513B9F77FD2AD79D706379310727ABA /* SYBlinkAnimationKit-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYBlinkAnimationKit-umbrella.h"; sourceTree = "<group>"; };
-		4597DE85D0FB5DA6A92377CD14B7E74D /* Pods-SYBlinkAnimationKit_Tests-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYBlinkAnimationKit_Tests-resources.sh"; sourceTree = "<group>"; };
-		4B2F584A99DE33BF08E200BBF0F317A5 /* Pods-SYBlinkAnimationKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "FBSnapshotTestCase-dummy.m"; sourceTree = "<group>"; };
-		58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = FBSnapshotTestCasePlatform.m; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.m; sourceTree = "<group>"; };
-		5B524FD44CF04685144F544508837621 /* Pods-SYBlinkAnimationKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SYBlinkAnimationKit_Tests.modulemap"; sourceTree = "<group>"; };
-		5B52FE2EDC7FB0D6B83915A453E05D09 /* Pods-SYBlinkAnimationKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-SYBlinkAnimationKit_Example.modulemap"; sourceTree = "<group>"; };
-		5C649BCACC48FF44AB4715CBEB17EF5C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C9700640A6D5A98CD951505A3F4BCE7 /* SYBlinkAnimationKit-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SYBlinkAnimationKit-prefix.pch"; sourceTree = "<group>"; };
-		5FBDB3E9284E5DF59BAA2A06618C0626 /* SYBlinkAnimationKit-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SYBlinkAnimationKit-dummy.m"; sourceTree = "<group>"; };
-		683F6001EE50A021A8F6189C4A385ACF /* Pods-SYBlinkAnimationKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYBlinkAnimationKit_Example-umbrella.h"; sourceTree = "<group>"; };
-		6E66B4218824CF8160D93713DDBEEA82 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		6E7299CB674EA65AF170A840B555D965 /* Pods-SYBlinkAnimationKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYBlinkAnimationKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		6FDB25ACDFDD4FF715D4A858EEC67707 /* Pods-SYBlinkAnimationKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-umbrella.h"; sourceTree = "<group>"; };
-		7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCasePlatform.h; path = FBSnapshotTestCase/FBSnapshotTestCasePlatform.h; sourceTree = "<group>"; };
-		823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = FBSnapshotTestCase.modulemap; sourceTree = "<group>"; };
-		8590A3C2B7E8EE7104C14649001CE6BD /* SYBlinkAnimationKit.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SYBlinkAnimationKit.xcconfig; sourceTree = "<group>"; };
-		85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIImage+Diff.h"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.h"; sourceTree = "<group>"; };
-		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A1D4CCC5950540866F59B11E7010A6B4 /* Pods-SYBlinkAnimationKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYBlinkAnimationKit_Tests-umbrella.h"; sourceTree = "<group>"; };
-		A27810809BAD71E4022600B21251449F /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/QuartzCore.framework; sourceTree = DEVELOPER_DIR; };
-		A3736FF0F0AE09E1233C4935610CAA63 /* Pods-SYBlinkAnimationKit_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYBlinkAnimationKit_Example-frameworks.sh"; sourceTree = "<group>"; };
-		AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
-		B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UIApplication+StrictKeyWindow.h"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.h"; sourceTree = "<group>"; };
-		B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIImage+Diff.m"; path = "FBSnapshotTestCase/Categories/UIImage+Diff.m"; sourceTree = "<group>"; };
-		C037DB27DB20EC9D2D411A489FE971B9 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "FBSnapshotTestCase-prefix.pch"; sourceTree = "<group>"; };
-		D0F2BCC289349D1B758AE6B5FAFFE5AF /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftSupport.swift; path = FBSnapshotTestCase/SwiftSupport.swift; sourceTree = "<group>"; };
-		DADAF30F2D84FDAAD2ADD2D50C1F40DF /* FBSnapshotTestCase.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = FBSnapshotTestCase.xcconfig; sourceTree = "<group>"; };
-		DDA7539CD36900EE03E2DA4E1902F722 /* SYBlinkAnimationKit.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SYBlinkAnimationKit.modulemap; sourceTree = "<group>"; };
-		E008177C1226E7BA6B129AD883792ECE /* Pods-SYBlinkAnimationKit_Example-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYBlinkAnimationKit_Example-resources.sh"; sourceTree = "<group>"; };
-		E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestCase.h; path = FBSnapshotTestCase/FBSnapshotTestCase.h; sourceTree = "<group>"; };
-		E54ECFEE27296950D4AFBF79C8C6DB00 /* Pods-SYBlinkAnimationKit_Tests-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-SYBlinkAnimationKit_Tests-frameworks.sh"; sourceTree = "<group>"; };
-		E9FF30526CDEC09A7C3E8A29D349406E /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		F4250079DFEE83811C1219097EE48004 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		F71763A6601E82DBF9839EEE1717BC01 /* Pods-SYBlinkAnimationKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYBlinkAnimationKit_Example-dummy.m"; sourceTree = "<group>"; };
-		F7AF0E0A752F6C874DBC1F143E6EE88F /* Pods-SYBlinkAnimationKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYBlinkAnimationKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		07D4DAE4B9184632EDBF48724A6315E8 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h"; sourceTree = "<group>"; };
+		18106340C4C07B4EE6C8CFD402112F0F /* Pods-SYBlinkAnimationKit_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYBlinkAnimationKit_Example-dummy.m"; sourceTree = "<group>"; };
+		2F39CF3C2ACA7540031512A9C08EC54F /* Pods-SYBlinkAnimationKit_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SYBlinkAnimationKit_Example.modulemap"; sourceTree = "<group>"; };
+		3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS12.2.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		339D04D19148D7C95B2F017564A11EEE /* Pods-SYBlinkAnimationKit_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		45579DDE531EEE99FA49045BDCE83498 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		5DB42C05BBF1104DE5CC293F88F835FB /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
+		686F03BAEFF45FC68ED7ACF11E089C19 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
+		7AA99B6CBDE9CDD5D2C7B8CBB3840810 /* Pods-SYBlinkAnimationKit_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Example-Info.plist"; sourceTree = "<group>"; };
+		9877C37D84CCCCCD8EAA3D36D37371A7 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A1C614C4897CCF68CD87C3CAA960BC9A /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-Info.plist"; sourceTree = "<group>"; };
+		A6FA016D0746730100AED71E217CF7B5 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.modulemap"; sourceTree = "<group>"; };
+		AC93982A673DB0CFB3B474FC967955CA /* Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		AD4C4897564E5412CC7315C47ADB4C58 /* Pods-SYBlinkAnimationKit_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-SYBlinkAnimationKit_Example-umbrella.h"; sourceTree = "<group>"; };
+		CC09DEA5C67E340C44E0DE429048D4DF /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m"; sourceTree = "<group>"; };
+		D4136717F65B32042F0527C141DF30A2 /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E543665DBB2E63892A8EF9918057770B /* Pods_SYBlinkAnimationKit_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB52EB1D4F96BADB86A56C600C6A0249 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
+		F627095761A4BA9244059389DC2D3111 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		86B109D7115B66A583FB5B5D9C74551F /* Frameworks */ = {
+		5B88297B13828D8059438555D26B5167 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				802EC4EC7E0F6E7204D25CC9333CA2E6 /* Foundation.framework in Frameworks */,
+				E12B79528B8A99A38967044A34231466 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5F378742A308468F4CF2C37FC2B46ED0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F70AA9C8165E69777A7AE65B9D86EE81 /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */ = {
+		57CFF8265DD5400427D1A3C1329D20CE /* Pods-SYBlinkAnimationKit_Example */ = {
 			isa = PBXGroup;
 			children = (
-				8D22B0D091B0427E43C82354D9CA8E06 /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		14E9DD2B31C9E8924527CAD59CDBD6BF /* Development Pods */ = {
-			isa = PBXGroup;
-			children = (
-				C428C2D30B1E4F61506308AADC805962 /* SYBlinkAnimationKit */,
-			);
-			name = "Development Pods";
-			sourceTree = "<group>";
-		};
-		1549F91FCD089822594C1F5DB8AB9E8F /* Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				823558E8AC8EB39D028DB5FBBEA227A3 /* FBSnapshotTestCase.modulemap */,
-				DADAF30F2D84FDAAD2ADD2D50C1F40DF /* FBSnapshotTestCase.xcconfig */,
-				52C18C0EB1FED5EB5CE3B0E768AC510F /* FBSnapshotTestCase-dummy.m */,
-				CC12BCFA3FC0B8C307F5B38C673EDD12 /* FBSnapshotTestCase-prefix.pch */,
-				73D037B3C804B9E1BB70538E342E5104 /* FBSnapshotTestCase-umbrella.h */,
-				6E66B4218824CF8160D93713DDBEEA82 /* Info.plist */,
-			);
-			name = "Support Files";
-			path = "../Target Support Files/FBSnapshotTestCase";
-			sourceTree = "<group>";
-		};
-		1B0B731E510D940F23F3C9847374794E /* Targets Support Files */ = {
-			isa = PBXGroup;
-			children = (
-				7A6B3BDBD3CA21A291BA14EE1D4188FB /* Pods-SYBlinkAnimationKit_Example */,
-				27AF04A2A9E74A57145B73EDFFD8F893 /* Pods-SYBlinkAnimationKit_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */ = {
-			isa = PBXGroup;
-			children = (
-				F35791481CAFDD8E7715AE1B44687328 /* Core */,
-				1549F91FCD089822594C1F5DB8AB9E8F /* Support Files */,
-				99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */,
-			);
-			path = FBSnapshotTestCase;
-			sourceTree = "<group>";
-		};
-		26741305240E945000F21D5E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				26741306240E945000F21D5E /* UIColorExtension.swift */,
-				26741307240E945000F21D5E /* TextConvertible.swift */,
-				26741308240E945000F21D5E /* AnimatableComponent.swift */,
-				26741309240E945000F21D5E /* Animatable.swift */,
-				2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */,
-			);
-			path = Core;
-			sourceTree = "<group>";
-		};
-		2674130B240E945000F21D5E /* Category */ = {
-			isa = PBXGroup;
-			children = (
-				2674130C240E945000F21D5E /* SYTableViewCell.swift */,
-				2674130D240E945000F21D5E /* SYView.swift */,
-				2674130E240E945000F21D5E /* SYLabel.swift */,
-				2674130F240E945000F21D5E /* SYTextField.swift */,
-				26741310240E945000F21D5E /* SYLayer.swift */,
-				26741311240E945000F21D5E /* SYCollectionViewCell.swift */,
-				26741312240E945000F21D5E /* SYButton.swift */,
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		27AF04A2A9E74A57145B73EDFFD8F893 /* Pods-SYBlinkAnimationKit_Tests */ = {
-			isa = PBXGroup;
-			children = (
-				F4250079DFEE83811C1219097EE48004 /* Info.plist */,
-				5B524FD44CF04685144F544508837621 /* Pods-SYBlinkAnimationKit_Tests.modulemap */,
-				6E7299CB674EA65AF170A840B555D965 /* Pods-SYBlinkAnimationKit_Tests-acknowledgements.markdown */,
-				4B2F584A99DE33BF08E200BBF0F317A5 /* Pods-SYBlinkAnimationKit_Tests-acknowledgements.plist */,
-				F7AF0E0A752F6C874DBC1F143E6EE88F /* Pods-SYBlinkAnimationKit_Tests-dummy.m */,
-				E54ECFEE27296950D4AFBF79C8C6DB00 /* Pods-SYBlinkAnimationKit_Tests-frameworks.sh */,
-				4597DE85D0FB5DA6A92377CD14B7E74D /* Pods-SYBlinkAnimationKit_Tests-resources.sh */,
-				A1D4CCC5950540866F59B11E7010A6B4 /* Pods-SYBlinkAnimationKit_Tests-umbrella.h */,
-				E9FF30526CDEC09A7C3E8A29D349406E /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */,
-				0F88358CE498BB079250C38419BFDA1B /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */,
-			);
-			name = "Pods-SYBlinkAnimationKit_Tests";
-			path = "Target Support Files/Pods-SYBlinkAnimationKit_Tests";
-			sourceTree = "<group>";
-		};
-		7A6B3BDBD3CA21A291BA14EE1D4188FB /* Pods-SYBlinkAnimationKit_Example */ = {
-			isa = PBXGroup;
-			children = (
-				D0F2BCC289349D1B758AE6B5FAFFE5AF /* Info.plist */,
-				5B52FE2EDC7FB0D6B83915A453E05D09 /* Pods-SYBlinkAnimationKit_Example.modulemap */,
-				2A5FC5A9611E38248D67D983D3177DEF /* Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown */,
-				6FDB25ACDFDD4FF715D4A858EEC67707 /* Pods-SYBlinkAnimationKit_Example-acknowledgements.plist */,
-				F71763A6601E82DBF9839EEE1717BC01 /* Pods-SYBlinkAnimationKit_Example-dummy.m */,
-				A3736FF0F0AE09E1233C4935610CAA63 /* Pods-SYBlinkAnimationKit_Example-frameworks.sh */,
-				E008177C1226E7BA6B129AD883792ECE /* Pods-SYBlinkAnimationKit_Example-resources.sh */,
-				683F6001EE50A021A8F6189C4A385ACF /* Pods-SYBlinkAnimationKit_Example-umbrella.h */,
-				C037DB27DB20EC9D2D411A489FE971B9 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */,
-				3151E9A6157B7F064F22E5F330530E43 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */,
+				2F39CF3C2ACA7540031512A9C08EC54F /* Pods-SYBlinkAnimationKit_Example.modulemap */,
+				AC93982A673DB0CFB3B474FC967955CA /* Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown */,
+				339D04D19148D7C95B2F017564A11EEE /* Pods-SYBlinkAnimationKit_Example-acknowledgements.plist */,
+				18106340C4C07B4EE6C8CFD402112F0F /* Pods-SYBlinkAnimationKit_Example-dummy.m */,
+				7AA99B6CBDE9CDD5D2C7B8CBB3840810 /* Pods-SYBlinkAnimationKit_Example-Info.plist */,
+				AD4C4897564E5412CC7315C47ADB4C58 /* Pods-SYBlinkAnimationKit_Example-umbrella.h */,
+				45579DDE531EEE99FA49045BDCE83498 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */,
+				686F03BAEFF45FC68ED7ACF11E089C19 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */,
 			);
 			name = "Pods-SYBlinkAnimationKit_Example";
 			path = "Target Support Files/Pods-SYBlinkAnimationKit_Example";
 			sourceTree = "<group>";
 		};
-		7B8071D626053E0F9B9D5319E36A29F9 /* Support Files */ = {
+		638633532BA9ECF0F852E033B6E57C84 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				5C649BCACC48FF44AB4715CBEB17EF5C /* Info.plist */,
-				DDA7539CD36900EE03E2DA4E1902F722 /* SYBlinkAnimationKit.modulemap */,
-				8590A3C2B7E8EE7104C14649001CE6BD /* SYBlinkAnimationKit.xcconfig */,
-				5FBDB3E9284E5DF59BAA2A06618C0626 /* SYBlinkAnimationKit-dummy.m */,
-				5C9700640A6D5A98CD951505A3F4BCE7 /* SYBlinkAnimationKit-prefix.pch */,
-				4513B9F77FD2AD79D706379310727ABA /* SYBlinkAnimationKit-umbrella.h */,
+				57CFF8265DD5400427D1A3C1329D20CE /* Pods-SYBlinkAnimationKit_Example */,
+				B103C9908DDF5779FA8B1950AFAA0460 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests */,
 			);
-			name = "Support Files";
-			path = "Example/Pods/Target Support Files/SYBlinkAnimationKit";
+			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
-		7DB346D0F39D3F0E887471402A8071AB = {
+		9F427D98EDA1AA132F5D4E7A70F48236 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
-				14E9DD2B31C9E8924527CAD59CDBD6BF /* Development Pods */,
-				14B8B9B15ECBE87983FF987239AB2D7B /* Frameworks */,
-				FBD2D672921284E66F309CA3462F84D6 /* Pods */,
-				D2C3474FE58F37705233379071166DC9 /* Products */,
-				1B0B731E510D940F23F3C9847374794E /* Targets Support Files */,
-			);
-			sourceTree = "<group>";
-		};
-		8D22B0D091B0427E43C82354D9CA8E06 /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */,
-				A27810809BAD71E4022600B21251449F /* QuartzCore.framework */,
-				AA323C90663942983643D7A4D1F697C8 /* UIKit.framework */,
-				3A8F339250A1C3C5C5C5364254007103 /* XCTest.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		99E46DD4AB2256791F111C718CB0EEF8 /* SwiftSupport */ = {
-			isa = PBXGroup;
-			children = (
-				D97545C39C4A5EE2631DD9FFECE76A40 /* SwiftSupport.swift */,
-			);
-			name = SwiftSupport;
-			sourceTree = "<group>";
-		};
-		C428C2D30B1E4F61506308AADC805962 /* SYBlinkAnimationKit */ = {
-			isa = PBXGroup;
-			children = (
-				2674130B240E945000F21D5E /* Category */,
-				26741305240E945000F21D5E /* Core */,
-				7B8071D626053E0F9B9D5319E36A29F9 /* Support Files */,
-			);
-			name = SYBlinkAnimationKit;
-			path = ../..;
-			sourceTree = "<group>";
-		};
-		D2C3474FE58F37705233379071166DC9 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				214610CD38EF3CFE35BAE3BC49FF43A5 /* SYBlinkAnimationKit.framework */,
+				E543665DBB2E63892A8EF9918057770B /* Pods_SYBlinkAnimationKit_Example.framework */,
+				D4136717F65B32042F0527C141DF30A2 /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		F35791481CAFDD8E7715AE1B44687328 /* Core */ = {
+		B103C9908DDF5779FA8B1950AFAA0460 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests */ = {
 			isa = PBXGroup;
 			children = (
-				E37899BD4B349060AA147E2A3721D3A2 /* FBSnapshotTestCase.h */,
-				39577E2B806B8B2D019998DE60728F63 /* FBSnapshotTestCase.m */,
-				7E3DB4D092B985E76E227F7F313C6981 /* FBSnapshotTestCasePlatform.h */,
-				58A2557E7CE20AACCD1B28B1CD1F920D /* FBSnapshotTestCasePlatform.m */,
-				1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */,
-				052258A488A96C35531FAC73C4F42924 /* FBSnapshotTestController.m */,
-				B9109B8B333B5A1A3E92EFC09EDC10AC /* UIApplication+StrictKeyWindow.h */,
-				2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */,
-				432938111B6FF0189EFFEDF2F845B308 /* UIImage+Compare.h */,
-				3B5E22F9517F21D3A0251F88FCAB281E /* UIImage+Compare.m */,
-				85E250EF19C5B5671AEC10BEB508D087 /* UIImage+Diff.h */,
-				B9CEF7D6C5E08AB80E58DABC75D882BC /* UIImage+Diff.m */,
-				0B161931541BFE46DFEA2092EDDDA815 /* UIImage+Snapshot.h */,
-				3DBFBDCC891B770A2AC9EF0FB164B751 /* UIImage+Snapshot.m */,
+				A6FA016D0746730100AED71E217CF7B5 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.modulemap */,
+				EB52EB1D4F96BADB86A56C600C6A0249 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.markdown */,
+				5DB42C05BBF1104DE5CC293F88F835FB /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-acknowledgements.plist */,
+				CC09DEA5C67E340C44E0DE429048D4DF /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m */,
+				A1C614C4897CCF68CD87C3CAA960BC9A /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-Info.plist */,
+				07D4DAE4B9184632EDBF48724A6315E8 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h */,
+				F627095761A4BA9244059389DC2D3111 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */,
+				9877C37D84CCCCCD8EAA3D36D37371A7 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */,
 			);
-			name = Core;
+			name = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests";
+			path = "Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests";
 			sourceTree = "<group>";
 		};
-		FBD2D672921284E66F309CA3462F84D6 /* Pods */ = {
+		C0834CEBB1379A84116EF29F93051C60 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				2287B5EBEAA3C332F8DB9A1E61F5B097 /* FBSnapshotTestCase */,
+				3212113385A8FBBDB272BD23C409FF61 /* Foundation.framework */,
 			);
-			name = Pods;
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		CF1408CF629C7361332E53B88F7BD30C = {
+			isa = PBXGroup;
+			children = (
+				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
+				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
+				9F427D98EDA1AA132F5D4E7A70F48236 /* Products */,
+				638633532BA9ECF0F852E033B6E57C84 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C0834CEBB1379A84116EF29F93051C60 /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		BC5B8DAE65803AE6E1F8E9F55023753E /* Headers */ = {
+		68483765D1EEB3A15870AC540DAA3340 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				BE9A8A775EE604155D8B115BDD93396D /* SYBlinkAnimationKit-umbrella.h in Headers */,
+				B84F05A3257AB3A216452F2179D9FAE6 /* Pods-SYBlinkAnimationKit_Example-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		E5980C4892E823731B967D919107394A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				13EDEACFE4B7FF3CDDC1C1D657D0F2F1 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		BE65DE274BDD3FDB2C1B2998C42BE654 /* SYBlinkAnimationKit */ = {
+		2F49F83B704AD27961C4D9B7CDC0FA6F /* Pods-SYBlinkAnimationKit_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = EF2D63BBCF2D995327FC40ADF9364C85 /* Build configuration list for PBXNativeTarget "SYBlinkAnimationKit" */;
+			buildConfigurationList = C7D9103BE5411B9B89AFA023004F4C10 /* Build configuration list for PBXNativeTarget "Pods-SYBlinkAnimationKit_Example" */;
 			buildPhases = (
-				84F3EEB9115959087CD142C65DAB9DED /* Sources */,
-				86B109D7115B66A583FB5B5D9C74551F /* Frameworks */,
-				BC5B8DAE65803AE6E1F8E9F55023753E /* Headers */,
+				68483765D1EEB3A15870AC540DAA3340 /* Headers */,
+				8E8D9ED195381C38705499D4691B36B7 /* Sources */,
+				5F378742A308468F4CF2C37FC2B46ED0 /* Frameworks */,
+				F80E60D5CFC158E9246E41E71DDE7DF4 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = SYBlinkAnimationKit;
-			productName = SYBlinkAnimationKit;
-			productReference = 214610CD38EF3CFE35BAE3BC49FF43A5 /* SYBlinkAnimationKit.framework */;
+			name = "Pods-SYBlinkAnimationKit_Example";
+			productName = "Pods-SYBlinkAnimationKit_Example";
+			productReference = E543665DBB2E63892A8EF9918057770B /* Pods_SYBlinkAnimationKit_Example.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BCA95055EAEA55C25F03EE512FBC6B82 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E4D3D7E13D6AB350E21A4E19826988FE /* Build configuration list for PBXNativeTarget "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests" */;
+			buildPhases = (
+				E5980C4892E823731B967D919107394A /* Headers */,
+				F374C9A28F556BE779676BCAF973F985 /* Sources */,
+				5B88297B13828D8059438555D26B5167 /* Frameworks */,
+				93FFF2493BB1D56CE7794DA7BF53DE2D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests";
+			productName = "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests";
+			productReference = D4136717F65B32042F0527C141DF30A2 /* Pods_SYBlinkAnimationKit_Example_SYBlinkAnimationKit_Tests.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+		BFDFE7DC352907FC980B868725387E98 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 0830;
+				LastSwiftUpdateCheck = 1100;
 				LastUpgradeCheck = 1130;
 			};
-			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
-				Base,
 			);
-			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = D2C3474FE58F37705233379071166DC9 /* Products */;
+			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
+			productRefGroup = 9F427D98EDA1AA132F5D4E7A70F48236 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				BE65DE274BDD3FDB2C1B2998C42BE654 /* SYBlinkAnimationKit */,
+				2F49F83B704AD27961C4D9B7CDC0FA6F /* Pods-SYBlinkAnimationKit_Example */,
+				BCA95055EAEA55C25F03EE512FBC6B82 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests */,
 			);
 		};
 /* End PBXProject section */
 
+/* Begin PBXResourcesBuildPhase section */
+		93FFF2493BB1D56CE7794DA7BF53DE2D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80E60D5CFC158E9246E41E71DDE7DF4 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
-		84F3EEB9115959087CD142C65DAB9DED /* Sources */ = {
+		8E8D9ED195381C38705499D4691B36B7 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2674131D240E945000F21D5E /* SYCollectionViewCell.swift in Sources */,
-				EA68A6FFDD67B1973CEAC4FBB3797949 /* SYBlinkAnimationKit-dummy.m in Sources */,
-				26741317240E945000F21D5E /* CABasicAnimationExtension.swift in Sources */,
-				26741315240E945000F21D5E /* AnimatableComponent.swift in Sources */,
-				26741318240E945000F21D5E /* SYTableViewCell.swift in Sources */,
-				2674131A240E945000F21D5E /* SYLabel.swift in Sources */,
-				26741313240E945000F21D5E /* UIColorExtension.swift in Sources */,
-				26741314240E945000F21D5E /* TextConvertible.swift in Sources */,
-				2674131E240E945000F21D5E /* SYButton.swift in Sources */,
-				2674131C240E945000F21D5E /* SYLayer.swift in Sources */,
-				2674131B240E945000F21D5E /* SYTextField.swift in Sources */,
-				26741319240E945000F21D5E /* SYView.swift in Sources */,
-				26741316240E945000F21D5E /* Animatable.swift in Sources */,
+				950B79332B1CD3F1C697B41293EA0DD0 /* Pods-SYBlinkAnimationKit_Example-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F374C9A28F556BE779676BCAF973F985 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				26163B3A9170CC36812B5D7D057709EA /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
-		717E77604BFBB04BEAF56608A1CB2EDE /* Release */ = {
+		0AFAEFE87D5C414D70290434ABA0CE88 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 686F03BAEFF45FC68ED7ACF11E089C19 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		1422B121EAEAEA11307496903FA623C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -415,54 +316,160 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
-				COPY_PHASE_STRIP = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_PREPROCESSOR_DEFINITIONS = (
 					"POD_CONFIGURATION_RELEASE=1",
 					"$(inherited)",
 				);
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
-				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
-		A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */ = {
+		612BE48D193C3881FEA17B84BEDC3CF2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 45579DDE531EEE99FA49045BDCE83498 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		929DC3E968CDBCC6435A22CED51A57DB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F627095761A4BA9244059389DC2D3111 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		A7B9E84D1672B789B77DFDA7856739E6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9877C37D84CCCCCD8EAA3D36D37371A7 /* Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests.modulemap";
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		ED7888FA6713EABBF66D26A8003AD1CA /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
 				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
@@ -471,17 +478,18 @@
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				CODE_SIGNING_REQUIRED = NO;
 				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_NO_COMMON_BLOCKS = YES;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -490,115 +498,56 @@
 					"DEBUG=1",
 					"$(inherited)",
 				);
-				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
 				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
 				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRIP_INSTALLED_PRODUCT = NO;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				SYMROOT = "${SRCROOT}/../build";
 			};
 			name = Debug;
 		};
-		BB9D586A9C642E62722BF3F8CA2EF6C3 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590A3C2B7E8EE7104C14649001CE6BD /* SYBlinkAnimationKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = dwarf;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SYBlinkAnimationKit/SYBlinkAnimationKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SYBlinkAnimationKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SYBlinkAnimationKit/SYBlinkAnimationKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = YES;
-				PRODUCT_NAME = SYBlinkAnimationKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		D49D793B14745F3B28E737CB7FAC6813 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 8590A3C2B7E8EE7104C14649001CE6BD /* SYBlinkAnimationKit.xcconfig */;
-			buildSettings = {
-				CODE_SIGN_IDENTITY = "";
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_PREFIX_HEADER = "Target Support Files/SYBlinkAnimationKit/SYBlinkAnimationKit-prefix.pch";
-				INFOPLIST_FILE = "Target Support Files/SYBlinkAnimationKit/Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MODULEMAP_FILE = "Target Support Files/SYBlinkAnimationKit/SYBlinkAnimationKit.modulemap";
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = SYBlinkAnimationKit;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+		4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				A6A03C9B1314C05BD3C2FBD3F65EDF83 /* Debug */,
-				717E77604BFBB04BEAF56608A1CB2EDE /* Release */,
+				ED7888FA6713EABBF66D26A8003AD1CA /* Debug */,
+				1422B121EAEAEA11307496903FA623C6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		EF2D63BBCF2D995327FC40ADF9364C85 /* Build configuration list for PBXNativeTarget "SYBlinkAnimationKit" */ = {
+		C7D9103BE5411B9B89AFA023004F4C10 /* Build configuration list for PBXNativeTarget "Pods-SYBlinkAnimationKit_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				BB9D586A9C642E62722BF3F8CA2EF6C3 /* Debug */,
-				D49D793B14745F3B28E737CB7FAC6813 /* Release */,
+				612BE48D193C3881FEA17B84BEDC3CF2 /* Debug */,
+				0AFAEFE87D5C414D70290434ABA0CE88 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		E4D3D7E13D6AB350E21A4E19826988FE /* Build configuration list for PBXNativeTarget "Pods-SYBlinkAnimationKit_Example-SYBlinkAnimationKit_Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929DC3E968CDBCC6435A22CED51A57DB /* Debug */,
+				A7B9E84D1672B789B77DFDA7856739E6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+	rootObject = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 }
