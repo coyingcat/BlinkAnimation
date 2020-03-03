@@ -7,6 +7,15 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		267412DB240E8B1500F21D5E /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412D7240E8B1500F21D5E /* CollectionViewCell.swift */; };
+		267412DC240E8B1500F21D5E /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267412D8240E8B1500F21D5E /* ExampleTableViewCell.xib */; };
+		267412DD240E8B1500F21D5E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 267412D9240E8B1500F21D5E /* CollectionViewCell.xib */; };
+		267412DE240E8B1500F21D5E /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412DA240E8B1500F21D5E /* ExampleTableViewCell.swift */; };
+		267412E5240E8B6C00F21D5E /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E0240E8B6C00F21D5E /* AnimationViewController.swift */; };
+		267412E6240E8B6C00F21D5E /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E1240E8B6C00F21D5E /* ButtonViewController.swift */; };
+		267412E7240E8B6C00F21D5E /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E2240E8B6C00F21D5E /* TextFieldViewController.swift */; };
+		267412E8240E8B6C00F21D5E /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E3240E8B6C00F21D5E /* LabelViewController.swift */; };
+		267412E9240E8B6C00F21D5E /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412E4240E8B6C00F21D5E /* CollectionViewController.swift */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
 		607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 607FACDC1AFB9204008FA782 /* Images.xcassets */; };
@@ -15,15 +24,6 @@
 		6B7A772A1D9A8401D534E613 /* Pods_SYBlinkAnimationKit_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0DD0D1B0CF0ECBBAB71E9905 /* Pods_SYBlinkAnimationKit_Example.framework */; };
 		6D2C74171DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D2C74161DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		6DA9213F1D4BAB0400454C88 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9213E1D4BAB0400454C88 /* TableViewController.swift */; };
-		6DA921421D4BACC300454C88 /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA921401D4BACC300454C88 /* ExampleTableViewCell.swift */; };
-		6DA921431D4BACC300454C88 /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA921411D4BACC300454C88 /* ExampleTableViewCell.xib */; };
-		6DA921491D4DDD2900454C88 /* CollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA921481D4DDD2900454C88 /* CollectionViewController.swift */; };
-		6DA9214C1D4DDE2900454C88 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA9214A1D4DDE2900454C88 /* CollectionViewCell.swift */; };
-		6DA9214D1D4DDE2900454C88 /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 6DA9214B1D4DDE2900454C88 /* CollectionViewCell.xib */; };
-		6DB6B4481C1D6D6A000680E9 /* TextFieldViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6B4471C1D6D6A000680E9 /* TextFieldViewController.swift */; };
-		6DB6B44A1C1D6DAA000680E9 /* ButtonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6B4491C1D6DAA000680E9 /* ButtonViewController.swift */; };
-		6DB6B44C1C1D6DBD000680E9 /* LabelViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DB6B44B1C1D6DBD000680E9 /* LabelViewController.swift */; };
-		6DED1E7D1C4A219B00A33514 /* AnimationViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DED1E7C1C4A219B00A33514 /* AnimationViewController.swift */; };
 		83DA82E30386F417993E0FD9 /* Pods_SYBlinkAnimationKit_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */; };
 /* End PBXBuildFile section */
 
@@ -57,6 +57,15 @@
 		152ED1CE78CD5530D3FF46D1 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		2016E64BFE9D329F166AB6A3 /* SYBlinkAnimationKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SYBlinkAnimationKit.podspec; path = ../SYBlinkAnimationKit.podspec; sourceTree = "<group>"; };
+		267412D7240E8B1500F21D5E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
+		267412D8240E8B1500F21D5E /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
+		267412D9240E8B1500F21D5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
+		267412DA240E8B1500F21D5E /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		267412E0240E8B6C00F21D5E /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
+		267412E1240E8B6C00F21D5E /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
+		267412E2240E8B6C00F21D5E /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
+		267412E3240E8B6C00F21D5E /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
+		267412E4240E8B6C00F21D5E /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
 		26C8EBAEADFD4EF853F26080 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		603805ABB0BE9A1FFBE0B524 /* Pods-SYBlinkAnimationKit_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* SYBlinkAnimationKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SYBlinkAnimationKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -70,15 +79,6 @@
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		6D2C74161DB0A1FF0053AF4A /* SYBlinkAnimationKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SYBlinkAnimationKit.framework; path = "../../../../../Library/Developer/Xcode/DerivedData/SYBlinkAnimationKit-beyykhzqdxeqgcghkxmayghanyrb/Build/Products/Debug-iphonesimulator/SYBlinkAnimationKit/SYBlinkAnimationKit.framework"; sourceTree = "<group>"; };
 		6DA9213E1D4BAB0400454C88 /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
-		6DA921401D4BACC300454C88 /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
-		6DA921411D4BACC300454C88 /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
-		6DA921481D4DDD2900454C88 /* CollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewController.swift; sourceTree = "<group>"; };
-		6DA9214A1D4DDE2900454C88 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		6DA9214B1D4DDE2900454C88 /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
-		6DB6B4471C1D6D6A000680E9 /* TextFieldViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldViewController.swift; sourceTree = "<group>"; };
-		6DB6B4491C1D6DAA000680E9 /* ButtonViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ButtonViewController.swift; sourceTree = "<group>"; };
-		6DB6B44B1C1D6DBD000680E9 /* LabelViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LabelViewController.swift; sourceTree = "<group>"; };
-		6DED1E7C1C4A219B00A33514 /* AnimationViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimationViewController.swift; sourceTree = "<group>"; };
 		6F6D317777A9370409DF2003 /* Pods-SYBlinkAnimationKit_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -103,6 +103,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		267412D6240E8B1500F21D5E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				267412D7240E8B1500F21D5E /* CollectionViewCell.swift */,
+				267412D8240E8B1500F21D5E /* ExampleTableViewCell.xib */,
+				267412D9240E8B1500F21D5E /* CollectionViewCell.xib */,
+				267412DA240E8B1500F21D5E /* ExampleTableViewCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		267412DF240E8B6C00F21D5E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				267412E0240E8B6C00F21D5E /* AnimationViewController.swift */,
+				267412E1240E8B6C00F21D5E /* ButtonViewController.swift */,
+				267412E2240E8B6C00F21D5E /* TextFieldViewController.swift */,
+				267412E3240E8B6C00F21D5E /* LabelViewController.swift */,
+				267412E4240E8B6C00F21D5E /* CollectionViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
@@ -127,17 +150,10 @@
 		607FACD21AFB9204008FA782 /* Example for SYBlinkAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
-				6DED1E7C1C4A219B00A33514 /* AnimationViewController.swift */,
+				267412DF240E8B6C00F21D5E /* Controller */,
+				267412D6240E8B1500F21D5E /* View */,
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
-				6DB6B4491C1D6DAA000680E9 /* ButtonViewController.swift */,
-				6DA921481D4DDD2900454C88 /* CollectionViewController.swift */,
-				6DA9214A1D4DDE2900454C88 /* CollectionViewCell.swift */,
-				6DA9214B1D4DDE2900454C88 /* CollectionViewCell.xib */,
-				6DB6B44B1C1D6DBD000680E9 /* LabelViewController.swift */,
-				6DB6B4471C1D6D6A000680E9 /* TextFieldViewController.swift */,
 				6DA9213E1D4BAB0400454C88 /* TableViewController.swift */,
-				6DA921401D4BACC300454C88 /* ExampleTableViewCell.swift */,
-				6DA921411D4BACC300454C88 /* ExampleTableViewCell.xib */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
@@ -294,11 +310,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DA921431D4BACC300454C88 /* ExampleTableViewCell.xib in Resources */,
+				267412DC240E8B1500F21D5E /* ExampleTableViewCell.xib in Resources */,
 				607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */,
 				607FACE01AFB9204008FA782 /* LaunchScreen.xib in Resources */,
 				607FACDD1AFB9204008FA782 /* Images.xcassets in Resources */,
-				6DA9214D1D4DDE2900454C88 /* CollectionViewCell.xib in Resources */,
+				267412DD240E8B1500F21D5E /* CollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -423,15 +439,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				6DB6B44A1C1D6DAA000680E9 /* ButtonViewController.swift in Sources */,
+				267412E9240E8B6C00F21D5E /* CollectionViewController.swift in Sources */,
 				6DA9213F1D4BAB0400454C88 /* TableViewController.swift in Sources */,
-				6DA9214C1D4DDE2900454C88 /* CollectionViewCell.swift in Sources */,
-				6DB6B44C1C1D6DBD000680E9 /* LabelViewController.swift in Sources */,
-				6DED1E7D1C4A219B00A33514 /* AnimationViewController.swift in Sources */,
-				6DA921491D4DDD2900454C88 /* CollectionViewController.swift in Sources */,
-				6DA921421D4BACC300454C88 /* ExampleTableViewCell.swift in Sources */,
-				6DB6B4481C1D6D6A000680E9 /* TextFieldViewController.swift in Sources */,
+				267412DB240E8B1500F21D5E /* CollectionViewCell.swift in Sources */,
+				267412E7240E8B6C00F21D5E /* TextFieldViewController.swift in Sources */,
+				267412E8240E8B6C00F21D5E /* LabelViewController.swift in Sources */,
+				267412E5240E8B6C00F21D5E /* AnimationViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				267412E6240E8B6C00F21D5E /* ButtonViewController.swift in Sources */,
+				267412DE240E8B1500F21D5E /* ExampleTableViewCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
