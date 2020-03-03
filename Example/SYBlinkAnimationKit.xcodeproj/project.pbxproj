@@ -56,7 +56,6 @@
 		146CFC4D314BE36EF9201312 /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Tests/Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		152ED1CE78CD5530D3FF46D1 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-SYBlinkAnimationKit_Example/Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		1A1D012F01C1CC0C5753C803 /* Pods_SYBlinkAnimationKit_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SYBlinkAnimationKit_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		2016E64BFE9D329F166AB6A3 /* SYBlinkAnimationKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = SYBlinkAnimationKit.podspec; path = ../SYBlinkAnimationKit.podspec; sourceTree = "<group>"; };
 		267412D7240E8B1500F21D5E /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
 		267412D8240E8B1500F21D5E /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
 		267412D9240E8B1500F21D5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
@@ -191,7 +190,6 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				2016E64BFE9D329F166AB6A3 /* SYBlinkAnimationKit.podspec */,
 				26C8EBAEADFD4EF853F26080 /* README.md */,
 				0EE63DCE0743D28A9B37FBC4 /* LICENSE */,
 			);
