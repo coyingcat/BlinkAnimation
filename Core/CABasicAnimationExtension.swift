@@ -9,8 +9,13 @@
 import UIKit
 
 enum AnimationKeyType: String {
-    case borderColor, borderWidth, shadowOpacity, backgroundColor, foregroundColor, opacity, transformScale  = "transform.scale"
+    case borderColor, borderWidth, shadowOpacity, backgroundColor, foregroundColor, opacity
+    
+    case transformScale  = "transform.scale"
 }
+
+
+
 
 extension CABasicAnimation {
     convenience init(type: AnimationKeyType) {

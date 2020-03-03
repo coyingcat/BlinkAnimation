@@ -125,11 +125,17 @@ final class SYLayer: Animatable {
         self.animationDuration = animationDuration
     }
     
+    
+    
+    
     func resizeSuperLayer() {
         resizeRippleLayer()
         resizeTextLayer()
         resizeShadowPath()
     }
+    
+    
+    
     
     func resetTextLayer(_ textLayer: CATextLayer) {
         self.textLayer = textLayer

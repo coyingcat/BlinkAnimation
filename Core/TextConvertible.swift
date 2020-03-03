@@ -40,13 +40,23 @@ extension TextConvertible where Self: UIView {
         textLayer.alignmentMode   = CATextLayerAlignmentMode(rawValue: alignmentMode)
     }
     
+    
+    
+    
+    
     // MARK: - Private Methods -
     
     private var alignmentMode: String {
         switch textAlignmentMode {
-        case .left, .topLeft, .bottomLeft:       return "left"
-        case .center, .topCenter, .bottomCenter: return "center"
-        case .right, .topRight, .bottomRight:    return "right"
+            
+        case .left, .topLeft, .bottomLeft:
+            return "left"
+            
+        case .center, .topCenter, .bottomCenter:
+            return "center"
+            
+        case .right, .topRight, .bottomRight:
+            return "right"
         }
     }
     

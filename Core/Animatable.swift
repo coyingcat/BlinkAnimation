@@ -28,6 +28,9 @@ struct AnimationConstants {
     static let rippleToScale: CGFloat          = 1
 }
 
+
+
+
 public enum SYMediaTimingFunction: Int {
     case linear, easeIn, easeOut, easeInEaseOut
     
@@ -45,9 +48,15 @@ public enum SYMediaTimingFunction: Int {
     }
 }
 
+
+
 enum AnimationType {
     case border, borderWithShadow, background, ripple, text
 }
+
+
+
+
 
 // MARK: - Protocol -
 
@@ -58,10 +67,14 @@ protocol Animatable {
     
     var animationType: AnimationType { get set }
     
+    
+    
     var superLayer: CALayer { get set }
     var textLayer: CATextLayer { get set }
     var subRippleLayer: CALayer { get set }
     var rippleLayer: CALayer { get set }
+    
+    
     
     var animationDuration: CFTimeInterval { get set }
     var animationTimingFunction: SYMediaTimingFunction { get set }
@@ -93,7 +106,11 @@ extension Animatable {
         }
     }
     
-    func stopAnimating() {
+    
+    
+    
+    func stopAnimating(){
+        print("Stop anima")
         superLayer.removeAllAnimations()
         textLayer.removeAllAnimations()
         subRippleLayer.removeAllAnimations()
@@ -119,6 +136,13 @@ extension Animatable {
         configureBorderWidthAnimation()
     }
     
+    
+    
+    
+    
+    
+    
+    
     func animateBorder() {
         let groupAnimation = CAAnimationGroup()
         groupAnimation.duration              = animationDuration
@@ -130,6 +154,14 @@ extension Animatable {
         animationType == .borderWithShadow ? animateBorderWithShadow(groupAnimation) : superLayer.add(groupAnimation, forKey: nil)
     }
     
+    
+    
+    
+    
+    
+    
+    
+    
     func animateBorderWithShadow(_ groupAnimation: CAAnimationGroup) {
         resetSuperLayerShadow()
         
@@ -138,6 +170,13 @@ extension Animatable {
         groupAnimation.animations?.append(shadowAnimation)
         superLayer.add(groupAnimation, forKey: nil)
     }
+    
+    
+    
+    
+    
+    
+    
     
     func animateBackground() {
         let backgroundColorAnimation = CABasicAnimation(type: .backgroundColor)

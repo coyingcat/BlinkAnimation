@@ -62,6 +62,9 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
         }
     }
     
+    
+    
+    
     public var animationType: AnimationType = .border {
         didSet {
             syLayer.animationType = {
@@ -80,6 +83,9 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
             }()
         }
     }
+    
+    
+    
     
     override public var bounds: CGRect {
         didSet {
@@ -165,7 +171,12 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     }
 }
 
-// MARK: - Fileprivate Methods -
+
+
+
+
+
+// MARK: - File  private Methods -
 
 fileprivate extension SYButton {
     func configure() {
