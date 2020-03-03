@@ -7,18 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		267412F9240E936B00F21D5E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412EC240E936B00F21D5E /* UIColorExtension.swift */; };
-		267412FA240E936B00F21D5E /* TextConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412ED240E936B00F21D5E /* TextConvertible.swift */; };
-		267412FB240E936B00F21D5E /* AnimatableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412EE240E936B00F21D5E /* AnimatableComponent.swift */; };
-		267412FC240E936B00F21D5E /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412EF240E936B00F21D5E /* Animatable.swift */; };
-		267412FD240E936B00F21D5E /* CABasicAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F0240E936B00F21D5E /* CABasicAnimationExtension.swift */; };
-		267412FE240E936B00F21D5E /* SYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F2240E936B00F21D5E /* SYTableViewCell.swift */; };
-		267412FF240E936B00F21D5E /* SYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F3240E936B00F21D5E /* SYView.swift */; };
-		26741300240E936B00F21D5E /* SYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F4240E936B00F21D5E /* SYLabel.swift */; };
-		26741301240E936B00F21D5E /* SYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F5240E936B00F21D5E /* SYTextField.swift */; };
-		26741302240E936B00F21D5E /* SYLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F6240E936B00F21D5E /* SYLayer.swift */; };
-		26741303240E936B00F21D5E /* SYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F7240E936B00F21D5E /* SYCollectionViewCell.swift */; };
-		26741304240E936B00F21D5E /* SYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267412F8240E936B00F21D5E /* SYButton.swift */; };
+		26741313240E945000F21D5E /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741306240E945000F21D5E /* UIColorExtension.swift */; };
+		26741314240E945000F21D5E /* TextConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741307240E945000F21D5E /* TextConvertible.swift */; };
+		26741315240E945000F21D5E /* AnimatableComponent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741308240E945000F21D5E /* AnimatableComponent.swift */; };
+		26741316240E945000F21D5E /* Animatable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741309240E945000F21D5E /* Animatable.swift */; };
+		26741317240E945000F21D5E /* CABasicAnimationExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */; };
+		26741318240E945000F21D5E /* SYTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130C240E945000F21D5E /* SYTableViewCell.swift */; };
+		26741319240E945000F21D5E /* SYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130D240E945000F21D5E /* SYView.swift */; };
+		2674131A240E945000F21D5E /* SYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130E240E945000F21D5E /* SYLabel.swift */; };
+		2674131B240E945000F21D5E /* SYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674130F240E945000F21D5E /* SYTextField.swift */; };
+		2674131C240E945000F21D5E /* SYLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741310240E945000F21D5E /* SYLayer.swift */; };
+		2674131D240E945000F21D5E /* SYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741311240E945000F21D5E /* SYCollectionViewCell.swift */; };
+		2674131E240E945000F21D5E /* SYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741312240E945000F21D5E /* SYButton.swift */; };
 		802EC4EC7E0F6E7204D25CC9333CA2E6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C6E88A450A84E3957158B3B3459740AA /* Foundation.framework */; };
 		BE9A8A775EE604155D8B115BDD93396D /* SYBlinkAnimationKit-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 4513B9F77FD2AD79D706379310727ABA /* SYBlinkAnimationKit-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		EA68A6FFDD67B1973CEAC4FBB3797949 /* SYBlinkAnimationKit-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 5FBDB3E9284E5DF59BAA2A06618C0626 /* SYBlinkAnimationKit-dummy.m */; };
@@ -30,18 +30,18 @@
 		0F88358CE498BB079250C38419BFDA1B /* Pods-SYBlinkAnimationKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		1374B79237CAC07693E99442FBED1F15 /* FBSnapshotTestController.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FBSnapshotTestController.h; path = FBSnapshotTestCase/FBSnapshotTestController.h; sourceTree = "<group>"; };
 		214610CD38EF3CFE35BAE3BC49FF43A5 /* SYBlinkAnimationKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SYBlinkAnimationKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		267412EC240E936B00F21D5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
-		267412ED240E936B00F21D5E /* TextConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConvertible.swift; sourceTree = "<group>"; };
-		267412EE240E936B00F21D5E /* AnimatableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableComponent.swift; sourceTree = "<group>"; };
-		267412EF240E936B00F21D5E /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
-		267412F0240E936B00F21D5E /* CABasicAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationExtension.swift; sourceTree = "<group>"; };
-		267412F2240E936B00F21D5E /* SYTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTableViewCell.swift; sourceTree = "<group>"; };
-		267412F3240E936B00F21D5E /* SYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYView.swift; sourceTree = "<group>"; };
-		267412F4240E936B00F21D5E /* SYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLabel.swift; sourceTree = "<group>"; };
-		267412F5240E936B00F21D5E /* SYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTextField.swift; sourceTree = "<group>"; };
-		267412F6240E936B00F21D5E /* SYLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLayer.swift; sourceTree = "<group>"; };
-		267412F7240E936B00F21D5E /* SYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCollectionViewCell.swift; sourceTree = "<group>"; };
-		267412F8240E936B00F21D5E /* SYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYButton.swift; sourceTree = "<group>"; };
+		26741306240E945000F21D5E /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		26741307240E945000F21D5E /* TextConvertible.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextConvertible.swift; sourceTree = "<group>"; };
+		26741308240E945000F21D5E /* AnimatableComponent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableComponent.swift; sourceTree = "<group>"; };
+		26741309240E945000F21D5E /* Animatable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Animatable.swift; sourceTree = "<group>"; };
+		2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CABasicAnimationExtension.swift; sourceTree = "<group>"; };
+		2674130C240E945000F21D5E /* SYTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTableViewCell.swift; sourceTree = "<group>"; };
+		2674130D240E945000F21D5E /* SYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYView.swift; sourceTree = "<group>"; };
+		2674130E240E945000F21D5E /* SYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLabel.swift; sourceTree = "<group>"; };
+		2674130F240E945000F21D5E /* SYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTextField.swift; sourceTree = "<group>"; };
+		26741310240E945000F21D5E /* SYLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLayer.swift; sourceTree = "<group>"; };
+		26741311240E945000F21D5E /* SYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCollectionViewCell.swift; sourceTree = "<group>"; };
+		26741312240E945000F21D5E /* SYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYButton.swift; sourceTree = "<group>"; };
 		2A5FC5A9611E38248D67D983D3177DEF /* Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-SYBlinkAnimationKit_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2EECE81A9AEC1ED1057A9C3C88DBCEBE /* UIApplication+StrictKeyWindow.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UIApplication+StrictKeyWindow.m"; path = "FBSnapshotTestCase/Categories/UIApplication+StrictKeyWindow.m"; sourceTree = "<group>"; };
 		3151E9A6157B7F064F22E5F330530E43 /* Pods-SYBlinkAnimationKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-SYBlinkAnimationKit_Example.release.xcconfig"; sourceTree = "<group>"; };
@@ -153,37 +153,28 @@
 			path = FBSnapshotTestCase;
 			sourceTree = "<group>";
 		};
-		267412EA240E936B00F21D5E /* Source */ = {
+		26741305240E945000F21D5E /* Core */ = {
 			isa = PBXGroup;
 			children = (
-				267412EB240E936B00F21D5E /* Core */,
-				267412F1240E936B00F21D5E /* Category */,
-			);
-			path = Source;
-			sourceTree = "<group>";
-		};
-		267412EB240E936B00F21D5E /* Core */ = {
-			isa = PBXGroup;
-			children = (
-				267412EC240E936B00F21D5E /* UIColorExtension.swift */,
-				267412ED240E936B00F21D5E /* TextConvertible.swift */,
-				267412EE240E936B00F21D5E /* AnimatableComponent.swift */,
-				267412EF240E936B00F21D5E /* Animatable.swift */,
-				267412F0240E936B00F21D5E /* CABasicAnimationExtension.swift */,
+				26741306240E945000F21D5E /* UIColorExtension.swift */,
+				26741307240E945000F21D5E /* TextConvertible.swift */,
+				26741308240E945000F21D5E /* AnimatableComponent.swift */,
+				26741309240E945000F21D5E /* Animatable.swift */,
+				2674130A240E945000F21D5E /* CABasicAnimationExtension.swift */,
 			);
 			path = Core;
 			sourceTree = "<group>";
 		};
-		267412F1240E936B00F21D5E /* Category */ = {
+		2674130B240E945000F21D5E /* Category */ = {
 			isa = PBXGroup;
 			children = (
-				267412F2240E936B00F21D5E /* SYTableViewCell.swift */,
-				267412F3240E936B00F21D5E /* SYView.swift */,
-				267412F4240E936B00F21D5E /* SYLabel.swift */,
-				267412F5240E936B00F21D5E /* SYTextField.swift */,
-				267412F6240E936B00F21D5E /* SYLayer.swift */,
-				267412F7240E936B00F21D5E /* SYCollectionViewCell.swift */,
-				267412F8240E936B00F21D5E /* SYButton.swift */,
+				2674130C240E945000F21D5E /* SYTableViewCell.swift */,
+				2674130D240E945000F21D5E /* SYView.swift */,
+				2674130E240E945000F21D5E /* SYLabel.swift */,
+				2674130F240E945000F21D5E /* SYTextField.swift */,
+				26741310240E945000F21D5E /* SYLayer.swift */,
+				26741311240E945000F21D5E /* SYCollectionViewCell.swift */,
+				26741312240E945000F21D5E /* SYButton.swift */,
 			);
 			path = Category;
 			sourceTree = "<group>";
@@ -272,7 +263,8 @@
 		C428C2D30B1E4F61506308AADC805962 /* SYBlinkAnimationKit */ = {
 			isa = PBXGroup;
 			children = (
-				267412EA240E936B00F21D5E /* Source */,
+				2674130B240E945000F21D5E /* Category */,
+				26741305240E945000F21D5E /* Core */,
 				7B8071D626053E0F9B9D5319E36A29F9 /* Support Files */,
 			);
 			name = SYBlinkAnimationKit;
@@ -379,19 +371,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				26741303240E936B00F21D5E /* SYCollectionViewCell.swift in Sources */,
+				2674131D240E945000F21D5E /* SYCollectionViewCell.swift in Sources */,
 				EA68A6FFDD67B1973CEAC4FBB3797949 /* SYBlinkAnimationKit-dummy.m in Sources */,
-				267412FD240E936B00F21D5E /* CABasicAnimationExtension.swift in Sources */,
-				267412FB240E936B00F21D5E /* AnimatableComponent.swift in Sources */,
-				267412FE240E936B00F21D5E /* SYTableViewCell.swift in Sources */,
-				26741300240E936B00F21D5E /* SYLabel.swift in Sources */,
-				267412F9240E936B00F21D5E /* UIColorExtension.swift in Sources */,
-				267412FA240E936B00F21D5E /* TextConvertible.swift in Sources */,
-				26741304240E936B00F21D5E /* SYButton.swift in Sources */,
-				26741302240E936B00F21D5E /* SYLayer.swift in Sources */,
-				26741301240E936B00F21D5E /* SYTextField.swift in Sources */,
-				267412FF240E936B00F21D5E /* SYView.swift in Sources */,
-				267412FC240E936B00F21D5E /* Animatable.swift in Sources */,
+				26741317240E945000F21D5E /* CABasicAnimationExtension.swift in Sources */,
+				26741315240E945000F21D5E /* AnimatableComponent.swift in Sources */,
+				26741318240E945000F21D5E /* SYTableViewCell.swift in Sources */,
+				2674131A240E945000F21D5E /* SYLabel.swift in Sources */,
+				26741313240E945000F21D5E /* UIColorExtension.swift in Sources */,
+				26741314240E945000F21D5E /* TextConvertible.swift in Sources */,
+				2674131E240E945000F21D5E /* SYButton.swift in Sources */,
+				2674131C240E945000F21D5E /* SYLayer.swift in Sources */,
+				2674131B240E945000F21D5E /* SYTextField.swift in Sources */,
+				26741319240E945000F21D5E /* SYView.swift in Sources */,
+				26741316240E945000F21D5E /* Animatable.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
