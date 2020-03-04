@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		26741346240E9A7200F21D5E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741345240E9A7200F21D5E /* AppDelegate.swift */; };
 		26741348240E9A7200F21D5E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741347240E9A7200F21D5E /* SceneDelegate.swift */; };
-		2674134A240E9A7200F21D5E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741349240E9A7200F21D5E /* ViewController.swift */; };
 		2674134D240E9A7200F21D5E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2674134B240E9A7200F21D5E /* Main.storyboard */; };
 		2674134F240E9A7400F21D5E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2674134E240E9A7400F21D5E /* Assets.xcassets */; };
 		26741352240E9A7400F21D5E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 26741350240E9A7400F21D5E /* LaunchScreen.storyboard */; };
@@ -60,7 +59,6 @@
 		26741342240E9A7200F21D5E /* BlinkAnima.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlinkAnima.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		26741345240E9A7200F21D5E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		26741347240E9A7200F21D5E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		26741349240E9A7200F21D5E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		2674134C240E9A7200F21D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		2674134E240E9A7400F21D5E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		26741351240E9A7400F21D5E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -150,7 +148,6 @@
 				2674138B240E9ACE00F21D5E /* View */,
 				26741345240E9A7200F21D5E /* AppDelegate.swift */,
 				26741347240E9A7200F21D5E /* SceneDelegate.swift */,
-				26741349240E9A7200F21D5E /* ViewController.swift */,
 				2674134B240E9A7200F21D5E /* Main.storyboard */,
 				2674134E240E9A7400F21D5E /* Assets.xcassets */,
 				26741350240E9A7400F21D5E /* LaunchScreen.storyboard */,
@@ -365,7 +362,6 @@
 				26741398240E9ACE00F21D5E /* SYTextField.swift in Sources */,
 				267413A1240E9ACE00F21D5E /* CABasicAnimationExtension.swift in Sources */,
 				267413A3240E9ACE00F21D5E /* CollectionViewCell.swift in Sources */,
-				2674134A240E9A7200F21D5E /* ViewController.swift in Sources */,
 				26741346240E9A7200F21D5E /* AppDelegate.swift in Sources */,
 				26741392240E9ACE00F21D5E /* TextFieldViewController.swift in Sources */,
 				26741348240E9A7200F21D5E /* SceneDelegate.swift in Sources */,
