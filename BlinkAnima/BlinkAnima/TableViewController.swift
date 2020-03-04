@@ -13,7 +13,7 @@ class TableViewController: UIViewController {
 
     @IBOutlet private weak var tableView: UITableView!
     
-    fileprivate let titles = [["SYButton", "SYLabel", "SYTextField", "SYView", "SYCollectionView"]]
+    fileprivate let titles = [["Button 按钮", "Label 标签", "TextField 文本框", "View 视图", "CollectionView 格子视图"]]
     fileprivate let controllers = ["ButtonView", "LabelView", "TextFieldView", "AnimationView", "CollectionView"]
     
     fileprivate let cellIdentifier = "ExampleTableViewCell"
