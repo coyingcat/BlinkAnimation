@@ -77,7 +77,7 @@ open class SYTableViewCell: UITableViewCell, AnimatableComponent {
         }
     }
     
-    fileprivate lazy var animaLayer: animaLayer = .init(layer: self.layer)
+    fileprivate lazy var animaLayer: AnimaLayer = .init(layer: self.layer)
     
     // MARK: - initializer -
     

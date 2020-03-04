@@ -77,7 +77,7 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
         }
     }
     
-    private lazy var animaLayer: animaLayer = .init(layer: self.layer)
+    private lazy var animaLayer: AnimaLayer = .init(layer: self.layer)
     
     // MARK: - initializer -
     

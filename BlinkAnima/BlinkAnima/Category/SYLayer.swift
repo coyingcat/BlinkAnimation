@@ -9,7 +9,7 @@
 import UIKit
 
 
-final class animaLayer: Animatable {
+final class AnimaLayer: Animatable {
     
     
     var superLayer: CALayer     = .init()
@@ -147,7 +147,7 @@ final class animaLayer: Animatable {
 
 // MARK: - Fileprivate Methods -
 
-fileprivate extension animaLayer {
+fileprivate extension AnimaLayer {
     
     func configure() {
         superLayer.shadowColor  = animationShadowColor.cgColor
