@@ -18,10 +18,7 @@ class TextFieldViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
-    }
-    
-    private func configure() {
+
         self.view.backgroundColor = .white
         self.navigationItem.title = "SYTextField"
         

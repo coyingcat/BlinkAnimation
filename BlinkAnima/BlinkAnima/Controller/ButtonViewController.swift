@@ -28,10 +28,7 @@ class ButtonViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
-    }
-    
-    private func configure() {
+
         self.view.backgroundColor = UIColor.white
         self.navigationItem.title = "按钮 Button"
         

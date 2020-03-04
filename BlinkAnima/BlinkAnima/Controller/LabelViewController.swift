@@ -19,10 +19,7 @@ class LabelViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
-    }
-    
-    private func configure() {
+
         view.backgroundColor = .white
         navigationItem.title = "SYLabel"
         

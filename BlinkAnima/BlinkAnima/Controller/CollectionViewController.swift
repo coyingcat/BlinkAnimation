@@ -17,15 +17,9 @@ class CollectionViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        configure()
+        
         registerNib()
-    }
-}
 
-// MARK: - Fileprivate Methods -
-
-fileprivate extension CollectionViewController {
-    func configure() {
         collectionView.delegate        = self
         collectionView.dataSource      = self
         collectionView.backgroundColor = UIColor(red: 236/255, green: 236/255, blue: 236/255, alpha: 1)
