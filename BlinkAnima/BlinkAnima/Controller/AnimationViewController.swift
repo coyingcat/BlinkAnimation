@@ -23,19 +23,19 @@ class AnimationViewController: UIViewController {
         self.navigationItem.title = "SYView"
         
         borderView.startAnimating()
-        self.view.addSubview(borderView)
+
         
         border2View.animationType = .borderWithShadow
         border2View.backgroundColor = UIColor.clear
         border2View.startAnimating()
-        self.view.addSubview(border2View)
+
         
         backgrondView.animationType = .background
         backgrondView.startAnimating()
-        self.view.addSubview(backgrondView)
+
         
         rippleView.animationType = .ripple
         rippleView.startAnimating()
-        self.view.addSubview(rippleView)
+
     }
 }

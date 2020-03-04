@@ -103,7 +103,8 @@ class ButtonViewController: UIViewController {
     
     
     
-    @objc private func alphaAnimation(_ sender: SYButton) {
+    @objc
+    private func alphaAnimation(_ sender: SYButton) {
         if alphaBtn.isAnimating{
             print("stopAnimating")
             alphaBtn.stopAnimating()
