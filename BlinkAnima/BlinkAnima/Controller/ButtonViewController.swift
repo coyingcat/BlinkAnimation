@@ -11,17 +11,17 @@ import UIKit
 
 class ButtonViewController: UIViewController {
     
-    @IBOutlet private weak var borderButton: SYButton!
-    @IBOutlet private weak var border2Button: SYButton!
-    @IBOutlet private weak var backgroundButton: SYButton!
-    @IBOutlet private weak var textButton: SYButton!
-    @IBOutlet private weak var rippleButton: SYButton!
+    @IBOutlet private weak var borderButton: BlinkBtn!
+    @IBOutlet private weak var border2Button: BlinkBtn!
+    @IBOutlet private weak var backgroundButton: BlinkBtn!
+    @IBOutlet private weak var textButton: BlinkBtn!
+    @IBOutlet private weak var rippleButton: BlinkBtn!
     
     
     
     
     
-    @IBOutlet weak var alphaBtn: SYButton!
+    @IBOutlet weak var alphaBtn: BlinkBtn!
     
     
     
@@ -101,7 +101,7 @@ class ButtonViewController: UIViewController {
     
     
     @objc
-    private func alphaAnimation(_ sender: SYButton) {
+    private func alphaAnimation(_ sender: BlinkBtn) {
         if alphaBtn.isAnimating{
             print("stopAnimating")
             alphaBtn.stopAnimating()
@@ -112,10 +112,10 @@ class ButtonViewController: UIViewController {
         }
     }
     
-    // MARK: - SYButton Tap Events -
+    // MARK: - BlinkBtn Tap Events -
     
     
-    @objc private func borderAnimation(_ sender: SYButton) {
+    @objc private func borderAnimation(_ sender: BlinkBtn) {
         if borderButton.isAnimating{
             print("stopAnimating")
             borderButton.stopAnimating()
@@ -126,19 +126,19 @@ class ButtonViewController: UIViewController {
         }
     }
     
-    @objc private func borderWithShadowAnimation(_ sender: SYButton) {
+    @objc private func borderWithShadowAnimation(_ sender: BlinkBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func backgroundAnimation(_ sender: SYButton) {
+    @objc private func backgroundAnimation(_ sender: BlinkBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func textAnimation(_ sender: SYButton) {
+    @objc private func textAnimation(_ sender: BlinkBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func rippleAnimation(_ sender: SYButton) {
+    @objc private func rippleAnimation(_ sender: BlinkBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
 }

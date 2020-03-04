@@ -1,5 +1,5 @@
 //
-//  SYButton.swift
+//  BlinkBtn.swift
 //  SYBlinkAnimationKit
 //
 //  Created by Shohei Yokoyama on 12/13/2015.
@@ -9,7 +9,7 @@
 import UIKit
 
 @IBDesignable
-public class SYButton: UIButton, AnimatableComponent, TextConvertible {
+public class BlinkBtn: UIButton, AnimatableComponent, TextConvertible {
     public enum AnimationType: Int {
         case border, borderWithShadow, background, ripple, text, opaque
     }
@@ -180,7 +180,7 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
 
 // MARK: - File  private Methods -
 
-fileprivate extension SYButton {
+fileprivate extension BlinkBtn {
     func configure() {
         layer.cornerRadius = 5
         
