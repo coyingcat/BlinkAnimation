@@ -17,6 +17,15 @@ class ButtonViewController: UIViewController {
     @IBOutlet private weak var textButton: SYButton!
     @IBOutlet private weak var rippleButton: SYButton!
     
+    
+    
+    
+    
+    @IBOutlet weak var alphaBtn: SYButton!
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         configure()
@@ -24,25 +33,25 @@ class ButtonViewController: UIViewController {
     
     private func configure() {
         self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = "SYButton"
+        self.navigationItem.title = "按钮 Button"
         
         borderButton.setTitle("Border Animation", for: .normal)
         borderButton.addTarget(self, action: #selector(borderAnimation(_:)), for: .touchUpInside)
         borderButton.startAnimating()
-        self.view.addSubview(borderButton)
+
         
         border2Button.setTitle("BorderWithShadow Animation", for: .normal)
         border2Button.animationBorderColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1)
         border2Button.addTarget(self, action: #selector(borderWithShadowAnimation(_:)), for: .touchUpInside)
         border2Button.animationType = .borderWithShadow
         border2Button.startAnimating()
-        self.view.addSubview(border2Button)
+
         
         backgroundButton.setTitle("Background Animation", for: .normal)
         backgroundButton.addTarget(self, action: #selector(backgroundAnimation(_:)), for: .touchUpInside)
         backgroundButton.animationType = .background
         backgroundButton.startAnimating()
-        self.view.addSubview(backgroundButton)
+
         
         textButton.setTitle("Text Animation", for: .normal)
         textButton.backgroundColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1)
@@ -50,7 +59,7 @@ class ButtonViewController: UIViewController {
         textButton.addTarget(self, action: #selector(textAnimation(_:)), for: .touchUpInside)
         textButton.animationType = .text
         textButton.startAnimating()
-        self.view.addSubview(textButton)
+
         
         rippleButton.setTitle("Ripple Animation", for: .normal)
         rippleButton.setTitleColor(UIColor.white, for: .normal)
@@ -61,10 +70,43 @@ class ButtonViewController: UIViewController {
             .setFont(name: ".SFUIText-Medium", ofSize: 21)
             .startAnimating()
         rippleButton.startAnimating()
-        self.view.addSubview(rippleButton)
+
+        
+        doCustomAlpha()
+    }
+    
+    
+    
+    func doCustomAlpha(){
+        alphaBtn.setTitle("Alpha Animation", for: .normal)
+        alphaBtn.addTarget(self, action: #selector(alphaAnimation(_:)), for: .touchUpInside)
+        alphaBtn.startAnimating()
+    }
+    
+    
+    
+    
+    
+    
+    
+    
+    // MARK: - alpha Tap Events -
+    
+    
+    
+    @objc private func alphaAnimation(_ sender: SYButton) {
+        if alphaBtn.isAnimating{
+            print("stopAnimating")
+            alphaBtn.stopAnimating()
+        }
+        else{
+            print("startAnimating")
+            alphaBtn.startAnimating()
+        }
     }
     
     // MARK: - SYButton Tap Events -
+    
     
     @objc private func borderAnimation(_ sender: SYButton) {
         if borderButton.isAnimating{
