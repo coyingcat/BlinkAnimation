@@ -137,8 +137,8 @@ final class AnimaLayer: Animatable {
     
     
     
-    func resetTextLayer(_ textLayer: CATextLayer) {
-        self.textLayer = textLayer
+    func resetTextLayer(_ txtLayer: CATextLayer) {
+        self.textLayer = txtLayer
         if let sublayers = superLayer.sublayers , sublayers.contains (where: { $0 === textLayer }) == false {
             superLayer.insertSublayer(self.textLayer, at: 0)
         }
