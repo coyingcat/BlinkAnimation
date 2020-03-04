@@ -23,7 +23,6 @@
 		26741396240E9ACE00F21D5E /* SYView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674137D240E9ACD00F21D5E /* SYView.swift */; };
 		26741397240E9ACE00F21D5E /* SYLabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674137E240E9ACD00F21D5E /* SYLabel.swift */; };
 		26741398240E9ACE00F21D5E /* SYTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674137F240E9ACD00F21D5E /* SYTextField.swift */; };
-		26741399240E9ACE00F21D5E /* AnimaLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741380240E9ACD00F21D5E /* AnimaLayer.swift */; };
 		2674139A240E9ACE00F21D5E /* SYCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741381240E9ACD00F21D5E /* SYCollectionViewCell.swift */; };
 		2674139B240E9ACE00F21D5E /* SYButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741382240E9ACD00F21D5E /* SYButton.swift */; };
 		2674139C240E9ACE00F21D5E /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26741383240E9ACD00F21D5E /* TableViewController.swift */; };
@@ -36,6 +35,7 @@
 		267413A4240E9ACE00F21D5E /* ExampleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2674138D240E9ACE00F21D5E /* ExampleTableViewCell.xib */; };
 		267413A5240E9ACE00F21D5E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2674138E240E9ACE00F21D5E /* CollectionViewCell.xib */; };
 		267413A6240E9ACE00F21D5E /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674138F240E9ACE00F21D5E /* ExampleTableViewCell.swift */; };
+		267D3502240F4960000BA779 /* AnimaLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D3501240F4960000BA779 /* AnimaLayer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -78,7 +78,6 @@
 		2674137D240E9ACD00F21D5E /* SYView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYView.swift; sourceTree = "<group>"; };
 		2674137E240E9ACD00F21D5E /* SYLabel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYLabel.swift; sourceTree = "<group>"; };
 		2674137F240E9ACD00F21D5E /* SYTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYTextField.swift; sourceTree = "<group>"; };
-		26741380240E9ACD00F21D5E /* AnimaLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimaLayer.swift; sourceTree = "<group>"; };
 		26741381240E9ACD00F21D5E /* SYCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYCollectionViewCell.swift; sourceTree = "<group>"; };
 		26741382240E9ACD00F21D5E /* SYButton.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SYButton.swift; sourceTree = "<group>"; };
 		26741383240E9ACD00F21D5E /* TableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
@@ -91,6 +90,7 @@
 		2674138D240E9ACE00F21D5E /* ExampleTableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ExampleTableViewCell.xib; sourceTree = "<group>"; };
 		2674138E240E9ACE00F21D5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		2674138F240E9ACE00F21D5E /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
+		267D3501240F4960000BA779 /* AnimaLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimaLayer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				2674137D240E9ACD00F21D5E /* SYView.swift */,
 				2674137E240E9ACD00F21D5E /* SYLabel.swift */,
 				2674137F240E9ACD00F21D5E /* SYTextField.swift */,
-				26741380240E9ACD00F21D5E /* AnimaLayer.swift */,
 				26741381240E9ACD00F21D5E /* SYCollectionViewCell.swift */,
 				26741382240E9ACD00F21D5E /* SYButton.swift */,
 			);
@@ -203,6 +202,7 @@
 		26741384240E9ACD00F21D5E /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				267D3501240F4960000BA779 /* AnimaLayer.swift */,
 				26741385240E9ACD00F21D5E /* UIColorExtension.swift */,
 				26741386240E9ACD00F21D5E /* TextConvertible.swift */,
 				26741387240E9ACD00F21D5E /* AnimatableComponent.swift */,
@@ -367,7 +367,6 @@
 				26741348240E9A7200F21D5E /* SceneDelegate.swift in Sources */,
 				26741395240E9ACE00F21D5E /* SYTableViewCell.swift in Sources */,
 				267413A0240E9ACE00F21D5E /* Animatable.swift in Sources */,
-				26741399240E9ACE00F21D5E /* AnimaLayer.swift in Sources */,
 				26741394240E9ACE00F21D5E /* CollectionViewController.swift in Sources */,
 				2674139B240E9ACE00F21D5E /* SYButton.swift in Sources */,
 				26741393240E9ACE00F21D5E /* LabelViewController.swift in Sources */,
@@ -375,6 +374,7 @@
 				2674139A240E9ACE00F21D5E /* SYCollectionViewCell.swift in Sources */,
 				2674139F240E9ACE00F21D5E /* AnimatableComponent.swift in Sources */,
 				267413A6240E9ACE00F21D5E /* ExampleTableViewCell.swift in Sources */,
+				267D3502240F4960000BA779 /* AnimaLayer.swift in Sources */,
 				26741391240E9ACE00F21D5E /* ButtonViewController.swift in Sources */,
 				26741390240E9ACE00F21D5E /* AnimationViewController.swift in Sources */,
 				26741397240E9ACE00F21D5E /* SYLabel.swift in Sources */,

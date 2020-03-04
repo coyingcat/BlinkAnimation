@@ -24,7 +24,7 @@ class TableViewController: UIViewController {
     }
     
     private func configure() {
-        title = "SYTableViewCell"
+        title = "从 Cell Anima 开始"
         
         tableView.delegate = self
         tableView.dataSource = self
