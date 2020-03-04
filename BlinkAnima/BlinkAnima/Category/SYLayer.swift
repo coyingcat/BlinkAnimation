@@ -1,5 +1,5 @@
 //
-//  SYLayer.swift
+//  animaLayer.swift
 //  SYBlinkAnimationKit
 //
 //  Created by Shohei Yokoyama on 12/13/2015.
@@ -9,7 +9,7 @@
 import UIKit
 
 
-final class SYLayer: Animatable {
+final class animaLayer: Animatable {
     
     
     var superLayer: CALayer     = .init()
@@ -147,7 +147,7 @@ final class SYLayer: Animatable {
 
 // MARK: - Fileprivate Methods -
 
-fileprivate extension SYLayer {
+fileprivate extension animaLayer {
     
     func configure() {
         superLayer.shadowColor  = animationShadowColor.cgColor

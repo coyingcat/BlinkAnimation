@@ -17,22 +17,22 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     
     @IBInspectable public var animationBorderColor = AnimationDefaultColor.border {
         didSet {
-            syLayer.setBorderColor(animationBorderColor)
+            animaLayer.setBorderColor(animationBorderColor)
         }
     }
     @IBInspectable public var animationBackgroundColor = AnimationDefaultColor.background {
         didSet {
-            syLayer.setAnimationBackgroundColor(animationBackgroundColor)
+            animaLayer.setAnimationBackgroundColor(animationBackgroundColor)
         }
     }
     @IBInspectable public var animationTextColor = AnimationDefaultColor.text {
         didSet {
-            syLayer.setAnimationTextColor(animationTextColor)
+            animaLayer.setAnimationTextColor(animationTextColor)
         }
     }
     @IBInspectable public var animationRippleColor = AnimationDefaultColor.ripple {
         didSet {
-            syLayer.setRippleColor(animationRippleColor)
+            animaLayer.setRippleColor(animationRippleColor)
         }
     }
     @IBInspectable public var animationTimingAdapter: Int {
@@ -45,14 +45,14 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     }
     @IBInspectable public var animationDuration: CGFloat = 1.5 {
         didSet {
-            syLayer.setAnimationDuration(CFTimeInterval(animationDuration))
+            animaLayer.setAnimationDuration(CFTimeInterval(animationDuration))
         }
     }
     @IBInspectable public var labelTextColor: UIColor = .black {
         didSet {
             textColor = UIColor.clear
             textLayer.foregroundColor = labelTextColor.cgColor
-            syLayer.setTextColor(labelTextColor)
+            animaLayer.setTextColor(labelTextColor)
         }
     }
     @IBInspectable public var animationAdapter: Int {
@@ -66,18 +66,18 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     
     override public var frame: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var bounds: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var backgroundColor: UIColor? {
         didSet {
             if let backgroundColor = backgroundColor {
-                syLayer.setBackgroundColor(backgroundColor)
+                animaLayer.setBackgroundColor(backgroundColor)
             }
         }
     }
@@ -89,7 +89,7 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     
     public var animationType: AnimationType = .border {
         didSet {
-            syLayer.animationType = {
+            animaLayer.animationType = {
                 switch animationType {
                 case .border:
                     return .border
@@ -117,11 +117,11 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     
     public var animationTimingFunction: SYMediaTimingFunction = .linear {
         didSet {
-            syLayer.setTimingFunction(animationTimingFunction)
+            animaLayer.setTimingFunction(animationTimingFunction)
         }
     }
     
-    fileprivate lazy var syLayer: SYLayer = .init(layer: self.layer)
+    fileprivate lazy var animaLayer: animaLayer = .init(layer: self.layer)
     
     // MARK: - initializer -
     
@@ -145,12 +145,12 @@ public class SYLabel: UILabel, AnimatableComponent, TextConvertible {
     
     public func startAnimating() {
         isAnimating = true
-        syLayer.startAnimating()
+        animaLayer.startAnimating()
     }
     
     public func stopAnimating() {
         isAnimating = false
-        syLayer.stopAnimating()
+        animaLayer.stopAnimating()
     }
 }
 
@@ -164,11 +164,11 @@ fileprivate extension SYLabel {
         textColor      = .clear
         labelTextColor = .black
         
-        syLayer.animationType = .border
+        animaLayer.animationType = .border
     }
     
     func resetTextLayer() {
         configureTextLayer(text, font: font, textColor: labelTextColor)
-        syLayer.resetTextLayer(textLayer)
+        animaLayer.resetTextLayer(textLayer)
     }
 }

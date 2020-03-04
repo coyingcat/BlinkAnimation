@@ -17,17 +17,17 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
     
     @IBInspectable open var animationBorderColor = AnimationDefaultColor.border {
         didSet {
-            syLayer.setBorderColor(animationBorderColor)
+            animaLayer.setBorderColor(animationBorderColor)
         }
     }
     @IBInspectable open var animationBackgroundColor = AnimationDefaultColor.background {
         didSet {
-            syLayer.setAnimationBackgroundColor(animationBackgroundColor)
+            animaLayer.setAnimationBackgroundColor(animationBackgroundColor)
         }
     }
     @IBInspectable open var animationRippleColor = AnimationDefaultColor.ripple {
         didSet {
-            syLayer.setRippleColor(animationRippleColor)
+            animaLayer.setRippleColor(animationRippleColor)
         }
     }
     @IBInspectable open var animationTimingAdapter: Int {
@@ -40,7 +40,7 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
     }
     @IBInspectable open var animationDuration: CGFloat = 1.5 {
         didSet {
-            syLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
+            animaLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
         }
     }
     @IBInspectable open var animationAdapter: Int {
@@ -56,13 +56,13 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
     
     open var animationTimingFunction: SYMediaTimingFunction = .linear {
         didSet {
-            syLayer.setTimingFunction(animationTimingFunction)
+            animaLayer.setTimingFunction(animationTimingFunction)
         }
     }
     
     open var animationType: AnimationType = .border {
         didSet {
-            syLayer.animationType = {
+            animaLayer.animationType = {
                 switch animationType {
                 case .border:
                     return .border
@@ -77,7 +77,7 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
         }
     }
     
-    private lazy var syLayer: SYLayer = .init(layer: self.layer)
+    private lazy var animaLayer: animaLayer = .init(layer: self.layer)
     
     // MARK: - initializer -
     
@@ -90,12 +90,12 @@ open class SYCollectionViewCell: UICollectionViewCell, AnimatableComponent {
     
     open func startAnimating() {
         isAnimating = true
-        syLayer.startAnimating()
+        animaLayer.startAnimating()
     }
     
     open func stopAnimating() {
         isAnimating = false
-        syLayer.stopAnimating()
+        animaLayer.stopAnimating()
     }
     
     // MARK: - Private Methods -

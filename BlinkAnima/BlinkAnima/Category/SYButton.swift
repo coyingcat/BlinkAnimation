@@ -16,22 +16,22 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     @IBInspectable public var animationBorderColor = AnimationDefaultColor.border {
         didSet {
-            syLayer.setBorderColor(animationBorderColor)
+            animaLayer.setBorderColor(animationBorderColor)
         }
     }
     @IBInspectable public var animationBackgroundColor = AnimationDefaultColor.background {
         didSet {
-            syLayer.setAnimationBackgroundColor(animationBackgroundColor)
+            animaLayer.setAnimationBackgroundColor(animationBackgroundColor)
         }
     }
     @IBInspectable public var animationTextColor = AnimationDefaultColor.text {
         didSet {
-            syLayer.setAnimationTextColor(animationTextColor)
+            animaLayer.setAnimationTextColor(animationTextColor)
         }
     }
     @IBInspectable public var animationRippleColor = AnimationDefaultColor.ripple {
         didSet {
-            syLayer.setRippleColor(animationRippleColor)
+            animaLayer.setRippleColor(animationRippleColor)
         }
     }
     @IBInspectable var animationTimingAdapter: Int {
@@ -44,7 +44,7 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     }
     @IBInspectable public var animationDuration: CGFloat = 1.5 {
         didSet {
-            syLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
+            animaLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
         }
     }
     @IBInspectable var animationAdapter: Int {
@@ -58,7 +58,7 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     public var animationTimingFunction: SYMediaTimingFunction = .linear {
         didSet {
-            syLayer.setTimingFunction(animationTimingFunction)
+            animaLayer.setTimingFunction(animationTimingFunction)
         }
     }
     
@@ -67,7 +67,7 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     public var animationType: AnimationType = .border {
         didSet {
-            syLayer.animationType = {
+            animaLayer.animationType = {
                 switch animationType {
                 case .border:
                     return .border
@@ -89,18 +89,18 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     override public var bounds: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var frame: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var backgroundColor: UIColor? {
         didSet {
             if let backgroundColor = backgroundColor {
-                syLayer.setBackgroundColor(backgroundColor)
+                animaLayer.setBackgroundColor(backgroundColor)
             }
         }
     }
@@ -115,11 +115,11 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
         }
     }
     
-    fileprivate lazy var syLayer: SYLayer = .init(layer: self.layer)
+    fileprivate lazy var animaLayer: animaLayer = .init(layer: self.layer)
     
     fileprivate var textColor: UIColor = .black {
         didSet {
-            syLayer.setTextColor(textColor)
+            animaLayer.setTextColor(textColor)
         }
     }
     
@@ -161,12 +161,12 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     
     public func startAnimating() {
         isAnimating = true
-        syLayer.startAnimating()
+        animaLayer.startAnimating()
     }
     
     public func stopAnimating() {
         isAnimating = false
-        syLayer.stopAnimating()
+        animaLayer.stopAnimating()
 
     }
 }
@@ -185,13 +185,13 @@ fileprivate extension SYButton {
         let padding: CGFloat = 5
         contentEdgeInsets = UIEdgeInsets(top: padding, left: padding, bottom: padding, right: padding)
         
-        syLayer.animationType = .border
+        animaLayer.animationType = .border
         
         setTitleColor(.black, for: .normal)
     }
     
     func resetTextLayer() {
         configureTextLayer(currentTitle, font: titleLabel?.font, textColor: textColor)
-        syLayer.resetTextLayer(textLayer)
+        animaLayer.resetTextLayer(textLayer)
     }
 }

@@ -17,22 +17,22 @@ public final class SYView: UIView, AnimatableComponent {
     
     @IBInspectable public var animationBorderColor = AnimationDefaultColor.border {
         didSet {
-            syLayer.setBorderColor(animationBorderColor)
+            animaLayer.setBorderColor(animationBorderColor)
         }
     }
     @IBInspectable public var animationBackgroundColor = AnimationDefaultColor.background {
         didSet {
-            syLayer.setAnimationBackgroundColor(animationBackgroundColor)
+            animaLayer.setAnimationBackgroundColor(animationBackgroundColor)
         }
     }
     @IBInspectable public var animationTextColor = AnimationDefaultColor.text {
         didSet {
-            syLayer.setAnimationTextColor(animationTextColor)
+            animaLayer.setAnimationTextColor(animationTextColor)
         }
     }
     @IBInspectable public var animationRippleColor = AnimationDefaultColor.ripple {
         didSet {
-            syLayer.setRippleColor(animationRippleColor)
+            animaLayer.setRippleColor(animationRippleColor)
         }
     }
     @IBInspectable public var animationTimingAdapter: Int {
@@ -45,7 +45,7 @@ public final class SYView: UIView, AnimatableComponent {
     }
     @IBInspectable public var animationDuration: CGFloat = 1.5 {
         didSet {
-            syLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
+            animaLayer.setAnimationDuration( CFTimeInterval(animationDuration) )
         }
     }
     @IBInspectable public  var animationAdapter: Int {
@@ -59,18 +59,18 @@ public final class SYView: UIView, AnimatableComponent {
     
     override public var frame: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var bounds: CGRect {
         didSet {
-            syLayer.resizeSuperLayer()
+            animaLayer.resizeSuperLayer()
         }
     }
     override public var backgroundColor: UIColor? {
         didSet {
             if let backgroundColor = backgroundColor {
-                syLayer.setBackgroundColor(backgroundColor)
+                animaLayer.setBackgroundColor(backgroundColor)
             }
         }
     }
@@ -79,13 +79,13 @@ public final class SYView: UIView, AnimatableComponent {
     
     public var animationTimingFunction: SYMediaTimingFunction = .linear {
         didSet {
-            syLayer.setTimingFunction(animationTimingFunction)
+            animaLayer.setTimingFunction(animationTimingFunction)
         }
     }
     
     public var animationType: AnimationType = .border {
         didSet {
-            syLayer.animationType = {
+            animaLayer.animationType = {
                 switch animationType {
                 case .border:
                     return .border
@@ -100,7 +100,7 @@ public final class SYView: UIView, AnimatableComponent {
         }
     }
     
-    fileprivate lazy var syLayer: SYLayer = .init(layer: self.layer)
+    fileprivate lazy var animaLayer: animaLayer = .init(layer: self.layer)
     
     // MARK: - initializer -
     
@@ -118,12 +118,12 @@ public final class SYView: UIView, AnimatableComponent {
     
     public func startAnimating() {
         isAnimating = true
-        syLayer.startAnimating()
+        animaLayer.startAnimating()
     }
     
     public func stopAnimating() {
         isAnimating = false
-        syLayer.stopAnimating()
+        animaLayer.stopAnimating()
     }
     
     // MARK: - Private Methods -

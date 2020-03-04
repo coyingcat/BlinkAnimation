@@ -1,9 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="H3q-Od-RKI">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="H3q-Od-RKI">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
-        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
@@ -28,8 +27,8 @@
             <objects>
                 <viewController id="Uq5-Gf-LBE" customClass="ButtonViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4HI-dO-lA2"/>
-                        <viewControllerLayoutGuide type="bottom" id="KYS-c3-lfD"/>
+                        <viewControllerLayoutGuide type="top" id="p6p-dg-a5R"/>
+                        <viewControllerLayoutGuide type="bottom" id="fSg-gb-x1t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XF5-sN-gaQ">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -69,7 +68,7 @@
                             <constraint firstItem="lpD-54-kXm" firstAttribute="top" secondItem="XJB-yS-Nzb" secondAttribute="bottom" constant="20" id="Ct4-Mv-Oet"/>
                             <constraint firstItem="N1B-CK-TtO" firstAttribute="top" secondItem="lpD-54-kXm" secondAttribute="bottom" constant="20" id="F9C-cp-riQ"/>
                             <constraint firstItem="N1B-CK-TtO" firstAttribute="width" secondItem="lpD-54-kXm" secondAttribute="width" id="PUl-aW-EuH"/>
-                            <constraint firstItem="QVh-Dr-R3y" firstAttribute="top" secondItem="4HI-dO-lA2" secondAttribute="bottom" constant="30" id="QXR-uD-z2s"/>
+                            <constraint firstItem="QVh-Dr-R3y" firstAttribute="top" secondItem="p6p-dg-a5R" secondAttribute="bottom" constant="30" id="QXR-uD-z2s"/>
                             <constraint firstItem="XJB-yS-Nzb" firstAttribute="centerX" secondItem="XF5-sN-gaQ" secondAttribute="centerX" id="RhY-oE-hQO"/>
                             <constraint firstItem="N1B-CK-TtO" firstAttribute="centerX" secondItem="XF5-sN-gaQ" secondAttribute="centerX" id="Tqk-Bu-OrQ"/>
                             <constraint firstItem="Tek-yV-aqa" firstAttribute="top" secondItem="N1B-CK-TtO" secondAttribute="bottom" constant="20" id="UT9-zf-Yt8"/>
@@ -81,7 +80,6 @@
                             <constraint firstItem="lpD-54-kXm" firstAttribute="height" secondItem="XJB-yS-Nzb" secondAttribute="height" id="snt-G5-cU0"/>
                             <constraint firstItem="lpD-54-kXm" firstAttribute="width" secondItem="XJB-yS-Nzb" secondAttribute="width" id="vAU-KN-7zx"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="x6U-G7-drq"/>
                     </view>
                     <navigationItem key="navigationItem" id="wmo-wH-ffl"/>
                     <connections>
@@ -101,8 +99,8 @@
             <objects>
                 <viewController id="rwJ-nW-Hdw" customClass="LabelViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="4Wn-Z8-tzf"/>
-                        <viewControllerLayoutGuide type="bottom" id="7kA-ZI-jtT"/>
+                        <viewControllerLayoutGuide type="top" id="dq1-q1-H4c"/>
+                        <viewControllerLayoutGuide type="bottom" id="7kT-2G-X6Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="veH-g5-U5N">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -154,7 +152,7 @@
                             <constraint firstItem="PBF-Et-dfq" firstAttribute="centerX" secondItem="veH-g5-U5N" secondAttribute="centerX" id="Tp4-ih-4Dy"/>
                             <constraint firstItem="Gin-RP-4aS" firstAttribute="height" secondItem="cjC-dY-sQz" secondAttribute="height" id="UkB-JB-GqB"/>
                             <constraint firstItem="cn1-TB-Vsu" firstAttribute="width" secondItem="cjC-dY-sQz" secondAttribute="width" id="afr-kR-1ME"/>
-                            <constraint firstItem="NBi-5o-us6" firstAttribute="top" secondItem="4Wn-Z8-tzf" secondAttribute="bottom" constant="65" id="aoy-IU-ZMF"/>
+                            <constraint firstItem="NBi-5o-us6" firstAttribute="top" secondItem="dq1-q1-H4c" secondAttribute="bottom" constant="65" id="aoy-IU-ZMF"/>
                             <constraint firstItem="cjC-dY-sQz" firstAttribute="centerX" secondItem="veH-g5-U5N" secondAttribute="centerX" id="d7O-qx-PA3"/>
                             <constraint firstItem="PBF-Et-dfq" firstAttribute="top" secondItem="NBi-5o-us6" secondAttribute="bottom" constant="20" id="ffs-3s-Thd"/>
                             <constraint firstItem="cjC-dY-sQz" firstAttribute="height" secondItem="PBF-Et-dfq" secondAttribute="height" id="pL5-W2-Tpp"/>
@@ -164,7 +162,6 @@
                             <constraint firstItem="Gin-RP-4aS" firstAttribute="top" secondItem="cjC-dY-sQz" secondAttribute="bottom" constant="20" id="v7Z-Sx-OBW"/>
                             <constraint firstItem="NBi-5o-us6" firstAttribute="centerX" secondItem="veH-g5-U5N" secondAttribute="centerX" id="yhI-Vk-Lmi"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="201-jc-7RD"/>
                     </view>
                     <navigationItem key="navigationItem" id="Gnk-6e-q3k"/>
                     <connections>
@@ -184,8 +181,8 @@
             <objects>
                 <viewController id="pmY-mG-PIB" customClass="AnimationViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="EMk-Vz-k7R"/>
-                        <viewControllerLayoutGuide type="bottom" id="xyq-qL-Ptw"/>
+                        <viewControllerLayoutGuide type="top" id="Sgz-Ym-hlH"/>
+                        <viewControllerLayoutGuide type="bottom" id="zCW-js-Qih"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q5Z-Rc-bDb">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -226,7 +223,7 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="1nb-FY-mFf" firstAttribute="top" secondItem="EMk-Vz-k7R" secondAttribute="bottom" constant="30" id="E1i-6H-Zgv"/>
+                            <constraint firstItem="1nb-FY-mFf" firstAttribute="top" secondItem="Sgz-Ym-hlH" secondAttribute="bottom" constant="30" id="E1i-6H-Zgv"/>
                             <constraint firstItem="Oxi-QC-BI9" firstAttribute="top" secondItem="wpw-Eh-BQf" secondAttribute="bottom" constant="20" id="Qth-Bl-Q8f"/>
                             <constraint firstItem="1nb-FY-mFf" firstAttribute="centerX" secondItem="Q5Z-Rc-bDb" secondAttribute="centerX" id="VWK-UO-ML1"/>
                             <constraint firstItem="wPd-rf-uhg" firstAttribute="centerX" secondItem="Q5Z-Rc-bDb" secondAttribute="centerX" id="YpF-uP-cFO"/>
@@ -235,7 +232,6 @@
                             <constraint firstItem="wpw-Eh-BQf" firstAttribute="top" secondItem="wPd-rf-uhg" secondAttribute="bottom" constant="20" id="mkN-fu-ssb"/>
                             <constraint firstItem="wpw-Eh-BQf" firstAttribute="centerX" secondItem="Q5Z-Rc-bDb" secondAttribute="centerX" id="z7Z-fD-v78"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="z1y-pR-z9f"/>
                     </view>
                     <navigationItem key="navigationItem" id="TVX-Nf-9VL"/>
                     <connections>
@@ -254,8 +250,8 @@
             <objects>
                 <viewController id="WPf-b2-qKO" customClass="TextFieldViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="CBc-w8-k1S"/>
-                        <viewControllerLayoutGuide type="bottom" id="WZ8-QV-hHZ"/>
+                        <viewControllerLayoutGuide type="top" id="Iog-5Q-U3E"/>
+                        <viewControllerLayoutGuide type="bottom" id="BAM-nv-OkP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wB4-36-A7X">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -305,11 +301,10 @@
                             <constraint firstItem="5dR-l2-0jj" firstAttribute="centerX" secondItem="wB4-36-A7X" secondAttribute="centerX" id="7Oc-Vy-BUa"/>
                             <constraint firstItem="kcd-HV-fyj" firstAttribute="top" secondItem="GAb-77-uhi" secondAttribute="bottom" constant="20" id="D9q-g6-hMo"/>
                             <constraint firstItem="FL0-ZH-4Uf" firstAttribute="centerX" secondItem="wB4-36-A7X" secondAttribute="centerX" id="O12-qa-e5J"/>
-                            <constraint firstItem="5dR-l2-0jj" firstAttribute="top" secondItem="CBc-w8-k1S" secondAttribute="bottom" constant="30" id="RFC-6k-XaY"/>
+                            <constraint firstItem="5dR-l2-0jj" firstAttribute="top" secondItem="Iog-5Q-U3E" secondAttribute="bottom" constant="30" id="RFC-6k-XaY"/>
                             <constraint firstItem="GAb-77-uhi" firstAttribute="top" secondItem="5dR-l2-0jj" secondAttribute="bottom" constant="20" id="eWx-Ac-bcF"/>
                             <constraint firstItem="FL0-ZH-4Uf" firstAttribute="top" secondItem="kcd-HV-fyj" secondAttribute="bottom" constant="20" id="vpG-5W-Cjw"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="nvs-YQ-bHB"/>
                     </view>
                     <navigationItem key="navigationItem" id="aYK-da-dBN"/>
                     <connections>
@@ -328,8 +323,8 @@
             <objects>
                 <viewController id="Ek5-QL-vK9" customClass="TableViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="7W0-Eo-wCo"/>
-                        <viewControllerLayoutGuide type="bottom" id="0qS-Bo-3td"/>
+                        <viewControllerLayoutGuide type="top" id="xSP-BR-HCl"/>
+                        <viewControllerLayoutGuide type="bottom" id="uRd-2J-S7x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JTL-TK-25A">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -347,7 +342,6 @@
                             <constraint firstAttribute="bottom" secondItem="C4N-Na-pwz" secondAttribute="bottom" id="M9S-Q3-Qq8"/>
                             <constraint firstItem="C4N-Na-pwz" firstAttribute="leading" secondItem="JTL-TK-25A" secondAttribute="leading" id="gHh-JY-FOO"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="reJ-kr-Duv"/>
                     </view>
                     <navigationItem key="navigationItem" id="y5C-rl-Bh1"/>
                     <connections>
@@ -368,8 +362,8 @@
             <objects>
                 <viewController id="COY-ex-nkP" customClass="CollectionViewController" customModule="BlinkAnima" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="Phi-k7-JAT"/>
-                        <viewControllerLayoutGuide type="bottom" id="Crb-fk-YHR"/>
+                        <viewControllerLayoutGuide type="top" id="RTM-Fx-2Jn"/>
+                        <viewControllerLayoutGuide type="bottom" id="omZ-Mz-hSa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nbe-Dr-o1b">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
@@ -402,7 +396,6 @@
                             <constraint firstAttribute="bottom" secondItem="meN-gJ-Kd5" secondAttribute="bottom" id="FJj-xc-UvP"/>
                             <constraint firstItem="meN-gJ-Kd5" firstAttribute="top" secondItem="nbe-Dr-o1b" secondAttribute="top" id="nze-Ba-1Ps"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="hAR-8l-CE5"/>
                     </view>
                     <navigationItem key="navigationItem" id="mcG-Eo-Crg"/>
                     <connections>
