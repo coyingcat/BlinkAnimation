@@ -36,6 +36,7 @@
 		267413A5240E9ACE00F21D5E /* CollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2674138E240E9ACE00F21D5E /* CollectionViewCell.xib */; };
 		267413A6240E9ACE00F21D5E /* ExampleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2674138F240E9ACE00F21D5E /* ExampleTableViewCell.swift */; };
 		267D3502240F4960000BA779 /* AnimaLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D3501240F4960000BA779 /* AnimaLayer.swift */; };
+		267D3516240F6466000BA779 /* BlinkLayoutBtn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 267D3515240F6466000BA779 /* BlinkLayoutBtn.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -91,6 +92,7 @@
 		2674138E240E9ACE00F21D5E /* CollectionViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CollectionViewCell.xib; sourceTree = "<group>"; };
 		2674138F240E9ACE00F21D5E /* ExampleTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExampleTableViewCell.swift; sourceTree = "<group>"; };
 		267D3501240F4960000BA779 /* AnimaLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimaLayer.swift; sourceTree = "<group>"; };
+		267D3515240F6466000BA779 /* BlinkLayoutBtn.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlinkLayoutBtn.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -189,6 +191,7 @@
 		2674137B240E9ACD00F21D5E /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				267D3515240F6466000BA779 /* BlinkLayoutBtn.swift */,
 				2674137C240E9ACD00F21D5E /* SYTableViewCell.swift */,
 				2674137D240E9ACD00F21D5E /* SYView.swift */,
 				2674137E240E9ACD00F21D5E /* SYLabel.swift */,
@@ -356,6 +359,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				267D3516240F6466000BA779 /* BlinkLayoutBtn.swift in Sources */,
 				2674139D240E9ACE00F21D5E /* UIColorExtension.swift in Sources */,
 				26741396240E9ACE00F21D5E /* SYView.swift in Sources */,
 				2674139E240E9ACE00F21D5E /* TextConvertible.swift in Sources */,

@@ -11,9 +11,14 @@ import UIKit
 
 class ButtonViewController: UIViewController {
     
-    @IBOutlet private weak var borderButton: BlinkBtn!
-    @IBOutlet private weak var border2Button: BlinkBtn!
-    @IBOutlet private weak var backgroundButton: BlinkBtn!
+    @IBOutlet private weak var borderButton: BlinkLayoutBtn!
+    @IBOutlet private weak var border2Button: BlinkLayoutBtn!
+    
+    
+    @IBOutlet private weak var backgroundButton: BlinkLayoutBtn!
+    
+    
+    
     @IBOutlet private weak var textButton: BlinkBtn!
     @IBOutlet private weak var rippleButton: BlinkBtn!
     
@@ -21,7 +26,7 @@ class ButtonViewController: UIViewController {
     
     
     
-    @IBOutlet weak var alphaBtn: BlinkBtn!
+    @IBOutlet weak var alphaBtn: BlinkLayoutBtn!
     
     
     
@@ -29,19 +34,16 @@ class ButtonViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.view.backgroundColor = UIColor.white
-        self.navigationItem.title = "按钮 Button"
+        view.backgroundColor = UIColor.white
+        navigationItem.title = "按钮 Button"
         
-        borderButton.setTitle("Border Animation", for: .normal)
+
+        borderButton.animationType = .border
         borderButton.addTarget(self, action: #selector(borderAnimation(_:)), for: .touchUpInside)
         borderButton.startAnimating()
 
         
         
-        
-        
-        
-        border2Button.setTitle("BorderWithShadow Animation", for: .normal)
         border2Button.animationBorderColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1)
         border2Button.addTarget(self, action: #selector(borderWithShadowAnimation(_:)), for: .touchUpInside)
         border2Button.animationType = .borderWithShadow
@@ -51,8 +53,6 @@ class ButtonViewController: UIViewController {
         
         
         
-        
-        backgroundButton.setTitle("Background Animation", for: .normal)
         backgroundButton.addTarget(self, action: #selector(backgroundAnimation(_:)), for: .touchUpInside)
         backgroundButton.animationType = .background
         backgroundButton.startAnimating()
@@ -66,7 +66,6 @@ class ButtonViewController: UIViewController {
         textButton.startAnimating()
 
         
-        rippleButton.setTitle("Ripple Animation", for: .normal)
         rippleButton.setTitleColor(UIColor.white, for: .normal)
         rippleButton.backgroundColor = UIColor(red: 191/255, green: 191/255, blue: 191/255, alpha: 1)
         rippleButton.addTarget(self, action: #selector(rippleAnimation(_:)), for: .touchUpInside)
@@ -84,7 +83,6 @@ class ButtonViewController: UIViewController {
     
     func doCustomAlpha(){
         alphaBtn.animationType = .opaque
-        alphaBtn.setTitle("Alpha Animation", for: .normal)
         alphaBtn.addTarget(self, action: #selector(alphaAnimation(_:)), for: .touchUpInside)
         alphaBtn.startAnimating()
     }
@@ -101,7 +99,7 @@ class ButtonViewController: UIViewController {
     
     
     @objc
-    private func alphaAnimation(_ sender: BlinkBtn) {
+    private func alphaAnimation(_ sender: BlinkLayoutBtn) {
         if alphaBtn.isAnimating{
             print("stopAnimating")
             alphaBtn.stopAnimating()
@@ -112,10 +110,10 @@ class ButtonViewController: UIViewController {
         }
     }
     
-    // MARK: - BlinkBtn Tap Events -
+    // MARK: - BlinkLayoutBtn Tap Events -
     
     
-    @objc private func borderAnimation(_ sender: BlinkBtn) {
+    @objc private func borderAnimation(_ sender: BlinkLayoutBtn) {
         if borderButton.isAnimating{
             print("stopAnimating")
             borderButton.stopAnimating()
@@ -126,19 +124,19 @@ class ButtonViewController: UIViewController {
         }
     }
     
-    @objc private func borderWithShadowAnimation(_ sender: BlinkBtn) {
+    @objc private func borderWithShadowAnimation(_ sender: BlinkLayoutBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func backgroundAnimation(_ sender: BlinkBtn) {
+    @objc private func backgroundAnimation(_ sender: BlinkLayoutBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func textAnimation(_ sender: BlinkBtn) {
+    @objc private func textAnimation(_ sender: BlinkLayoutBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
     
-    @objc private func rippleAnimation(_ sender: BlinkBtn) {
+    @objc private func rippleAnimation(_ sender: BlinkLayoutBtn) {
         sender.isAnimating ? sender.stopAnimating() : sender.startAnimating()
     }
 }

@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="Uq5-Gf-LBE">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -30,38 +31,40 @@
                         <viewControllerLayoutGuide type="bottom" id="fSg-gb-x1t"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="XF5-sN-gaQ">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-Dr-R3y" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="80" width="300" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="QVh-Dr-R3y" customClass="BlinkLayoutBtn" customModule="BlinkAnima" customModuleProvider="target">
+                                <rect key="frame" x="57" y="118" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="V7p-B3-qBU"/>
                                     <constraint firstAttribute="height" constant="50" id="cFh-YY-2jJ"/>
                                 </constraints>
-                                <inset key="contentEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="Border Animation" image="my_use_guide"/>
+                                <state key="normal" title="Border Animation" image="my_use_guide">
+                                    <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
+                                </state>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-yS-Nzb" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="190" width="300" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJB-yS-Nzb" customClass="BlinkLayoutBtn" customModule="BlinkAnima" customModuleProvider="target">
+                                <rect key="frame" x="57" y="228" width="300" height="50"/>
                                 <state key="normal" title="BorderWithShadow Animation"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-54-kXm" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="260" width="300" height="50"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lpD-54-kXm" customClass="BlinkLayoutBtn" customModule="BlinkAnima" customModuleProvider="target">
+                                <rect key="frame" x="57" y="298" width="300" height="50"/>
                                 <state key="normal" title="Background Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N1B-CK-TtO" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="330" width="300" height="50"/>
+                                <rect key="frame" x="57" y="368" width="300" height="50"/>
                                 <state key="normal" title="Text Animation"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Tek-yV-aqa" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="400" width="300" height="50"/>
+                                <rect key="frame" x="57" y="438" width="300" height="50"/>
                                 <state key="normal" title="Ripple Animation"/>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jD-ua-IsF" customClass="BlinkBtn" customModule="BlinkAnima" customModuleProvider="target">
-                                <rect key="frame" x="150" y="506" width="300" height="50"/>
-                                <inset key="contentEdgeInsets" minX="-50" minY="0.0" maxX="0.0" maxY="0.0"/>
-                                <state key="normal" title="alpha Animation" image="my_use_guide"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8jD-ua-IsF" customClass="BlinkLayoutBtn" customModule="BlinkAnima" customModuleProvider="target">
+                                <rect key="frame" x="57" y="544" width="300" height="50"/>
+                                <state key="normal" title="alpha Animation" image="my_use_guide">
+                                    <color key="titleColor" red="1" green="0.16078431369999999" blue="0.3294117647" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -92,12 +95,12 @@
                     </view>
                     <navigationItem key="navigationItem" id="wmo-wH-ffl"/>
                     <connections>
-                        <outlet property="alphaBtn" destination="8jD-ua-IsF" id="d7F-No-SrD"/>
-                        <outlet property="backgroundButton" destination="lpD-54-kXm" id="pqQ-YA-wVY"/>
-                        <outlet property="border2Button" destination="XJB-yS-Nzb" id="Qc6-sa-Vel"/>
-                        <outlet property="borderButton" destination="QVh-Dr-R3y" id="XA8-cz-mRl"/>
-                        <outlet property="rippleButton" destination="Tek-yV-aqa" id="XNX-pZ-aK9"/>
-                        <outlet property="textButton" destination="N1B-CK-TtO" id="5Gs-bf-TLc"/>
+                        <outlet property="alphaBtn" destination="8jD-ua-IsF" id="405-52-MdT"/>
+                        <outlet property="backgroundButton" destination="lpD-54-kXm" id="imv-Lk-EAJ"/>
+                        <outlet property="border2Button" destination="XJB-yS-Nzb" id="WYb-Dr-HWg"/>
+                        <outlet property="borderButton" destination="QVh-Dr-R3y" id="r42-O0-KgY"/>
+                        <outlet property="rippleButton" destination="Tek-yV-aqa" id="9Fo-Ju-NtO"/>
+                        <outlet property="textButton" destination="N1B-CK-TtO" id="U3W-Sc-Xav"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8RP-LF-QQS" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -113,11 +116,11 @@
                         <viewControllerLayoutGuide type="bottom" id="7kT-2G-X6Z"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="veH-g5-U5N">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NBi-5o-us6" customClass="SYLabel" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="115" width="300" height="50"/>
+                                <rect key="frame" x="57" y="153" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="ASO-HN-3lC"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="300" id="FRs-xd-anG"/>
@@ -127,25 +130,25 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PBF-Et-dfq" customClass="SYLabel" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="185" width="300" height="50"/>
+                                <rect key="frame" x="57" y="223" width="300" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cjC-dY-sQz" customClass="SYLabel" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="255" width="300" height="50"/>
+                                <rect key="frame" x="57" y="293" width="300" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cn1-TB-Vsu" customClass="SYLabel" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="395" width="300" height="50"/>
+                                <rect key="frame" x="57" y="433" width="300" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gin-RP-4aS" customClass="SYLabel" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="325" width="300" height="50"/>
+                                <rect key="frame" x="57" y="363" width="300" height="50"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
@@ -195,11 +198,11 @@
                         <viewControllerLayoutGuide type="bottom" id="zCW-js-Qih"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="Q5Z-Rc-bDb">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="1nb-FY-mFf" customClass="SYView" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="74" width="300" height="70"/>
+                                <rect key="frame" x="57" y="118" width="300" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="bXq-5n-ESq"/>
@@ -207,7 +210,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wPd-rf-uhg" customClass="SYView" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="164" width="300" height="70"/>
+                                <rect key="frame" x="57" y="208" width="300" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="MR4-RV-hSD"/>
@@ -215,7 +218,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wpw-Eh-BQf" customClass="SYView" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="254" width="300" height="70"/>
+                                <rect key="frame" x="57" y="298" width="300" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="70" id="Nka-Pm-X6R"/>
@@ -223,7 +226,7 @@
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Oxi-QC-BI9" customClass="SYView" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="344" width="300" height="70"/>
+                                <rect key="frame" x="57" y="388" width="300" height="70"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1xA-gx-fme"/>
@@ -264,11 +267,11 @@
                         <viewControllerLayoutGuide type="bottom" id="BAM-nv-OkP"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="wB4-36-A7X">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5dR-l2-0jj" customClass="SYTextField" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="80" width="300" height="50"/>
+                                <rect key="frame" x="57" y="118" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="1TA-ez-tWQ"/>
                                     <constraint firstAttribute="height" constant="50" id="8ng-oa-8sB"/>
@@ -277,7 +280,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="GAb-77-uhi" customClass="SYTextField" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="150" width="300" height="50"/>
+                                <rect key="frame" x="57" y="188" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="BBQ-Qi-SnL"/>
                                     <constraint firstAttribute="width" constant="300" id="dmk-VO-sKZ"/>
@@ -286,7 +289,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FL0-ZH-4Uf" customClass="SYTextField" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="290" width="300" height="50"/>
+                                <rect key="frame" x="57" y="328" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="Ivg-q6-HWX"/>
                                     <constraint firstAttribute="width" constant="300" id="uLQ-Mf-hRW"/>
@@ -295,7 +298,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="kcd-HV-fyj" customClass="SYTextField" customModule="BlinkAnima">
-                                <rect key="frame" x="150" y="220" width="300" height="50"/>
+                                <rect key="frame" x="57" y="258" width="300" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="300" id="LRT-E9-FIF"/>
                                     <constraint firstAttribute="height" constant="50" id="ROF-00-XJg"/>
@@ -337,11 +340,11 @@
                         <viewControllerLayoutGuide type="bottom" id="uRd-2J-S7x"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="JTL-TK-25A">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C4N-Na-pwz">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <sections/>
                             </tableView>
@@ -376,11 +379,11 @@
                         <viewControllerLayoutGuide type="bottom" id="omZ-Mz-hSa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="nbe-Dr-o1b">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="meN-gJ-Kd5">
-                                <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="v3n-RJ-QJU">
                                     <size key="itemSize" width="50" height="50"/>
                                     <size key="headerReferenceSize" width="0.0" height="0.0"/>
