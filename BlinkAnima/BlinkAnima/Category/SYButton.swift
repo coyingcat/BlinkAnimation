@@ -11,7 +11,7 @@ import UIKit
 @IBDesignable
 public class SYButton: UIButton, AnimatableComponent, TextConvertible {
     public enum AnimationType: Int {
-        case border, borderWithShadow, background, ripple, text
+        case border, borderWithShadow, background, ripple, text, opaque
     }
     
     @IBInspectable public var animationBorderColor = AnimationDefaultColor.border {
@@ -79,6 +79,8 @@ public class SYButton: UIButton, AnimatableComponent, TextConvertible {
                     return .ripple
                 case .text:
                     return .text
+                case .opaque:
+                    return .alpha
                 }
             }()
         }

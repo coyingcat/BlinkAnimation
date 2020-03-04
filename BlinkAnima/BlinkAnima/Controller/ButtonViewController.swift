@@ -40,12 +40,20 @@ class ButtonViewController: UIViewController {
         borderButton.startAnimating()
 
         
+        
+        
+        
+        
         border2Button.setTitle("BorderWithShadow Animation", for: .normal)
         border2Button.animationBorderColor = UIColor(red: 34/255, green: 167/255, blue: 240/255, alpha: 1)
         border2Button.addTarget(self, action: #selector(borderWithShadowAnimation(_:)), for: .touchUpInside)
         border2Button.animationType = .borderWithShadow
         border2Button.startAnimating()
 
+        
+        
+        
+        
         
         backgroundButton.setTitle("Background Animation", for: .normal)
         backgroundButton.addTarget(self, action: #selector(backgroundAnimation(_:)), for: .touchUpInside)
@@ -78,6 +86,7 @@ class ButtonViewController: UIViewController {
     
     
     func doCustomAlpha(){
+        alphaBtn.animationType = .opaque
         alphaBtn.setTitle("Alpha Animation", for: .normal)
         alphaBtn.addTarget(self, action: #selector(alphaAnimation(_:)), for: .touchUpInside)
         alphaBtn.startAnimating()

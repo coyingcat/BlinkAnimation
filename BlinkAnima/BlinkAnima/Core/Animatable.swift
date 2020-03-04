@@ -51,7 +51,7 @@ public enum SYMediaTimingFunction: Int {
 
 
 enum AnimationType {
-    case border, borderWithShadow, background, ripple, text
+    case border, borderWithShadow, background, ripple, text, alpha
 }
 
 
@@ -71,6 +71,8 @@ protocol Animatable {
     
     var superLayer: CALayer { get set }
     var textLayer: CATextLayer { get set }
+    
+    
     var subRippleLayer: CALayer { get set }
     var rippleLayer: CALayer { get set }
     
@@ -103,6 +105,8 @@ extension Animatable {
             animateText()
         case .ripple:
             animateRipple()
+        case .alpha:
+            animateOpaque()
         }
     }
     
@@ -223,6 +227,28 @@ extension Animatable {
         rippleLayer.add(animationGroup, forKey: nil)
         subRippleLayer.add(animationGroup, forKey: nil)
     }
+    
+    
+    func animateOpaque(){
+        let fadeOutOpacity = CABasicAnimation(type: .opacity)
+        fadeOutOpacity.fromValue = 1
+        fadeOutOpacity.toValue   = AnimationConstants.rippleToAlpha
+    
+        
+        
+        fadeOutOpacity.duration              = animationDuration
+        fadeOutOpacity.repeatCount           = Float.greatestFiniteMagnitude
+        fadeOutOpacity.isRemovedOnCompletion = false
+        fadeOutOpacity.timingFunction        = animationTimingFunction.timingFunction
+        
+        
+        superLayer.add(fadeOutOpacity, forKey: nil)
+        
+    }
+    
+    
+    
+    
     
     func resetSuperLayerShadow() {
         if backgroundColor.cgColor.alpha == 1 {
