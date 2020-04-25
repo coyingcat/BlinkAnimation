@@ -1,5 +1,14 @@
 ## Swift 5
 
+
+
+blog: [原理念经，夯实基础: 从圆角动画，探索 CATransaction 的作用](https://juejin.im/post/5ea3f93fe51d4546bb6f633b)
+
+
+<hr>
+
+
+
 **BlinkAnima** is a blink effect animation framework for iOS, written in **Swift** :bowtie:
 
 ## :eyes: Demo
