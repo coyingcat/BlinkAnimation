@@ -49,18 +49,6 @@ you can change properties in Interface Builder(IB) inspector. then IB update you
 - [x] [SYCollectionViewCell](https://github.com/shoheiyokoyama/SYBlinkAnimationKit/blob/master/Source/SYCollectionViewCell.swift)
 
 
-
-# Demo App
-Open `Example/SYBlinkAnimationKit.xcworkspace` and run `SYBlinkAnimationKit-Example` to see a simple demonstration.
-
-To run the example project, run `pod install` from the Example directory first.
-
-## :large_orange_diamond: Usage
-First, Import **SYBlinkAnimationKit** in class.
-```swift
-   
-```
-
 **SYBlinkAnimationKit** is designed to be easy to use.
 
 1. Call the SYClass. for example,` SYButton`, `SYLabel`, `SYTextField`, etc.
@@ -274,10 +262,8 @@ If SYClass is in middle of animation, this property is `true`
    public var isAnimating: Bool
 ```
 
-## :computer: Installation
+## :computer: Installation,  Demo App,  Usage
 
 Please do it manually
-
-
 
 # DIY and enjoy yourself
