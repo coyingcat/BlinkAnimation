@@ -36,10 +36,10 @@ There are 5 types of animation for component.
 - The 5 types of animation : `border`,  `borderWithShadow`,  `background`, `ripple`, `text`
 - Easily usable :stuck_out_tongue_closed_eyes:
 - Customizable in any properties for animation
-- [x] Support Swift 3.0 :tada:
+
 - [x] Support `@IBDesignable` and `@IBInspectable`.
 you can change properties in Interface Builder(IB) inspector. then IB update your custom objects automatically.
-- [x] Compatible with ***Carthage***
+
 
 - [x] [SYButton](https://github.com/shoheiyokoyama/SYBlinkAnimationKit/blob/master/Source/SYButton.swift)
 - [x] [SYLabel](https://github.com/shoheiyokoyama/SYBlinkAnimationKit/blob/master/Source/SYLabel.swift)
