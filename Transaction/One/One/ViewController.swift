@@ -20,24 +20,18 @@ class ViewController: UIViewController {
         return btn
     }()
     
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         view.backgroundColor = .white
-        
         styledButton.center = view.center
-        
         view.addSubview(styledButton)
     }
     
 
-    
-    
     @IBAction func start(_ sender: UIButton) {
         // Call animation
         animateButton()
     }
-    
     
     fileprivate func animateButton(duration: CFTimeInterval = 1.0) {
        let oldValue = styledButton.frame.width/2
