@@ -45,7 +45,82 @@ import UIKit
  */
 @IBDesignable open class UICircularRing: UIView {
 
-  
+     
+     @IBInspectable public var value: CGFloat = 0 {
+         didSet {
+             if value < minValue {
+                 #if DEBUG
+                 print("Warning in: \(#file):\(#line)")
+                 print("Attempted to set a value less than minValue, value has been set to minValue.\n")
+                 #endif
+                 ringLayer.value = minValue
+             } else if value > maxValue {
+                 #if DEBUG
+                 print("Warning in: \(#file):\(#line)")
+                 print("Attempted to set a value greater than maxValue, value has been set to maxValue.\n")
+                 #endif
+                 ringLayer.value = maxValue
+             } else {
+                 ringLayer.value = value
+             }
+         }
+     }
+
+     /**
+      The current value of the progress ring
+
+      This will return the current value of the progress ring,
+      if the ring is animating it will be updated in real time.
+      If the ring is not currently animating then the value returned
+      will be the `value` property of the ring
+
+      ## Author
+      Luis Padron
+      */
+     public var currentValue: CGFloat? {
+         return isAnimating ? layer.presentation()?.value(forKey: .value) as? CGFloat : value
+     }
+
+     /**
+      The minimum value for the progress ring. ex: (0) -> 100.
+
+      ## Important ##
+      Default = 0.0
+
+      Must be a non-negative value, the absolute value is taken when setting this property.
+
+      The `value` of the progress ring must NOT fall below `minValue` if it does the `value` property is clamped
+      and will be set equal to `value`, you will receive a warning message in the console.
+
+      Making this value greater than
+
+      ## Author
+      Luis Padron
+      */
+     @IBInspectable public var minValue: CGFloat = 0.0 {
+         didSet { ringLayer.minValue = minValue }
+     }
+
+     /**
+      The maximum value for the progress ring. ex: 0 -> (100)
+
+      ## Important ##
+      Default = 100.0
+
+      Must be a non-negative value, the absolute value is taken when setting this property.
+
+      Unlike the `minValue` member `value` can extend beyond `maxValue`. What happens in this case
+      is the inner ring will do an extra loop through the outer ring, this is not noticible however.
+
+
+      ## Author
+      Luis Padron
+      */
+     @IBInspectable public var maxValue: CGFloat = 100.0 {
+         didSet { ringLayer.maxValue = maxValue }
+     }
+    
+    
     /**
      A toggle for showing or hiding the value label.
      If false the current value will not be shown.
@@ -199,6 +274,13 @@ import UIKit
 
         backgroundColor = UIColor.clear
         ringLayer.backgroundColor = UIColor.clear.cgColor
+        
+        
+        
+        ringLayer.ring = self
+        ringLayer.value = value
+        ringLayer.maxValue = maxValue
+        ringLayer.minValue = minValue
 
     }
 
@@ -219,7 +301,7 @@ import UIKit
         ringLayer.beginTime = 0
         ringLayer.speed = 1
    
-
+        self.value = 50
     }
 
 

@@ -10,8 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let progressRing = { () -> UICircularProgressRing in
-        let ring = UICircularProgressRing(frame: CGRect(x: 100, y: 100, width: 250, height: 250))
+    let progressRing = { () -> UICircularRing in
+        let ring = UICircularRing(frame: CGRect(x: 100, y: 100, width: 250, height: 250))
         ring.maxValue = 50
  
         
@@ -27,7 +27,7 @@ class ViewController: UIViewController {
 
     @IBAction func animate(_ sender: UIButton) {
         
-        progressRing.startProgress()
+        progressRing.startAnimation()
         
     }
     
