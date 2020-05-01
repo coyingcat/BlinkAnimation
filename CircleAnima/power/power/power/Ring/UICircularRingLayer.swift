@@ -53,7 +53,11 @@ class UICircularRingLayer: CAShapeLayer {
     var animated = false
 
     /// the value label which draws the text for the current value
-    lazy var valueLabel: UILabel = UILabel(frame: .zero)
+    lazy var valueLabel = { () -> UILabel in
+        let l = UILabel(frame: .zero)
+        l.textAlignment = .center
+        return l
+    }()
 
     // MARK: Animatable properties
 
@@ -104,7 +108,7 @@ class UICircularRingLayer: CAShapeLayer {
         UIGraphicsPushContext(ctx)
         // Draw the rings
         
-        drawInnerRing(in: ctx)
+        drawRing(in: ctx)
         // Draw the label
         drawValueLabel()
         // Call the delegate and notifiy of updated value
@@ -154,7 +158,7 @@ class UICircularRingLayer: CAShapeLayer {
      Draws the inner ring for the view.
      Sets path properties according to how the user has decided to customize the view.
      */
-    private func drawInnerRing(in ctx: CGContext) {
+    private func drawRing(in ctx: CGContext) {
         guard ring.innerRingWidth > 0 else { return }
 
         let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
@@ -217,14 +221,11 @@ class UICircularRingLayer: CAShapeLayer {
         // Draws the text field
         // Some basic label properties are set
         valueLabel.font = ring.font
-        valueLabel.textAlignment = .center
+        
         valueLabel.textColor = ring.fontColor
         valueLabel.text = valueFormatter?.string(for: value)
         ring.willDisplayLabel(label: valueLabel)
-        valueLabel.sizeToFit()
 
-        // Deterime what should be the center for the label
-        valueLabel.center = CGPoint(x: bounds.midX, y: bounds.midY)
 
         valueLabel.drawText(in: bounds)
     }
