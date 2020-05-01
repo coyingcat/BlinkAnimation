@@ -25,8 +25,6 @@ class ViewController: UIViewController {
         view.addSubview(progressRing)
     }
 
-    
-    
     @IBAction func animate(_ sender: UIButton) {
         
         progressRing.startProgress(to: 30, duration: 2.0) {
@@ -34,12 +32,7 @@ class ViewController: UIViewController {
           // Do anything your heart desires...
         }
         
-        
-        
-        
     }
-    
-    
     
 
 }
