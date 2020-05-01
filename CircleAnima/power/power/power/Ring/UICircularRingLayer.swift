@@ -5,7 +5,7 @@ import UIKit
  The internal subclass for CAShapeLayer.
  This is the class that handles all the drawing and animation.
  This class is not interacted with, instead
- properties are set in UICircularRing 
+ properties are set in UICircularRing
 
  */
 class UICircularRingLayer: CAShapeLayer {
@@ -41,13 +41,8 @@ class UICircularRingLayer: CAShapeLayer {
         super.draw(in: ctx)
         UIGraphicsPushContext(ctx)
         // Draw the rings
-        
         drawRing(in: ctx)
-
-        // Call the delegate and notifiy of updated val
-   
         UIGraphicsPopContext()
-
     }
 
     // MARK: Animation methods

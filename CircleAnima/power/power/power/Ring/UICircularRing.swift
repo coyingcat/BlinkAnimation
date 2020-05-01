@@ -5,7 +5,7 @@ import UIKit
 @IBDesignable open class UICircularRing: UIView {
 
     /**
-     Set the ring layer to the default layer, cated as custom layer
+     Set the ring layer to the default layer, casted as custom layer
      */
     var ringLayer: UICircularRingLayer {
         // swiftlint:disable:next force_cast
@@ -41,8 +41,6 @@ import UIKit
      This method initializes the custom CALayer to the default values
      */
     func setup(){
-        // This view will become the value delegate of the layer, which will call the updateValue method when needed
-
         // Helps with pixelation and blurriness on retina devices
         ringLayer.contentsScale = UIScreen.main.scale
         ringLayer.shouldRasterize = true
@@ -54,15 +52,9 @@ import UIKit
         ringLayer.val = 0
     }
 
-    /**
-     These functions are here to allow reuse between subclasses.
-     They handle starting, pausing and resetting an animation of the ring.
-    */
 
     func startAnimation() {
         ringLayer.val = 1
     }
-
-
 }
 
