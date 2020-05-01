@@ -118,40 +118,6 @@ import UIKit
     }
 
 
-
-    // MARK: Label
-
-    /**
-     The text color for the value label field
-
-     ## Important ##
-     Default = UIColor.black
-
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var fontColor: UIColor = UIColor.black {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-    /**
-     The font to be used for the progress indicator.
-     All font attributes are specified here except for font color, which is done
-     using `fontColor`.
-
-
-     ## Important ##
-     Default = UIFont.systemFont(ofSize: 18)
-
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var font: UIFont = UIFont.systemFont(ofSize: 18) {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
     /**
      This returns whether or not the ring is currently animating
 
@@ -187,10 +153,6 @@ import UIKit
 
     /// Used to determine when the animation was paused
     private var animationPauseTime: CFTimeInterval?
-
-    /// This stores the animation when the timer is paused. We use this variable to continue the animation where it left off.
-    /// See https://stackoverflow.com/questions/7568567/restoring-animation-where-it-left-off-when-app-resumes-from-background
-    var snapshottedAnimation: CAAnimation?
 
 
     typealias AnimationCompletion = () -> Void
@@ -248,7 +210,7 @@ import UIKit
      They handle starting, pausing and resetting an animation of the ring.
     */
 
-    func startAnimation(duration: TimeInterval, completion: @escaping AnimationCompletion) {
+    func startAnimation(duration: TimeInterval) {
         if isAnimating {
             animationPauseTime = nil
         }
@@ -263,16 +225,6 @@ import UIKit
 
 
 
-
-    func resetAnimation() {
-        ringLayer.animated = false
-        ringLayer.removeAnimation(forKey: .value)
-        snapshottedAnimation = nil
-
-
-        animationPauseTime = nil
-
-    }
 
     // MARK: API
 

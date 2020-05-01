@@ -123,14 +123,6 @@ final public class UICircularProgressRing: UICircularRing {
 
 
 
-    /**
-     Typealias for the startProgress(:) method closure
-     */
-    public typealias ProgressCompletion = (() -> Void)
-
-    /// The completion block to call after the animation is done
-    private var completion: ProgressCompletion?
-
     // MARK: API
 
     /**
@@ -149,35 +141,19 @@ final public class UICircularProgressRing: UICircularRing {
      ## Author
      Luis Padron
      */
-    public func startProgress(to value: CGFloat, duration: TimeInterval, completion: ProgressCompletion? = nil) {
+    public func startProgress(to value: CGFloat, duration: TimeInterval) {
         // Store the completion event locally
-        self.completion = completion
+     
 
         // call super class helper function to begin animating layer
-        startAnimation(duration: duration) {
-
-            self.completion?()
-        }
+        startAnimation(duration: duration)
 
         self.value = value
     }
 
 
 
-    /**
-     Resets the progress back to the `minValue` of the progress ring.
-     Does **not** perform any animations
-
-     ## Author
-     Luis Padron
-     */
-    public func resetProgress() {
-        // call super class helper to reset animation layer
-        resetAnimation()
-        value = minValue
-        // Remove reference to the completion block
-        completion = nil
-    }
+  
 
     // MARK: Overrides
 

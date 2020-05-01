@@ -27,10 +27,7 @@ class ViewController: UIViewController {
 
     @IBAction func animate(_ sender: UIButton) {
         
-        progressRing.startProgress(to: 30, duration: 2.0) {
-          print("Done animating!")
-          // Do anything your heart desires...
-        }
+        progressRing.startProgress(to: 30, duration: 2.0)
         
     }
     
