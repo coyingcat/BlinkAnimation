@@ -15,18 +15,56 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-gz-WvV">
-                                <rect key="frame" x="85" y="433" width="55" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="animate"/>
-                                <connections>
-                                    <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="12M-Bz-bGV"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="70" translatesAutoresizingMaskIntoConstraints="NO" id="ilI-Zi-O3d">
+                                <rect key="frame" x="7" y="338" width="400" height="230"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8Nt-gz-WvV">
+                                        <rect key="frame" x="150.5" y="0.0" width="99" height="30"/>
+                                        <state key="normal" title="animate frame"/>
+                                        <connections>
+                                            <action selector="animateFrame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JG9-36-cXo"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gdp-Gv-ien" userLabel="animate autolayout">
+                                        <rect key="frame" x="135" y="100" width="130" height="30"/>
+                                        <state key="normal" title="animate autolayout"/>
+                                        <connections>
+                                            <action selector="animateAutolayout:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tlH-OC-hQt"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ab2-SL-uTc">
+                                        <rect key="frame" x="133.5" y="200" width="133" height="30"/>
+                                        <state key="normal" title="animate storyboard"/>
+                                        <connections>
+                                            <action selector="animateStoryboard:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9yg-GB-d1h"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="400" id="O3D-dn-COp"/>
+                                </constraints>
+                            </stackView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="rzM-6O-Cpg" customClass="CircleView" customModule="one" customModuleProvider="target">
+                                <rect key="frame" x="107" y="603" width="200" height="200"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="200" id="5XY-j9-JfU"/>
+                                    <constraint firstAttribute="height" constant="200" id="SSo-Ct-7ar"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="rzM-6O-Cpg" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="ESq-gb-EdD"/>
+                            <constraint firstItem="ilI-Zi-O3d" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Gdw-6j-yKR"/>
+                            <constraint firstItem="rzM-6O-Cpg" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="250" id="rrA-Q3-AII"/>
+                            <constraint firstItem="ilI-Zi-O3d" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="vCM-gn-zhT"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="circleV" destination="rzM-6O-Cpg" id="dLe-Q1-wen"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

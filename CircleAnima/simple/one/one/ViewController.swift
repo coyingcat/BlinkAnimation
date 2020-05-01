@@ -9,6 +9,12 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    
+    
+    @IBOutlet weak var circleV: CircleView!
+    
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -16,8 +22,9 @@ class ViewController: UIViewController {
     }
     
     
-
-    @IBAction func animate(_ sender: UIButton) {
+    
+    @IBAction func animateFrame(_ sender: UIButton) {
+        
         
         let diceRoll = CGFloat(Int(arc4random_uniform(7))*30)
         let circleEdge = CGFloat(200)
@@ -33,6 +40,32 @@ class ViewController: UIViewController {
         
     }
     
+    
+    
+    @IBAction func animateAutolayout(_ sender: UIButton) {
+        
+        let circleView = CircleView(frame: CGRect.zero)
+        circleView.translatesAutoresizingMaskIntoConstraints = false
+        view.addSubview(circleView)
+        circleView.centerXAnchor.constraint(equalTo: view.centerXAnchor).isActive = true
+        circleView.centerYAnchor.constraint(equalTo: view.centerYAnchor).isActive = true
+        circleView.widthAnchor.constraint(equalToConstant: 250).isActive = true
+        circleView.heightAnchor.constraint(equalToConstant: 250).isActive = true
+        // Animate the drawing of the circle over the course of 1 second
+        circleView.animateCircle(duration: 1.0)
+        
+        
+    }
+    
+    
+    
+    
+    
+    @IBAction func animateStoryboard(_ sender: UIButton) {
+        // Animate the drawing of the circle over the course of 1 second
+        circleV.animateCircle(duration: 1.0)
+        
+    }
     
 
 }

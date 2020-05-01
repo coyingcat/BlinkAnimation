@@ -24,20 +24,34 @@ class CircleView: UIView {
 
     override init(frame: CGRect) {
         super.init(frame: frame)
-        self.backgroundColor = UIColor.clear
+        setup()
+    }
+    
+    
+    required init?(coder: NSCoder) {
+        super.init(coder: coder)
+        setup()
+    }
+    
+    
+    func setup(){
+        backgroundColor = UIColor.clear
 
+        // Add the circleLayer to the view's layer's sublayers
+        layer.addSublayer(circleLayer)
+    }
+    
+    
+    
+    override func layoutSubviews() {
+        super.layoutSubviews()
         // Use UIBezierPath as an easy way to create the CGPath for the layer.
         // The path should be the entire circle.
         let circlePath = UIBezierPath(arcCenter: CGPoint(x: frame.size.width / 2.0, y: frame.size.height / 2.0), radius: (frame.size.width - 10)/2, startAngle: 0.0, endAngle: CGFloat(Double.pi * 2.0), clockwise: true)
 
         circleLayer.path = circlePath.cgPath
-        // Add the circleLayer to the view's layer's sublayers
-        layer.addSublayer(circleLayer)
     }
     
-    required init?(coder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     
     func animateCircle(duration t: TimeInterval) {
