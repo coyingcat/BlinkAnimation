@@ -11,6 +11,7 @@ import UIKit
 class ViewController: UIViewController {
     
     
+    @IBOutlet weak var btns: UIStackView!
     
     @IBOutlet weak var circleV: CircleView!
     
@@ -33,7 +34,7 @@ class ViewController: UIViewController {
         let circleView = CircleView(frame: CGRect(x: 50, y: diceRoll, width: circleEdge, height: circleEdge))
 
         view.addSubview(circleView)
-
+        view.bringSubviewToFront(btns)
         // Animate the drawing of the circle over the course of 1 second
         circleView.animateCircle(duration: 1.0)
         
@@ -53,7 +54,7 @@ class ViewController: UIViewController {
         circleView.heightAnchor.constraint(equalToConstant: 250).isActive = true
         // Animate the drawing of the circle over the course of 1 second
         circleView.animateCircle(duration: 1.0)
-        
+        view.bringSubviewToFront(btns)
         
     }
     
@@ -64,7 +65,7 @@ class ViewController: UIViewController {
     @IBAction func animateStoryboard(_ sender: UIButton) {
         // Animate the drawing of the circle over the course of 1 second
         circleV.animateCircle(duration: 1.0)
-        
+        view.bringSubviewToFront(btns)
     }
     
 
