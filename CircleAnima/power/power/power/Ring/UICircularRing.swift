@@ -48,18 +48,18 @@ import UIKit
      
      @IBInspectable public var value: CGFloat = 0 {
          didSet {
-             if value < minValue {
+             if value < 0 {
                  #if DEBUG
                  print("Warning in: \(#file):\(#line)")
                  print("Attempted to set a value less than minValue, value has been set to minValue.\n")
                  #endif
-                 ringLayer.value = minValue
-             } else if value > maxValue {
+                 ringLayer.value = 0
+             } else if value > 50 {
                  #if DEBUG
                  print("Warning in: \(#file):\(#line)")
                  print("Attempted to set a value greater than maxValue, value has been set to maxValue.\n")
                  #endif
-                 ringLayer.value = maxValue
+                 ringLayer.value = 50
              } else {
                  ringLayer.value = value
              }
@@ -81,45 +81,7 @@ import UIKit
          return isAnimating ? layer.presentation()?.value(forKey: .value) as? CGFloat : value
      }
 
-     /**
-      The minimum value for the progress ring. ex: (0) -> 100.
-
-      ## Important ##
-      Default = 0.0
-
-      Must be a non-negative value, the absolute value is taken when setting this property.
-
-      The `value` of the progress ring must NOT fall below `minValue` if it does the `value` property is clamped
-      and will be set equal to `value`, you will receive a warning message in the console.
-
-      Making this value greater than
-
-      ## Author
-      Luis Padron
-      */
-     @IBInspectable public var minValue: CGFloat = 0.0 {
-         didSet { ringLayer.minValue = minValue }
-     }
-
-     /**
-      The maximum value for the progress ring. ex: 0 -> (100)
-
-      ## Important ##
-      Default = 100.0
-
-      Must be a non-negative value, the absolute value is taken when setting this property.
-
-      Unlike the `minValue` member `value` can extend beyond `maxValue`. What happens in this case
-      is the inner ring will do an extra loop through the outer ring, this is not noticible however.
-
-
-      ## Author
-      Luis Padron
-      */
-     @IBInspectable public var maxValue: CGFloat = 100.0 {
-         didSet { ringLayer.maxValue = maxValue }
-     }
-    
+  
     
     /**
      A toggle for showing or hiding the value label.
@@ -279,8 +241,7 @@ import UIKit
         
         ringLayer.ring = self
         ringLayer.value = value
-        ringLayer.maxValue = maxValue
-        ringLayer.minValue = minValue
+   
 
     }
 

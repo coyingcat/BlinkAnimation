@@ -10,14 +10,8 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    let progressRing = { () -> UICircularRing in
-        let ring = UICircularRing(frame: CGRect(x: 100, y: 100, width: 250, height: 250))
-        ring.maxValue = 50
- 
-        
-        // Change any of the properties you'd like
-        return ring
-    }()
+    let progressRing = UICircularRing(frame: CGRect(x: 100, y: 100, width: 250, height: 250))
+   
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -37,8 +37,7 @@ class UICircularRingLayer: CAShapeLayer {
     // MARK: Properties
 
     @NSManaged var value: CGFloat
-    @NSManaged var minValue: CGFloat
-    @NSManaged var maxValue: CGFloat
+
 
     /// the delegate for the value, is notified when value changes
     @NSManaged weak var ring: UICircularRing!
@@ -162,7 +161,7 @@ class UICircularRingLayer: CAShapeLayer {
     /// Returns the end angle of the inner ring
     private func calculateInnerEndAngle() -> CGFloat {
      
-        return (value - minValue) / (maxValue - minValue) * 360.0 + ring.startAngle
+        return value/50 * 360.0 + ring.startAngle
     }
 
     /// Returns the raidus of the inner ring
