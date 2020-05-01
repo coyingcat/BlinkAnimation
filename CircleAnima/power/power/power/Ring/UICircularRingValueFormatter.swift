@@ -93,17 +93,7 @@ public struct UICircularProgressRingFormatter: UICircularRingValueFormatter {
      */
     public var valueIndicator: String
 
-    /**
-     A toggle for either placing the value indicator right or left to the value
-     Example: true -> "GB 100" (instead of 100 GB)
-
-     ## Important ##
-     Default = false (place value indicator to the right)
-
-     ## Author
-     Elad Hayun
-     */
-    public var rightToLeft: Bool
+ 
 
     /**
      A toggle for showing or hiding floating points from
@@ -135,11 +125,10 @@ public struct UICircularProgressRingFormatter: UICircularRingValueFormatter {
     // MARK: Init
 
     public init(valueIndicator: String = "%",
-                rightToLeft: Bool = false,
                 showFloatingPoint: Bool = false,
                 decimalPlaces: Int = 2) {
         self.valueIndicator = valueIndicator
-        self.rightToLeft = rightToLeft
+
         self.showFloatingPoint = showFloatingPoint
         self.decimalPlaces = decimalPlaces
     }
@@ -150,19 +139,12 @@ public struct UICircularProgressRingFormatter: UICircularRingValueFormatter {
     public func string(for value: Any) -> String? {
         guard let value = value as? CGFloat else { return nil }
 
-        if rightToLeft {
-            if showFloatingPoint {
-                return "\(valueIndicator)" + String(format: "%.\(decimalPlaces)f", value)
-            } else {
-                return "\(valueIndicator)\(Int(value))"
-            }
-
-        } else {
+     
             if showFloatingPoint {
                 return String(format: "%.\(decimalPlaces)f", value) + "\(valueIndicator)"
             } else {
                 return "\(Int(value))\(valueIndicator)"
             }
-        }
+        
     }
 }

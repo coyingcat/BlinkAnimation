@@ -112,9 +112,7 @@ class UICircularRingLayer: CAShapeLayer {
         // Draw the label
         drawValueLabel()
         // Call the delegate and notifiy of updated value
-        if let updatedValue = value(forKey: "value") as? CGFloat {
-            ring.didUpdateValue(newValue: updatedValue)
-        }
+   
         UIGraphicsPopContext()
 
     }
@@ -224,9 +222,6 @@ class UICircularRingLayer: CAShapeLayer {
         
         valueLabel.textColor = ring.fontColor
         valueLabel.text = valueFormatter?.string(for: value)
-        ring.willDisplayLabel(label: valueLabel)
-
-
         valueLabel.drawText(in: bounds)
     }
 }

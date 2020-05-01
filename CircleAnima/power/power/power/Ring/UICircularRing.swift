@@ -302,17 +302,6 @@ import UIKit
     // MARK: Internal API
 
     /**
-     These methods are called from the layer class in order to notify
-     this class about changes to the value and label display.
-
-     In this base class they do nothing.
-     */
-
-    func didUpdateValue(newValue: CGFloat) { }
-
-    func willDisplayLabel(label: UILabel) { }
-
-    /**
      These functions are here to allow reuse between subclasses.
      They handle starting, pausing and resetting an animation of the ring.
     */
