@@ -22,65 +22,6 @@ import UIKit
  */
 @IBDesignable open class UICircularRing: UIView {
 
-     
-     @IBInspectable public var value: CGFloat = 0 {
-         didSet {
-             if value < 0 {
-                 #if DEBUG
-                 print("Warning in: \(#file):\(#line)")
-                 print("Attempted to set a value less than minValue, value has been set to minValue.\n")
-                 #endif
-                 ringLayer.value = 0
-             } else if value > 50 {
-                 #if DEBUG
-                 print("Warning in: \(#file):\(#line)")
-                 print("Attempted to set a value greater than maxValue, value has been set to maxValue.\n")
-                 #endif
-                 ringLayer.value = 50
-             } else {
-                 ringLayer.value = value
-             }
-         }
-     }
-
-   
-   
-    /**
-     The end angle for the entire progress ring
-
-     Please note that Cocoa Touch uses a clockwise rotating unit circle.
-     I.e: 90 degrees is at the bottom and 270 degrees is at the top
-
-     ## Important ##
-     Default = 360 (degrees)
-
-     Values should be in degrees (they're converted to radians internally)
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var endAngle: CGFloat = 360 {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-
-  
-
- 
-
-    /**
-     The color of the inner ring for the progres bar
-
-     ## Important ##
-     Default = UIColor.blue
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var innerRingColor: UIColor = UIColor.blue {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
 
     // MARK: Private / internal
 
@@ -124,7 +65,6 @@ import UIKit
      */
     func setup(){
         // This view will become the value delegate of the layer, which will call the updateValue method when needed
-        ringLayer.ring = self
 
         // Helps with pixelation and blurriness on retina devices
         ringLayer.contentsScale = UIScreen.main.scale
@@ -134,13 +74,7 @@ import UIKit
 
         backgroundColor = UIColor.clear
         ringLayer.backgroundColor = UIColor.clear.cgColor
-        
-        
-        
-        ringLayer.ring = self
-        ringLayer.value = value
-   
-
+        ringLayer.value = 0
     }
 
 
@@ -157,16 +91,9 @@ import UIKit
         ringLayer.beginTime = 0
         ringLayer.speed = 1
    
-        self.value = 50
+        ringLayer.value = 50
     }
 
 
 }
 
-
-extension UICircularRing {
-    /// Helper enum for animation key
-    enum AnimationKeys: String {
-        case value
-    }
-}

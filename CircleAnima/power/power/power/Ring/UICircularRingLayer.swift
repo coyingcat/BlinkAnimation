@@ -13,12 +13,8 @@ class UICircularRingLayer: CAShapeLayer {
     // MARK: Properties
 
     @NSManaged var value: CGFloat
-
-
-    /// the delegate for the value, is notified when value changes
-    @NSManaged weak var ring: UICircularRing!
-
- 
+    
+    
     let startAngle = CGFloat(0).rads
         
     // MARK: Init
@@ -106,7 +102,7 @@ class UICircularRingLayer: CAShapeLayer {
         ctx.setLineWidth(20)
         ctx.setLineJoin(.round)
         ctx.setLineCap(CGLineCap.round)
-        ctx.setStrokeColor(ring.innerRingColor.cgColor)
+        ctx.setStrokeColor(UIColor.red.cgColor)
         ctx.addPath(innerPath.cgPath)
         ctx.drawPath(using: .stroke)
 
