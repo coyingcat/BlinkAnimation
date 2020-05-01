@@ -11,11 +11,11 @@ import UIKit
 class UICircularRingLayer: CAShapeLayer {
 
     // MARK: Properties
-
+//  https://stackoverflow.com/questions/31357564/what-does-nsmanaged-do
     @NSManaged var val: CGFloat
     
     let ringWidth: CGFloat = 20
-    let startAngle = CGFloat(0).rads
+    let startAngle = CGFloat(-90).rads
         
     // MARK: Init
 
