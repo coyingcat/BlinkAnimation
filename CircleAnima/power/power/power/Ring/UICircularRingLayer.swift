@@ -52,9 +52,13 @@ class UICircularRingLayer: CAShapeLayer {
      */
     override class func needsDisplay(forKey key: String) -> Bool {
         if key == "val" {
+            //  print(1)
             return true
         } else {
-            return super.needsDisplay(forKey: key)
+            //  print(2)
+            return false
+            
+            //  return super.needsDisplay(forKey: key)
         }
     }
 
@@ -63,13 +67,17 @@ class UICircularRingLayer: CAShapeLayer {
      */
     override func action(forKey event: String) -> CAAction? {
         if event == "val"{
+            //  print(3)
             let animation = CABasicAnimation(keyPath: "val")
             animation.fromValue = presentation()?.value(forKey: "val")
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = 2
             return animation
         } else {
-            return super.action(forKey: event)
+            //  print(4)
+            //  print(super.action(forKey: event))
+            return nil
+            // return super.action(forKey: event)
         }
     }
 
@@ -102,7 +110,7 @@ class UICircularRingLayer: CAShapeLayer {
 
  
     var toEndAngle: CGFloat {
-        return (val * 360.0).rads + startAngle
+        return (val * 160.0).rads + startAngle
     }
 
 
