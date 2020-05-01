@@ -60,19 +60,7 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    /**
-     A toggle for showing or hiding the value knob when current value == minimum value.
-     If false the value knob will not be shown when current value == minimum value.
 
-     ## Important ##
-     Default = false
-
-     ## Author
-     Tom Knapen
-     */
-    @IBInspectable public var shouldDrawMinValueKnob: Bool = false {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
 
    
     /**
@@ -111,50 +99,8 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    // MARK: Outer Ring properties
 
-    /**
-     The width of the outer ring for the progres bar
-
-     ## Important ##
-     Default = 10.0
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var outerRingWidth: CGFloat = 10.0 {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-    /**
-     The color for the outer ring
-
-     ## Important ##
-     Default = UIColor.gray
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var outerRingColor: UIColor = UIColor.gray {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-    /**
-     The style for the tip/cap of the outer ring
-
-     Type: `CGLineCap`
-
-     ## Important ##
-     Default = CGLineCap.butt
-
-     This is only noticible when ring is not a full circle.
-
-     ## Author
-     Luis Padron
-     */
-    open var outerCapStyle: CGLineCap = .butt {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
+  
 
     // MARK: Inner Ring properties
 
@@ -302,27 +248,27 @@ import UIKit
     }
 
     /**
-     Overriden public init to initialize the layer and view
+     Overriden public init to setup() the layer and view
      */
     override public init(frame: CGRect) {
         super.init(frame: frame)
         // Call the internal initializer
-        initialize()
+        setup()
     }
 
     /**
-     Overriden public init to initialize the layer and view
+     Overriden public init to setup() the layer and view
      */
     required public init?(coder aDecoder: NSCoder) {
         super.init(coder: aDecoder)
         // Call the internal initializer
-        initialize()
+        setup()
     }
 
     /**
      This method initializes the custom CALayer to the default values
      */
-    func initialize() {
+    func setup(){
         // This view will become the value delegate of the layer, which will call the updateValue method when needed
         ringLayer.ring = self
 

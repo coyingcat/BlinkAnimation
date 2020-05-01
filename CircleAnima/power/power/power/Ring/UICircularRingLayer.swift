@@ -103,7 +103,7 @@ class UICircularRingLayer: CAShapeLayer {
         super.draw(in: ctx)
         UIGraphicsPushContext(ctx)
         // Draw the rings
-        drawOuterRing()
+        
         drawInnerRing(in: ctx)
         // Draw the label
         drawValueLabel()
@@ -149,34 +149,7 @@ class UICircularRingLayer: CAShapeLayer {
         }
     }
 
-    // MARK: Helpers
-
-    /**
-     Draws the outer ring for the view.
-     Sets path properties according to how the user has decided to customize the view.
-     */
-    private func drawOuterRing() {
-        guard ring.outerRingWidth > 0 else { return }
-        let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
-        let offSet = calculateOuterRingOffset()
-        let outerRadius = min(bounds.width, bounds.height) / 2 - offSet
-
-        let start: CGFloat =  0
-        let end: CGFloat = .pi * 2
-        let outerPath = UIBezierPath(arcCenter: center,
-                                     radius: outerRadius,
-                                     startAngle: start,
-                                     endAngle: end,
-                                     clockwise: true)
-        
-        outerPath.lineWidth = ring.outerRingWidth
-        outerPath.lineCapStyle = ring.outerCapStyle
-
-
-        ring.outerRingColor.setStroke()
-        outerPath.stroke()
-    }
-
+   
     /**
      Draws the inner ring for the view.
      Sets path properties according to how the user has decided to customize the view.
@@ -212,7 +185,7 @@ class UICircularRingLayer: CAShapeLayer {
     private func calculateOuterRingOffset() -> CGFloat {
  
         
-        return max(ring.outerRingWidth, ring.innerRingWidth) / 2
+        return ring.innerRingWidth / 2
    
     }
 
@@ -225,7 +198,7 @@ class UICircularRingLayer: CAShapeLayer {
     /// Returns the raidus of the inner ring
     private func calculateInnerRadius() -> CGFloat {
      
-        let difference = ring.outerRingWidth * 2 + ring.innerRingSpacing
+        let difference = ring.innerRingSpacing
         let offSet = ring.innerRingWidth / 2
         return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
   

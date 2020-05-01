@@ -239,8 +239,8 @@ final public class UICircularProgressRing: UICircularRing {
 
     // MARK: Overrides
 
-    override func initialize() {
-        super.initialize()
+    override func setup() {
+        super.setup()
         ringLayer.ring = self
         ringLayer.value = value
         ringLayer.maxValue = maxValue
