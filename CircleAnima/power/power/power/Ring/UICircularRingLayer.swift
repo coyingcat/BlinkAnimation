@@ -5,13 +5,12 @@ import UIKit
  The internal subclass for CAShapeLayer.
  This is the class that handles all the drawing and animation.
  This class is not interacted with, instead
- properties are set in UICircularRing and those are delegated to here.
+ properties are set in UICircularRing 
 
  */
 class UICircularRingLayer: CAShapeLayer {
 
     // MARK: Properties
-//  https://stackoverflow.com/questions/31357564/what-does-nsmanaged-do
     @NSManaged var val: CGFloat
     
     let ringWidth: CGFloat = 20
@@ -90,8 +89,6 @@ class UICircularRingLayer: CAShapeLayer {
 
         let radiusIn: CGFloat = (min(bounds.width, bounds.height) - ringWidth)/2
         // Start drawing
-        
-    //    print("startAngle: \(startAngle), toEndAngle: \(toEndAngle)")
         let innerPath: UIBezierPath = UIBezierPath(arcCenter: center,
                                                    radius: radiusIn,
                                                    startAngle: startAngle,
