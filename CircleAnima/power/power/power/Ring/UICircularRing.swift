@@ -45,30 +45,7 @@ import UIKit
  */
 @IBDesignable open class UICircularRing: UIView {
 
-    // MARK: Circle Properties
-
-    /**
-     Whether or not the progress ring should be a full circle.
-
-     What this means is that the outer ring will always go from 0 - 360 degrees and
-     the inner ring will be calculated accordingly depending on current value.
-
-     ## Important ##
-     Default = true
-
-     When this property is true any value set for `endAngle` will be ignored.
-
-     ## Author
-     Luis Padron
-
-     */
-    @IBInspectable open var fullCircle: Bool = true {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-
   
-
     /**
      A toggle for showing or hiding the value label.
      If false the current value will not be shown.

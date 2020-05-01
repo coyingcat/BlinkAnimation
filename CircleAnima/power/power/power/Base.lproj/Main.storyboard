@@ -16,7 +16,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JPp-ZT-YdH">
-                                <rect key="frame" x="186.5" y="438" width="41" height="30"/>
+                                <rect key="frame" x="186.5" y="558" width="41" height="30"/>
                                 <state key="normal" title="anima"/>
                                 <connections>
                                     <action selector="animate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="pml-CT-ns7"/>
@@ -26,7 +26,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="JPp-ZT-YdH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rQL-UX-xBq"/>
-                            <constraint firstItem="JPp-ZT-YdH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="t0v-RN-Y7l"/>
+                            <constraint firstItem="JPp-ZT-YdH" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="120" id="t0v-RN-Y7l"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>

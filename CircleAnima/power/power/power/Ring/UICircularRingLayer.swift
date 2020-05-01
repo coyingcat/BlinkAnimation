@@ -160,13 +160,15 @@ class UICircularRingLayer: CAShapeLayer {
         let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
         let offSet = calculateOuterRingOffset()
         let outerRadius = min(bounds.width, bounds.height) / 2 - offSet
-        let start = ring.fullCircle ? 0 : ring.startAngle.rads
-        let end = ring.fullCircle ? .pi * 2 : ring.endAngle.rads
+
+        let start: CGFloat =  0
+        let end: CGFloat = .pi * 2
         let outerPath = UIBezierPath(arcCenter: center,
                                      radius: outerRadius,
                                      startAngle: start,
                                      endAngle: end,
                                      clockwise: true)
+        
         outerPath.lineWidth = ring.outerRingWidth
         outerPath.lineCapStyle = ring.outerCapStyle
 
@@ -218,22 +220,13 @@ class UICircularRingLayer: CAShapeLayer {
     private func calculateInnerEndAngle() -> CGFloat {
         let innerEndAngle: CGFloat
 
-        if ring.fullCircle {
+
             if !ring.isClockwise {
                 innerEndAngle = ring.startAngle - ((value - minValue) / (maxValue - minValue) * 360.0)
             } else {
                 innerEndAngle = (value - minValue) / (maxValue - minValue) * 360.0 + ring.startAngle
             }
-        } else {
-            // Calculate the center difference between the end and start angle
-            let angleDiff: CGFloat = (ring.startAngle > ring.endAngle) ? (360.0 - ring.startAngle + ring.endAngle) : (ring.endAngle - ring.startAngle)
-            // Calculate how much we should draw depending on the value set
-            if !ring.isClockwise {
-                innerEndAngle = ring.startAngle - ((value - minValue) / (maxValue - minValue) * angleDiff)
-            } else {
-                innerEndAngle = (value - minValue) / (maxValue - minValue) * angleDiff + ring.startAngle
-            }
-        }
+       
 
         return innerEndAngle
     }
