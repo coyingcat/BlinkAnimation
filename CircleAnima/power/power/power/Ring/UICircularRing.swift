@@ -2,28 +2,7 @@
 
 import UIKit
 
-/**
-
- # UICircularRing
-
- This is the base class of `UICircularProgressRing` and `UICircularTimerRing`.
- You should not instantiate this class, instead use one of the concrete classes provided
- or subclass and make your own.
-
- This is the UIView subclass that creates and handles everything
- to do with the circular ring.
-
- This class has a custom CAShapeLayer (`UICircularRingLayer`) which
- handels the drawing and animating of the view
-
- ## Author
- Luis Padron
-
- */
 @IBDesignable open class UICircularRing: UIView {
-
-
-    // MARK: Private / internal
 
     /**
      Set the ring layer to the default layer, cated as custom layer
@@ -32,9 +11,7 @@ import UIKit
         // swiftlint:disable:next force_cast
         return layer as! UICircularRingLayer
     }
-
-    // MARK: Methods
-
+    
     /**
      Overrides the default layer with the custom UICircularRingLayer class
      */
@@ -76,9 +53,6 @@ import UIKit
         ringLayer.backgroundColor = UIColor.clear.cgColor
         ringLayer.val = 0
     }
-
-
-    // MARK: Internal API
 
     /**
      These functions are here to allow reuse between subclasses.
