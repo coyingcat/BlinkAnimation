@@ -233,8 +233,6 @@ import UIKit
     /// See https://stackoverflow.com/questions/7568567/restoring-animation-where-it-left-off-when-app-resumes-from-background
     var snapshottedAnimation: CAAnimation?
 
-    /// The completion timer, also indicates whether or not the view is animating
-    var animationCompletionTimer: Timer?
 
     typealias AnimationCompletion = () -> Void
 
@@ -317,13 +315,6 @@ import UIKit
         ringLayer.animated = duration > 0
         ringLayer.animationDuration = duration
 
-        // Check if a completion timer is still active and if so stop it
-        animationCompletionTimer?.invalidate()
-        animationCompletionTimer = Timer.scheduledTimer(timeInterval: duration,
-                                                        target: self,
-                                                        selector: #selector(self.animationDidComplete),
-                                                        userInfo: completion,
-                                                        repeats: false)
     }
 
     func pauseAnimation() {
@@ -345,14 +336,6 @@ import UIKit
         ringLayer.speed = 0.0
         ringLayer.timeOffset = pauseTime
 
-        if let fireTime = animationCompletionTimer?.fireDate {
-            pausedTimeRemaining = fireTime.timeIntervalSince(Date())
-        } else {
-            pausedTimeRemaining = 0
-        }
-
-        animationCompletionTimer?.invalidate()
-        animationCompletionTimer = nil
     }
 
     func continueAnimation(completion: @escaping AnimationCompletion) {
@@ -376,12 +359,6 @@ import UIKit
 
         ringLayer.beginTime = timeSincePause
 
-        animationCompletionTimer?.invalidate()
-        animationCompletionTimer = Timer.scheduledTimer(timeInterval: pausedTimeRemaining,
-                                               target: self,
-                                               selector: #selector(animationDidComplete),
-                                               userInfo: completion,
-                                               repeats: false)
 
         animationPauseTime = nil
     }
@@ -391,9 +368,7 @@ import UIKit
         ringLayer.removeAnimation(forKey: .value)
         snapshottedAnimation = nil
 
-        // Stop the timer and thus make the completion method not get fired
-        animationCompletionTimer?.invalidate()
-        animationCompletionTimer = nil
+
         animationPauseTime = nil
 
     }
@@ -470,10 +445,7 @@ extension UICircularRing {
         ringLayer.add(animation, forKey: AnimationKeys.value.rawValue)
     }
 
-    /// Called when the animation timer is complete
-    @objc func animationDidComplete(withTimer timer: Timer) {
-        (timer.userInfo as? AnimationCompletion)?()
-    }
+
 }
 
 extension UICircularRing {
