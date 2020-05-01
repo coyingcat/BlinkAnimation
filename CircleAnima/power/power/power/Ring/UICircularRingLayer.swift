@@ -194,7 +194,7 @@ class UICircularRingLayer: CAShapeLayer {
                                                    radius: radiusIn,
                                                    startAngle: ring.startAngle.rads,
                                                    endAngle: innerEndAngle.rads,
-                                                   clockwise: ring.isClockwise)
+                                                   clockwise: true)
 
         // Draw path
         ctx.setLineWidth(ring.innerRingWidth)
@@ -218,26 +218,17 @@ class UICircularRingLayer: CAShapeLayer {
 
     /// Returns the end angle of the inner ring
     private func calculateInnerEndAngle() -> CGFloat {
-        let innerEndAngle: CGFloat
-
-
-            if !ring.isClockwise {
-                innerEndAngle = ring.startAngle - ((value - minValue) / (maxValue - minValue) * 360.0)
-            } else {
-                innerEndAngle = (value - minValue) / (maxValue - minValue) * 360.0 + ring.startAngle
-            }
-       
-
-        return innerEndAngle
+     
+        return (value - minValue) / (maxValue - minValue) * 360.0 + ring.startAngle
     }
 
     /// Returns the raidus of the inner ring
     private func calculateInnerRadius() -> CGFloat {
      
-            let difference = ring.outerRingWidth * 2 + ring.innerRingSpacing
-            let offSet = ring.innerRingWidth / 2
-            return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
-      
+        let difference = ring.outerRingWidth * 2 + ring.innerRingSpacing
+        let offSet = ring.innerRingWidth / 2
+        return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
+  
     }
 
 

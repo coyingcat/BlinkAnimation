@@ -260,19 +260,7 @@ import UIKit
         return ringLayer.animation(forKey: .value) != nil
     }
 
-    /**
-     The direction the circle is drawn in
-     Example: true -> clockwise
 
-     ## Important ##
-     Default = true (draw the circle clockwise)
-
-     ## Author
-     Pete Walker
-     */
-    @IBInspectable open var isClockwise: Bool = true {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
 
     /**
      Typealias for animateProperties(duration:animations:completion:) fucntion completion
