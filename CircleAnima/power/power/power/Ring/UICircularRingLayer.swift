@@ -94,14 +94,14 @@ class UICircularRingLayer: CAShapeLayer {
      Creates animation when value property is changed
      */
     override func action(forKey event: String) -> CAAction? {
-        if event == "value"  {
+        if event == "value"{
             let animation = CABasicAnimation(keyPath: "value")
             animation.fromValue = presentation()?.value(forKey: "value")
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = 2
             return animation
         } else {
-                 return super.action(forKey: event)
+            return super.action(forKey: event)
         }
     }
 

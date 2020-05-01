@@ -81,24 +81,6 @@ import UIKit
          return isAnimating ? layer.presentation()?.value(forKey: .value) as? CGFloat : value
      }
 
-  
-    
-    /**
-     A toggle for showing or hiding the value label.
-     If false the current value will not be shown.
-
-     ## Important ##
-     Default = true
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable public var shouldShowValueText: Bool = true {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-
-
    
     /**
      The start angle for the entire progress ring view.
@@ -170,10 +152,6 @@ import UIKit
 
 
 
-    /**
-     Typealias for animateProperties(duration:animations:completion:) fucntion completion
-     */
-    public typealias PropertyAnimationCompletion = (() -> Void)
 
     // MARK: Private / internal
 
@@ -185,14 +163,10 @@ import UIKit
         return layer as! UICircularRingLayer
     }
 
-    /// This variable stores how long remains on the timer when it's paused
-    private var pausedTimeRemaining: TimeInterval = 0
 
     /// Used to determine when the animation was paused
     private var animationPauseTime: CFTimeInterval?
 
-
-    typealias AnimationCompletion = () -> Void
 
     // MARK: Methods
 
@@ -266,45 +240,6 @@ import UIKit
     }
 
 
-
-
-    // MARK: API
-
-    /**
-     This function allows animation of the animatable properties of the `UICircularRing`.
-     These properties include `innerRingColor, innerRingWidth, outerRingColor, outerRingWidth, innerRingSpacing, fontColor`.
-
-     Simply call this function and inside of the animation block change the animatable properties as you would in any `UView`
-     animation block.
-
-     The completion block is called when all animations finish.
-     */
-    open func animateProperties(duration: TimeInterval, animations: () -> Void) {
-        animateProperties(duration: duration, animations: animations, completion: nil)
-    }
-
-    /**
-     This function allows animation of the animatable properties of the `UICircularRing`.
-     These properties include `innerRingColor, innerRingWidth, outerRingColor, outerRingWidth, innerRingSpacing, fontColor`.
-
-     Simply call this function and inside of the animation block change the animatable properties as you would in any `UView`
-     animation block.
-
-     The completion block is called when all animations finish.
-     */
-    open func animateProperties(duration: TimeInterval, animations: () -> Void,
-                                completion: PropertyAnimationCompletion? = nil) {
-
-        CATransaction.begin()
-        CATransaction.setCompletionBlock {
-            // Reset and call completion
-      
-            completion?()
-        }
-        // Commit and perform animations
-        animations()
-        CATransaction.commit()
-    }
 }
 
 
