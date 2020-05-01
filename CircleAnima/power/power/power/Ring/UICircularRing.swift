@@ -294,13 +294,11 @@ import UIKit
      */
     open func animateProperties(duration: TimeInterval, animations: () -> Void,
                                 completion: PropertyAnimationCompletion? = nil) {
-        ringLayer.shouldAnimateProperties = true
-        ringLayer.propertyAnimationDuration = duration
+
         CATransaction.begin()
         CATransaction.setCompletionBlock {
             // Reset and call completion
-            self.ringLayer.shouldAnimateProperties = false
-            self.ringLayer.propertyAnimationDuration = 0.0
+      
             completion?()
         }
         // Commit and perform animations

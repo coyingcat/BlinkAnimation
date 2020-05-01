@@ -42,25 +42,7 @@ class UICircularRingLayer: CAShapeLayer {
     /// the delegate for the value, is notified when value changes
     @NSManaged weak var ring: UICircularRing!
 
-
-    // MARK: Animatable properties
-
-    /// whether or not animatable properties should be animated when changed
-    var shouldAnimateProperties: Bool = false
-
-    /// the animation duration for a animatable property animation
-    var propertyAnimationDuration: TimeInterval = 0.0
-
-    /// the properties which are animatable
-    static let animatableProperties: [String] = ["innerRingColor",
-                                                         "outerRingWidth", "outerRingColor",
-                                                         "fontColor", "innerRingSpacing"]
-
-    // Returns whether or not a given property key is animatable
-    static func isAnimatableProperty(_ key: String) -> Bool {
-        return animatableProperties.firstIndex(of: key) != nil
-    }
-
+ 
     // MARK: Init
 
     override init() {
@@ -71,9 +53,6 @@ class UICircularRingLayer: CAShapeLayer {
         // copy our properties to this layer which will be used for animation
         guard let layer = layer as? UICircularRingLayer else { fatalError("unable to copy layer") }
 
-
-        shouldAnimateProperties = layer.shouldAnimateProperties
-        propertyAnimationDuration = layer.propertyAnimationDuration
         super.init(layer: layer)
     }
 
