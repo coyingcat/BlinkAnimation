@@ -255,12 +255,6 @@ import UIKit
 
     }
 
-    /**
-     Overriden because of custom layer drawing in UICircularRingLayer
-     */
-    open override func draw(_ rect: CGRect) {
-        super.draw(rect)
-    }
 
     // MARK: Internal API
 

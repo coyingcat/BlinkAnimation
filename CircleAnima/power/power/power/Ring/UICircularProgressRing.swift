@@ -121,32 +121,7 @@ final public class UICircularProgressRing: UICircularRing {
         didSet { ringLayer.maxValue = maxValue }
     }
 
-    /**
-     The type of animation function the ring view will use
 
-     ## Important ##
-     Default = .easeInEaseOut
-
-     ## Author
-     Luis Padron
-     */
-    public var animationTimingFunction: CAMediaTimingFunctionName = .easeInEaseOut {
-        didSet { ringLayer.animationTimingFunction = animationTimingFunction }
-    }
-
-    /**
-     The formatter responsible for formatting the
-     value of the progress ring into a readable text string
-     which is then displayed in the label of the ring.
-
-     Default formatter is of type `UICircularProgressRingFormatter`.
-
-     ## Author
-     Luis Padron
-     */
-    public var valueFormatter: UICircularRingValueFormatter = UICircularProgressRingFormatter() {
-        didSet { ringLayer.valueFormatter = valueFormatter }
-    }
 
     /**
      Typealias for the startProgress(:) method closure
@@ -245,7 +220,7 @@ final public class UICircularProgressRing: UICircularRing {
         ringLayer.value = value
         ringLayer.maxValue = maxValue
         ringLayer.minValue = minValue
-        ringLayer.valueFormatter = valueFormatter
+   
     }
 
 }

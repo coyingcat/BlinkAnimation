@@ -43,21 +43,12 @@ class UICircularRingLayer: CAShapeLayer {
     /// the delegate for the value, is notified when value changes
     @NSManaged weak var ring: UICircularRing!
 
-    /// formatter for the text of the value label
-    var valueFormatter: UICircularRingValueFormatter?
 
     // MARK: Animation members
 
     var animationDuration: TimeInterval = 1.0
-    var animationTimingFunction: CAMediaTimingFunctionName = .easeInEaseOut
     var animated = false
 
-    /// the value label which draws the text for the current value
-    lazy var valueLabel = { () -> UILabel in
-        let l = UILabel(frame: .zero)
-        l.textAlignment = .center
-        return l
-    }()
 
     // MARK: Animatable properties
 
@@ -86,9 +77,8 @@ class UICircularRingLayer: CAShapeLayer {
     override init(layer: Any) {
         // copy our properties to this layer which will be used for animation
         guard let layer = layer as? UICircularRingLayer else { fatalError("unable to copy layer") }
-        valueFormatter = layer.valueFormatter
+       
         animationDuration = layer.animationDuration
-        animationTimingFunction = layer.animationTimingFunction
         animated = layer.animated
         shouldAnimateProperties = layer.shouldAnimateProperties
         propertyAnimationDuration = layer.propertyAnimationDuration
@@ -109,8 +99,7 @@ class UICircularRingLayer: CAShapeLayer {
         // Draw the rings
         
         drawRing(in: ctx)
-        // Draw the label
-        drawValueLabel()
+
         // Call the delegate and notifiy of updated value
    
         UIGraphicsPopContext()
@@ -137,13 +126,13 @@ class UICircularRingLayer: CAShapeLayer {
         if event == "value" && animated {
             let animation = CABasicAnimation(keyPath: "value")
             animation.fromValue = presentation()?.value(forKey: "value")
-            animation.timingFunction = CAMediaTimingFunction(name: animationTimingFunction)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = animationDuration
             return animation
         } else if UICircularRingLayer.isAnimatableProperty(event) && shouldAnimateProperties {
             let animation = CABasicAnimation(keyPath: event)
             animation.fromValue = presentation()?.value(forKey: event)
-            animation.timingFunction = CAMediaTimingFunction(name: animationTimingFunction)
+            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = propertyAnimationDuration
             return animation
         } else {
@@ -205,22 +194,4 @@ class UICircularRingLayer: CAShapeLayer {
   
     }
 
-
-
-
-    /**
-     Draws the value label for the view.
-     Only drawn if shouldShowValueText = true
-     */
-    func drawValueLabel() {
-        guard ring.shouldShowValueText else { return }
-
-        // Draws the text field
-        // Some basic label properties are set
-        valueLabel.font = ring.font
-        
-        valueLabel.textColor = ring.fontColor
-        valueLabel.text = valueFormatter?.string(for: value)
-        valueLabel.drawText(in: bounds)
-    }
 }
