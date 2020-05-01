@@ -12,7 +12,7 @@ class UICircularRingLayer: CAShapeLayer {
 
     // MARK: Properties
 
-    @NSManaged var value: CGFloat
+    @NSManaged var val: CGFloat
     
     let ringWidth: CGFloat = 20
     let startAngle = CGFloat(0).rads
@@ -36,7 +36,7 @@ class UICircularRingLayer: CAShapeLayer {
 
     /**
      Overriden for custom drawing.
-     Draws the outer ring, inner ring and value label.
+     Draws the outer ring, inner ring and val label.
      */
     override func draw(in ctx: CGContext) {
         super.draw(in: ctx)
@@ -45,7 +45,7 @@ class UICircularRingLayer: CAShapeLayer {
         
         drawRing(in: ctx)
 
-        // Call the delegate and notifiy of updated value
+        // Call the delegate and notifiy of updated val
    
         UIGraphicsPopContext()
 
@@ -54,10 +54,10 @@ class UICircularRingLayer: CAShapeLayer {
     // MARK: Animation methods
 
     /**
-     Watches for changes in the value property, and setNeedsDisplay accordingly
+     Watches for changes in the val property, and setNeedsDisplay accordingly
      */
     override class func needsDisplay(forKey key: String) -> Bool {
-        if key == "value" {
+        if key == "val" {
             return true
         } else {
             return super.needsDisplay(forKey: key)
@@ -65,12 +65,12 @@ class UICircularRingLayer: CAShapeLayer {
     }
 
     /**
-     Creates animation when value property is changed
+     Creates animation when val property is changed
      */
     override func action(forKey event: String) -> CAAction? {
-        if event == "value"{
-            let animation = CABasicAnimation(keyPath: "value")
-            animation.fromValue = presentation()?.value(forKey: "value")
+        if event == "val"{
+            let animation = CABasicAnimation(keyPath: "val")
+            animation.fromValue = presentation()?.value(forKey: "val")
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = 2
             return animation
@@ -108,7 +108,7 @@ class UICircularRingLayer: CAShapeLayer {
 
  
     var toEndAngle: CGFloat {
-        return (value/50 * 360.0 + startAngle).rads
+        return (val * 360.0 + startAngle).rads
     }
 
 

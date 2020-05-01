@@ -74,7 +74,7 @@ import UIKit
 
         backgroundColor = UIColor.clear
         ringLayer.backgroundColor = UIColor.clear.cgColor
-        ringLayer.value = 0
+        ringLayer.val = 0
     }
 
 
@@ -86,7 +86,7 @@ import UIKit
     */
 
     func startAnimation() {
-        ringLayer.value = 50
+        ringLayer.val = 1
     }
 
 
