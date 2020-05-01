@@ -1,27 +1,4 @@
-//
-//  UICircularRing.swift
-//  UICircularProgressRing
-//
-//  Copyright (c) 2019 Luis Padron
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a
-//  copy of this software and associated documentation files (the "Software"),
-//  to deal in the Software without restriction, including without limitation the
-//  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is furnished
-//  to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-//  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND
-//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
-//  FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
-//  OR OTHERWISE, ARISING FROM, OUT OF OR IN
-//  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//
+
 
 import UIKit
 
@@ -66,40 +43,8 @@ import UIKit
          }
      }
 
-     /**
-      The current value of the progress ring
-
-      This will return the current value of the progress ring,
-      if the ring is animating it will be updated in real time.
-      If the ring is not currently animating then the value returned
-      will be the `value` property of the ring
-
-      ## Author
-      Luis Padron
-      */
-     public var currentValue: CGFloat? {
-         return isAnimating ? layer.presentation()?.value(forKey: .value) as? CGFloat : value
-     }
-
    
-    /**
-     The start angle for the entire progress ring view.
-
-     Please note that Cocoa Touch uses a clockwise rotating unit circle.
-     I.e: 90 degrees is at the bottom and 270 degrees is at the top
-
-     ## Important ##
-     Default = 0 (degrees)
-
-     Values should be in degrees (they're converted to radians internally)
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var startAngle: CGFloat = 0 {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
+   
     /**
      The end angle for the entire progress ring
 
@@ -137,22 +82,6 @@ import UIKit
     }
 
 
-    /**
-     This returns whether or not the ring is currently animating
-
-     ## Important ##
-     Get only property
-
-     ## Author
-     Luis Padron
-     */
-    open var isAnimating: Bool {
-        return ringLayer.animation(forKey: .value) != nil
-    }
-
-
-
-
     // MARK: Private / internal
 
     /**
@@ -162,11 +91,6 @@ import UIKit
         // swiftlint:disable:next force_cast
         return layer as! UICircularRingLayer
     }
-
-
-    /// Used to determine when the animation was paused
-    private var animationPauseTime: CFTimeInterval?
-
 
     // MARK: Methods
 
@@ -228,10 +152,7 @@ import UIKit
     */
 
     func startAnimation() {
-        if isAnimating {
-            animationPauseTime = nil
-        }
-
+ 
         ringLayer.timeOffset = 0
         ringLayer.beginTime = 0
         ringLayer.speed = 1

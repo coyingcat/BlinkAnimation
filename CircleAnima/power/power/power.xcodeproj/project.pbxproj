@@ -17,7 +17,6 @@
 		26F6C531245BE1F600D95963 /* powerUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C530245BE1F600D95963 /* powerUITests.swift */; };
 		26F6C548245BE23900D95963 /* UICircularRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C53F245BE23800D95963 /* UICircularRing.swift */; };
 		26F6C549245BE23900D95963 /* UICircularRingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C540245BE23800D95963 /* UICircularRingLayer.swift */; };
-		26F6C54C245BE23900D95963 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C543245BE23800D95963 /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -54,7 +53,6 @@
 		26F6C532245BE1F600D95963 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		26F6C53F245BE23800D95963 /* UICircularRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularRing.swift; sourceTree = "<group>"; };
 		26F6C540245BE23800D95963 /* UICircularRingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularRingLayer.swift; sourceTree = "<group>"; };
-		26F6C543245BE23800D95963 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -140,7 +138,6 @@
 			children = (
 				26F6C53F245BE23800D95963 /* UICircularRing.swift */,
 				26F6C540245BE23800D95963 /* UICircularRingLayer.swift */,
-				26F6C543245BE23800D95963 /* Extensions.swift */,
 			);
 			path = Ring;
 			sourceTree = "<group>";
@@ -278,7 +275,6 @@
 			files = (
 				26F6C549245BE23900D95963 /* UICircularRingLayer.swift in Sources */,
 				26F6C513245BE1F300D95963 /* ViewController.swift in Sources */,
-				26F6C54C245BE23900D95963 /* Extensions.swift in Sources */,
 				26F6C50F245BE1F300D95963 /* AppDelegate.swift in Sources */,
 				26F6C548245BE23900D95963 /* UICircularRing.swift in Sources */,
 				26F6C511245BE1F300D95963 /* SceneDelegate.swift in Sources */,

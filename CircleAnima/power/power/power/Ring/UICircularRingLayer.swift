@@ -1,27 +1,3 @@
-//
-//  UICircularRingLayer.swift
-//  UICircularProgressRing
-//
-//  Copyright (c) 2019 Luis Padron
-//
-//  Permission is hereby granted, free of charge, to any person obtaining a
-//  copy of this software and associated documentation files (the "Software"),
-//  to deal in the Software without restriction, including without limitation the
-//  rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
-//  copies of the Software, and to permit persons to whom the Software is furnished
-//  to do so, subject to the following conditions:
-//
-//  The above copyright notice and this permission notice shall be included
-// in all copies or substantial portions of the Software.
-//
-//  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED,
-//  INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
-//  FITNESS FOR A PARTICULAR PURPOSE AND
-//  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE
-//  FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT
-//  OR OTHERWISE, ARISING FROM, OUT OF OR IN
-//  CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-//
 
 import UIKit
 
@@ -43,6 +19,8 @@ class UICircularRingLayer: CAShapeLayer {
     @NSManaged weak var ring: UICircularRing!
 
  
+    let startAngle = CGFloat(0).rads
+        
     // MARK: Init
 
     override init() {
@@ -114,14 +92,14 @@ class UICircularRingLayer: CAShapeLayer {
       
         let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
 
-        let innerEndAngle = calculateInnerEndAngle()
-        let radiusIn = calculateInnerRadius()
+        let innerEndAngle = calculateInnerEndAngle().rads
+        let radiusIn: CGFloat = (min(bounds.width, bounds.height) / 2) - 10
 
         // Start drawing
         let innerPath: UIBezierPath = UIBezierPath(arcCenter: center,
                                                    radius: radiusIn,
-                                                   startAngle: ring.startAngle.rads,
-                                                   endAngle: innerEndAngle.rads,
+                                                   startAngle: startAngle,
+                                                   endAngle: innerEndAngle,
                                                    clockwise: true)
 
         // Draw path
@@ -140,13 +118,18 @@ class UICircularRingLayer: CAShapeLayer {
     /// Returns the end angle of the inner ring
     private func calculateInnerEndAngle() -> CGFloat {
      
-        return value/50 * 360.0 + ring.startAngle
+        return value/50 * 360.0 + startAngle
     }
 
-    /// Returns the raidus of the inner ring
-    private func calculateInnerRadius() -> CGFloat {
-        return (min(bounds.width, bounds.height) / 2) - 10
-  
-    }
 
+}
+
+
+
+/**
+ A private extension to CGFloat in order to provide simple
+ conversion from degrees to radians, used when drawing the rings.
+ */
+extension CGFloat {
+    var rads: CGFloat { return self * CGFloat.pi / 180 }
 }
