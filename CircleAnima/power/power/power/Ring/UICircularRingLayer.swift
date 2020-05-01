@@ -90,6 +90,8 @@ class UICircularRingLayer: CAShapeLayer {
 
         let radiusIn: CGFloat = (min(bounds.width, bounds.height) - ringWidth)/2
         // Start drawing
+        
+    //    print("startAngle: \(startAngle), toEndAngle: \(toEndAngle)")
         let innerPath: UIBezierPath = UIBezierPath(arcCenter: center,
                                                    radius: radiusIn,
                                                    startAngle: startAngle,
@@ -108,7 +110,7 @@ class UICircularRingLayer: CAShapeLayer {
 
  
     var toEndAngle: CGFloat {
-        return (val * 360.0 + startAngle).rads
+        return (val * 360.0).rads + startAngle
     }
 
 
