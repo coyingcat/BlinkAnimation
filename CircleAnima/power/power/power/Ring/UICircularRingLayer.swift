@@ -69,7 +69,9 @@ class UICircularRingLayer: CAShapeLayer {
         if event == "val"{
             //  print(3)
             let animation = CABasicAnimation(keyPath: "val")
-            animation.fromValue = presentation()?.value(forKey: "val")
+           //   animation.fromValue = presentation()?.value(forKey: "val")
+           //   print("presentation()?.value(forKey: ):   \(presentation()?.value(forKey: "val"))")
+            animation.fromValue = 0
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
             animation.duration = 2
             return animation
