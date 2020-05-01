@@ -117,22 +117,7 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    /**
-     The spacing between the outer ring and inner ring
 
-     ## Important ##
-     This only applies when using `ringStyle` = `.inside`
-
-     Default = 1
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var innerRingSpacing: CGFloat = 1 {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-   
 
     // MARK: Label
 
@@ -276,51 +261,8 @@ import UIKit
 
     }
 
-    func pauseAnimation() {
-        guard isAnimating else {
-            #if DEBUG
-            print("""
-                    UICircularProgressRing: Progress was paused without having been started.
-                    This has no effect but may indicate that you're unnecessarily calling this method.
-                    """)
-            #endif
-            return
-        }
-
-        snapshotAnimation()
-
-        let pauseTime = ringLayer.convertTime(CACurrentMediaTime(), from: nil)
-        animationPauseTime = pauseTime
-
-        ringLayer.speed = 0.0
-        ringLayer.timeOffset = pauseTime
-
-    }
-
-    func continueAnimation(completion: @escaping AnimationCompletion) {
-        guard let pauseTime = animationPauseTime else {
-            #if DEBUG
-            print("""
-                    UICircularRing: Progress was continued without having been paused.
-                    This has no effect but may indicate that you're unnecessarily calling this method.
-                    """)
-            #endif
-            return
-        }
-
-        restoreAnimation()
-
-        ringLayer.speed = 1.0
-        ringLayer.timeOffset = 0.0
-        ringLayer.beginTime = 0.0
-
-        let timeSincePause = ringLayer.convertTime(CACurrentMediaTime(), from: nil) - pauseTime
-
-        ringLayer.beginTime = timeSincePause
 
 
-        animationPauseTime = nil
-    }
 
     func resetAnimation() {
         ringLayer.animated = false
@@ -373,39 +315,6 @@ import UIKit
     }
 }
 
-// MARK: Helpers
-
-extension UICircularRing {
-    /**
-     This method is called when the application goes into the background or when the
-     ProgressRing is paused using the pauseProgress method.
-     This is necessary for the animation to properly pick up where it left off.
-     Triggered by UIApplicationWillResignActive.
-
-     ## Author
-     Nicolai Cornelis
-     */
-    @objc func snapshotAnimation() {
-        guard let animation = ringLayer.animation(forKey: .value) else { return }
-        snapshottedAnimation = animation
-    }
-
-    /**
-     This method is called when the application comes back into the foreground or
-     when the ProgressRing is resumed using the continueProgress method.
-     This is necessary for the animation to properly pick up where it left off.
-     Triggered by UIApplicationWillEnterForeground.
-
-     ## Author
-     Nicolai Cornelis
-     */
-    @objc func restoreAnimation() {
-        guard let animation = snapshottedAnimation else { return }
-        ringLayer.add(animation, forKey: AnimationKeys.value.rawValue)
-    }
-
-
-}
 
 extension UICircularRing {
     /// Helper enum for animation key

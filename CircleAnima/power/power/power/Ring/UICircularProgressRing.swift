@@ -162,40 +162,7 @@ final public class UICircularProgressRing: UICircularRing {
         self.value = value
     }
 
-    /**
-     Pauses the currently running animation and halts all progress.
 
-     ## Important ##
-     This method has no effect unless called when there is a running animation.
-     You should call this method manually whenever the progress ring is not in an active view,
-     for example in `viewWillDisappear` in a parent view controller.
-
-     ## Author
-     Luis Padron & Nicolai Cornelis
-     */
-    public func pauseProgress() {
-        // call super class helper to stop layer animation
-        pauseAnimation()
-       
-    }
-
-    /**
-     Continues the animation with its remaining time from where it left off before it was paused.
-     This method has no effect unless called when there is a paused animation.
-     You should call this method when you wish to resume a paused animation.
-
-     ## Author
-     Luis Padron & Nicolai Cornelis
-     */
-    public func continueProgress() {
-        // call super class helper to continue layer animation
-        continueAnimation {
-          
-            self.completion?()
-        }
-
-   
-    }
 
     /**
      Resets the progress back to the `minValue` of the progress ring.

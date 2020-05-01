@@ -171,13 +171,6 @@ class UICircularRingLayer: CAShapeLayer {
 
  
 
-    /// Returns the style dependent outer ring offset
-    private func calculateOuterRingOffset() -> CGFloat {
- 
-        
-        return 10
-   
-    }
 
     /// Returns the end angle of the inner ring
     private func calculateInnerEndAngle() -> CGFloat {
@@ -187,10 +180,7 @@ class UICircularRingLayer: CAShapeLayer {
 
     /// Returns the raidus of the inner ring
     private func calculateInnerRadius() -> CGFloat {
-     
-        let difference = ring.innerRingSpacing
-        let offSet = CGFloat(10)
-        return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
+        return (min(bounds.width, bounds.height) / 2) - 10
   
     }
 
