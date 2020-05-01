@@ -14,7 +14,7 @@ class UICircularRingLayer: CAShapeLayer {
 
     @NSManaged var value: CGFloat
     
-    
+    let ringWidth: CGFloat = 20
     let startAngle = CGFloat(0).rads
         
     // MARK: Init
@@ -88,18 +88,16 @@ class UICircularRingLayer: CAShapeLayer {
       
         let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
 
-        let innerEndAngle = calculateInnerEndAngle().rads
-        let radiusIn: CGFloat = (min(bounds.width, bounds.height) / 2) - 10
-
+        let radiusIn: CGFloat = (min(bounds.width, bounds.height) - ringWidth)/2
         // Start drawing
         let innerPath: UIBezierPath = UIBezierPath(arcCenter: center,
                                                    radius: radiusIn,
                                                    startAngle: startAngle,
-                                                   endAngle: innerEndAngle,
+                                                   endAngle: toEndAngle,
                                                    clockwise: true)
 
         // Draw path
-        ctx.setLineWidth(20)
+        ctx.setLineWidth(ringWidth)
         ctx.setLineJoin(.round)
         ctx.setLineCap(CGLineCap.round)
         ctx.setStrokeColor(UIColor.red.cgColor)
@@ -109,12 +107,8 @@ class UICircularRingLayer: CAShapeLayer {
     }
 
  
-
-
-    /// Returns the end angle of the inner ring
-    private func calculateInnerEndAngle() -> CGFloat {
-     
-        return value/50 * 360.0 + startAngle
+    var toEndAngle: CGFloat {
+        return (value/50 * 360.0 + startAngle).rads
     }
 
 

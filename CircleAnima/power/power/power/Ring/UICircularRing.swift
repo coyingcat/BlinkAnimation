@@ -86,11 +86,6 @@ import UIKit
     */
 
     func startAnimation() {
- 
-        ringLayer.timeOffset = 0
-        ringLayer.beginTime = 0
-        ringLayer.speed = 1
-   
         ringLayer.value = 50
     }
 
