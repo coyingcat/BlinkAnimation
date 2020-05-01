@@ -18,7 +18,6 @@
 		26F6C548245BE23900D95963 /* UICircularRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C53F245BE23800D95963 /* UICircularRing.swift */; };
 		26F6C549245BE23900D95963 /* UICircularRingLayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C540245BE23800D95963 /* UICircularRingLayer.swift */; };
 		26F6C54C245BE23900D95963 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C543245BE23800D95963 /* Extensions.swift */; };
-		26F6C54D245BE23900D95963 /* UICircularProgressRingDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C545245BE23800D95963 /* UICircularProgressRingDelegate.swift */; };
 		26F6C54E245BE23900D95963 /* UICircularProgressRing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C546245BE23800D95963 /* UICircularProgressRing.swift */; };
 		26F6C54F245BE23900D95963 /* UICircularRingValueFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 26F6C547245BE23900D95963 /* UICircularRingValueFormatter.swift */; };
 /* End PBXBuildFile section */
@@ -58,8 +57,6 @@
 		26F6C53F245BE23800D95963 /* UICircularRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularRing.swift; sourceTree = "<group>"; };
 		26F6C540245BE23800D95963 /* UICircularRingLayer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularRingLayer.swift; sourceTree = "<group>"; };
 		26F6C543245BE23800D95963 /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
-		26F6C544245BE23800D95963 /* UICircularProgressRing.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UICircularProgressRing.h; sourceTree = "<group>"; };
-		26F6C545245BE23800D95963 /* UICircularProgressRingDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularProgressRingDelegate.swift; sourceTree = "<group>"; };
 		26F6C546245BE23800D95963 /* UICircularProgressRing.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularProgressRing.swift; sourceTree = "<group>"; };
 		26F6C547245BE23900D95963 /* UICircularRingValueFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UICircularRingValueFormatter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -148,8 +145,6 @@
 				26F6C53F245BE23800D95963 /* UICircularRing.swift */,
 				26F6C540245BE23800D95963 /* UICircularRingLayer.swift */,
 				26F6C543245BE23800D95963 /* Extensions.swift */,
-				26F6C544245BE23800D95963 /* UICircularProgressRing.h */,
-				26F6C545245BE23800D95963 /* UICircularProgressRingDelegate.swift */,
 				26F6C546245BE23800D95963 /* UICircularProgressRing.swift */,
 				26F6C547245BE23900D95963 /* UICircularRingValueFormatter.swift */,
 			);
@@ -288,7 +283,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				26F6C549245BE23900D95963 /* UICircularRingLayer.swift in Sources */,
-				26F6C54D245BE23900D95963 /* UICircularProgressRingDelegate.swift in Sources */,
 				26F6C513245BE1F300D95963 /* ViewController.swift in Sources */,
 				26F6C54C245BE23900D95963 /* Extensions.swift in Sources */,
 				26F6C50F245BE1F300D95963 /* AppDelegate.swift in Sources */,
