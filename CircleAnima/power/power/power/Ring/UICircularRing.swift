@@ -210,7 +210,7 @@ import UIKit
      They handle starting, pausing and resetting an animation of the ring.
     */
 
-    func startAnimation(duration: TimeInterval) {
+    func startAnimation() {
         if isAnimating {
             animationPauseTime = nil
         }
@@ -218,8 +218,7 @@ import UIKit
         ringLayer.timeOffset = 0
         ringLayer.beginTime = 0
         ringLayer.speed = 1
-        ringLayer.animated = duration > 0
-        ringLayer.animationDuration = duration
+   
 
     }
 

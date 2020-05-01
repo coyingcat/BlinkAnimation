@@ -44,12 +44,6 @@ class UICircularRingLayer: CAShapeLayer {
     @NSManaged weak var ring: UICircularRing!
 
 
-    // MARK: Animation members
-
-    var animationDuration: TimeInterval = 1.0
-    var animated = false
-
-
     // MARK: Animatable properties
 
     /// whether or not animatable properties should be animated when changed
@@ -77,9 +71,8 @@ class UICircularRingLayer: CAShapeLayer {
     override init(layer: Any) {
         // copy our properties to this layer which will be used for animation
         guard let layer = layer as? UICircularRingLayer else { fatalError("unable to copy layer") }
-       
-        animationDuration = layer.animationDuration
-        animated = layer.animated
+
+
         shouldAnimateProperties = layer.shouldAnimateProperties
         propertyAnimationDuration = layer.propertyAnimationDuration
         super.init(layer: layer)
@@ -112,7 +105,7 @@ class UICircularRingLayer: CAShapeLayer {
      Watches for changes in the value property, and setNeedsDisplay accordingly
      */
     override class func needsDisplay(forKey key: String) -> Bool {
-        if key == "value" || isAnimatableProperty(key) {
+        if key == "value" {
             return true
         } else {
             return super.needsDisplay(forKey: key)
@@ -123,20 +116,14 @@ class UICircularRingLayer: CAShapeLayer {
      Creates animation when value property is changed
      */
     override func action(forKey event: String) -> CAAction? {
-        if event == "value" && animated {
+        if event == "value"  {
             let animation = CABasicAnimation(keyPath: "value")
             animation.fromValue = presentation()?.value(forKey: "value")
             animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-            animation.duration = animationDuration
-            return animation
-        } else if UICircularRingLayer.isAnimatableProperty(event) && shouldAnimateProperties {
-            let animation = CABasicAnimation(keyPath: event)
-            animation.fromValue = presentation()?.value(forKey: event)
-            animation.timingFunction = CAMediaTimingFunction(name: CAMediaTimingFunctionName.easeInEaseOut)
-            animation.duration = propertyAnimationDuration
+            animation.duration = 2
             return animation
         } else {
-            return super.action(forKey: event)
+                 return super.action(forKey: event)
         }
     }
 

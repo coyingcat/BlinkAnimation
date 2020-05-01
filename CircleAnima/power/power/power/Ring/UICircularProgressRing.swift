@@ -141,14 +141,14 @@ final public class UICircularProgressRing: UICircularRing {
      ## Author
      Luis Padron
      */
-    public func startProgress(to value: CGFloat, duration: TimeInterval) {
+    public func startProgress() {
         // Store the completion event locally
      
 
         // call super class helper function to begin animating layer
-        startAnimation(duration: duration)
+        startAnimation()
 
-        self.value = value
+        self.value = 50
     }
 
 
