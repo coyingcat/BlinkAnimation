@@ -170,8 +170,6 @@ class UICircularRingLayer: CAShapeLayer {
         outerPath.lineWidth = ring.outerRingWidth
         outerPath.lineCapStyle = ring.outerCapStyle
 
-        // Update path depending on style of the ring
-        updateOuterRingPath(outerPath, radius: outerRadius, style: ring.style)
 
         ring.outerRingColor.setStroke()
         outerPath.stroke()
@@ -204,97 +202,16 @@ class UICircularRingLayer: CAShapeLayer {
         ctx.addPath(innerPath.cgPath)
         ctx.drawPath(using: .stroke)
 
-        if let gradientOptions = ring.gradientOptions {
-            // Create gradient and draw it
-            var cgColors: [CGColor] = [CGColor]()
-            for color: UIColor in gradientOptions.colors {
-                cgColors.append(color.cgColor)
-            }
-
-            guard let gradient: CGGradient = CGGradient(colorsSpace: nil,
-                                                        colors: cgColors as CFArray,
-                                                        locations: gradientOptions.colorLocations)
-            else {
-                fatalError("\nUnable to create gradient for progress ring.\n" +
-                    "Check values of gradientColors and gradientLocations.\n")
-            }
-
-            ctx.saveGState()
-            ctx.addPath(innerPath.cgPath)
-            ctx.replacePathWithStrokedPath()
-            ctx.clip()
-
-            drawGradient(gradient,
-                         start: gradientOptions.startPosition,
-                         end: gradientOptions.endPosition,
-                         in: ctx)
-
-            ctx.restoreGState()
-        }
-
-        if let knobStyle = ring.valueKnobStyle, ((value > minValue) || (ring?.shouldDrawMinValueKnob ?? false)) {
-            let knobOffset = knobStyle.size / 2
-            drawValueKnob(in: ctx, origin: CGPoint(x: innerPath.currentPoint.x - knobOffset,
-                                                   y: innerPath.currentPoint.y - knobOffset))
-        }
     }
 
-    /// Updates the outer ring path depending on the ring's style
-    private func updateOuterRingPath(_ path: UIBezierPath, radius: CGFloat, style: UICircularRingStyle) {
-        switch style {
-        case .dashed(let pattern):
-            path.setLineDash(pattern, count: pattern.count, phase: 0.0)
-
-        case .dotted:
-            path.setLineDash([0, path.lineWidth * 2], count: 2, phase: 0)
-            path.lineCapStyle = .round
-
-        case .bordered(let borderWidth, let borderColor):
-            let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
-            let offSet = calculateOuterRingOffset()
-            let outerRadius = min(bounds.width, bounds.height) / 2 - offSet
-            let borderStartAngle = ring.outerCapStyle == .butt ? ring.startAngle - borderWidth : ring.startAngle
-            let borderEndAngle = ring.outerCapStyle == .butt ? ring.endAngle + borderWidth : ring.endAngle
-            let start = ring.fullCircle ? 0 : borderStartAngle.rads
-            let end = ring.fullCircle ? .pi * 2 : borderEndAngle.rads
-            let borderPath = UIBezierPath(arcCenter: center,
-                                          radius: outerRadius,
-                                          startAngle: start,
-                                          endAngle: end,
-                                          clockwise: true)
-            UIColor.clear.setFill()
-            borderPath.fill()
-            borderPath.lineWidth = (borderWidth * 2) + ring.outerRingWidth
-            borderPath.lineCapStyle = ring.outerCapStyle
-            borderColor.setStroke()
-            borderPath.stroke()
-        default:
-            break
-        }
-    }
+ 
 
     /// Returns the style dependent outer ring offset
     private func calculateOuterRingOffset() -> CGFloat {
-        let borderWidth: CGFloat
-        if case let UICircularRingStyle.bordered(width, _) = ring.style {
-            borderWidth = width
-        } else {
-            borderWidth = 0
-        }
-
-        let offsetBasedOnKnob: Bool
-        switch ring.style {
-        case .bordered, .dashed, .dotted, .ontop:
-            offsetBasedOnKnob = true
-        case .inside:
-            offsetBasedOnKnob = false
-        }
-
-        let knobSize = offsetBasedOnKnob ? (ring.valueKnobStyle?.size ?? 0) : 0
+ 
         
         return max(ring.outerRingWidth, ring.innerRingWidth) / 2
-            + (knobSize / 2)
-            + (borderWidth * 2)
+   
     }
 
     /// Returns the end angle of the inner ring
@@ -323,75 +240,15 @@ class UICircularRingLayer: CAShapeLayer {
 
     /// Returns the raidus of the inner ring
     private func calculateInnerRadius() -> CGFloat {
-        let knobSize = ring.valueKnobStyle?.size ?? 0
-        let borderWidth: CGFloat
-        if case let UICircularRingStyle.bordered(width, _) = ring.style {
-            borderWidth = width
-        } else {
-            borderWidth = 0
-        }
-
-        switch ring.style {
-        case .inside:
+     
             let difference = ring.outerRingWidth * 2 + ring.innerRingSpacing
-            let offSet = ring.innerRingWidth / 2 + knobSize / 2
+            let offSet = ring.innerRingWidth / 2
             return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
-        default:
-            let offSet = (max(ring.outerRingWidth, ring.innerRingWidth) / 2) + (knobSize / 2) + (borderWidth * 2)
-            return (min(bounds.width, bounds.height) / 2) - offSet
-        }
+      
     }
 
-    /**
-     Draws a gradient with a start and end position inside the provided context
-     */
-    private func drawGradient(_ gradient: CGGradient,
-                              start: UICircularRingGradientPosition,
-                              end: UICircularRingGradientPosition,
-                              in context: CGContext) {
 
-        context.drawLinearGradient(gradient,
-                                   start: start.pointForPosition(in: bounds),
-                                   end: end.pointForPosition(in: bounds),
-                                   options: .drawsBeforeStartLocation)
-    }
 
-    /**
-     Draws the value knob inside the provided context
-     */
-    private func drawValueKnob(in context: CGContext, origin: CGPoint) {
-        guard let knobStyle = ring.valueKnobStyle else { return }
-
-        context.saveGState()
-
-        let rect = CGRect(origin: origin, size: CGSize(width: knobStyle.size, height: knobStyle.size))
-        let knobPath = knobStyle.path.from(rect)
-
-        context.setShadow(offset: knobStyle.shadowOffset,
-                          blur: knobStyle.shadowBlur,
-                          color: knobStyle.shadowColor.cgColor)
-        context.addPath(knobPath.cgPath)
-        context.setFillColor(knobStyle.color.cgColor)
-        context.setLineCap(.round)
-        context.setLineWidth(12)
-        context.drawPath(using: .fill)
-
-        context.restoreGState()
-
-        if let image = knobStyle.image {
-            context.saveGState()
-
-            let imageRect = rect.inset(by: knobStyle.imageInsets)
-            if let tintColor = knobStyle.imageTintColor {
-                tintColor.setFill()
-                image.withRenderingMode(.alwaysTemplate).draw(in: imageRect)
-            } else {
-                image.draw(in: imageRect)
-            }
-
-            context.restoreGState()
-        }
-    }
 
     /**
      Draws the value label for the view.

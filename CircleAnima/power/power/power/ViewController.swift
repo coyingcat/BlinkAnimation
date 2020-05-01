@@ -13,7 +13,7 @@ class ViewController: UIViewController {
     let progressRing = { () -> UICircularProgressRing in
         let ring = UICircularProgressRing(frame: CGRect(x: 100, y: 100, width: 250, height: 250))
         ring.maxValue = 50
-        ring.style = .inside
+ 
         
         // Change any of the properties you'd like
         return ring

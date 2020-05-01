@@ -66,36 +66,8 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    // MARK: View Style
 
-    /**
-     The style of the progress ring.
-
-     Type: `UICircularRingStyle`
-
-     The five styles include `inside`, `ontop`, `dashed`, `dotted`, and `gradient`
-
-     ## Important ##
-     Default = UICircularRingStyle.inside
-
-     ## Author
-     Luis Padron
-     */
-    open var style: UICircularRingStyle = .inside {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
-    /**
-     The options for a gradient ring.
-
-     If this is non-`nil` then a gradient style will be applied.
-
-     ## Important ##
-    Default = `nil`
-    */
-    open var gradientOptions: UICircularRingGradientOptions? = nil {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
+  
 
     /**
      A toggle for showing or hiding the value label.
@@ -125,17 +97,7 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    /**
-     Style for the value knob, default is `nil`.
-
-     ## Important ##
-     If this is `nil`, no value knob is shown.
-
-    */
-    open var valueKnobStyle: UICircularRingValueKnobStyle? {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
-
+   
     /**
      The start angle for the entire progress ring view.
 
