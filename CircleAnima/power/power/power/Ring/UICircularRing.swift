@@ -102,20 +102,7 @@ import UIKit
 
   
 
-    // MARK: Inner Ring properties
-
-    /**
-     The width of the inner ring for the progres bar
-
-     ## Important ##
-     Default = 5.0
-
-     ## Author
-     Luis Padron
-     */
-    @IBInspectable open var innerRingWidth: CGFloat = 5.0 {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
+ 
 
     /**
      The color of the inner ring for the progres bar
@@ -145,20 +132,7 @@ import UIKit
         didSet { ringLayer.setNeedsDisplay() }
     }
 
-    /**
-     The style for the tip/cap of the inner ring
-
-     Type: `CGLineCap`
-
-     ## Important ##
-     Default = CGLineCap.round
-
-     ## Author
-     Luis Padron
-     */
-    open var innerCapStyle: CGLineCap = .round {
-        didSet { ringLayer.setNeedsDisplay() }
-    }
+   
 
     // MARK: Label
 
@@ -279,15 +253,6 @@ import UIKit
         backgroundColor = UIColor.clear
         ringLayer.backgroundColor = UIColor.clear.cgColor
 
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(restoreAnimation),
-                                               name: UIApplication.willEnterForegroundNotification,
-                                               object: nil)
-
-        NotificationCenter.default.addObserver(self,
-                                               selector: #selector(snapshotAnimation),
-                                               name: UIApplication.willResignActiveNotification,
-                                               object: nil)
     }
 
     /**

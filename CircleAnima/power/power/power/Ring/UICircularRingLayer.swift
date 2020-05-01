@@ -68,7 +68,7 @@ class UICircularRingLayer: CAShapeLayer {
     var propertyAnimationDuration: TimeInterval = 0.0
 
     /// the properties which are animatable
-    static let animatableProperties: [String] = ["innerRingWidth", "innerRingColor",
+    static let animatableProperties: [String] = ["innerRingColor",
                                                          "outerRingWidth", "outerRingColor",
                                                          "fontColor", "innerRingSpacing"]
 
@@ -157,8 +157,7 @@ class UICircularRingLayer: CAShapeLayer {
      Sets path properties according to how the user has decided to customize the view.
      */
     private func drawRing(in ctx: CGContext) {
-        guard ring.innerRingWidth > 0 else { return }
-
+      
         let center: CGPoint = CGPoint(x: bounds.midX, y: bounds.midY)
 
         let innerEndAngle = calculateInnerEndAngle()
@@ -172,9 +171,9 @@ class UICircularRingLayer: CAShapeLayer {
                                                    clockwise: true)
 
         // Draw path
-        ctx.setLineWidth(ring.innerRingWidth)
+        ctx.setLineWidth(20)
         ctx.setLineJoin(.round)
-        ctx.setLineCap(ring.innerCapStyle)
+        ctx.setLineCap(CGLineCap.round)
         ctx.setStrokeColor(ring.innerRingColor.cgColor)
         ctx.addPath(innerPath.cgPath)
         ctx.drawPath(using: .stroke)
@@ -187,7 +186,7 @@ class UICircularRingLayer: CAShapeLayer {
     private func calculateOuterRingOffset() -> CGFloat {
  
         
-        return ring.innerRingWidth / 2
+        return 10
    
     }
 
@@ -201,7 +200,7 @@ class UICircularRingLayer: CAShapeLayer {
     private func calculateInnerRadius() -> CGFloat {
      
         let difference = ring.innerRingSpacing
-        let offSet = ring.innerRingWidth / 2
+        let offSet = CGFloat(10)
         return (min(bounds.width - difference, bounds.height - difference) / 2) - offSet
   
     }
