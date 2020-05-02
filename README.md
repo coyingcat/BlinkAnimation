@@ -1,6 +1,18 @@
 ## Swift 5
 
 
+<hr>
+
+
+blog: [画个圆动画，的两种实现。iOS 动画由很浅，入浅，当然是 Swift](https://juejin.im/post/5ead0c536fb9a0435c6f4d07)
+
+
+Thanks @luispadron/UICircularProgressRing
+
+
+<hr>
+
+
 
 blog: [原理念经，夯实基础: 从圆角动画，探索 CATransaction 的作用](https://juejin.im/post/5ea3f93fe51d4546bb6f633b)
 
